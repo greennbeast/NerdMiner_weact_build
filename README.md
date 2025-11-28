@@ -102,6 +102,52 @@ This project is a fork of [NerdMiner_v2](https://github.com/BitMaker-hub/NerdMin
 - Pool name display
 - Render tick lock architecture for stable UI updates
 
+## Dashboard Proxy (Public Access)
+
+Use the included Node.js proxy to serve the dashboard locally and safely expose it on the web.
+
+### Requirements
+- Node.js (macOS: `brew install node`)
+- Optional: ngrok for public URL (`brew install ngrok`)
+
+### Setup
+1. Install deps:
+   ```bash
+   npm install
+   ```
+2. Create `.env` from example and edit values:
+   ```bash
+   cp .env.example .env
+   # MINER_IP=<esp32-ip>
+   # DASH_USER=<username>
+   # DASH_PASS=<password>
+   # PORT=8080
+   ```
+
+### Run Locally
+```bash
+npm start
+# Open:
+# http://localhost:8080/?mode=proxy
+```
+
+### Change Credentials
+- Visit `/admin` (e.g., `http://localhost:8080/admin`) to update username/password.
+- Changes persist to `.env`. Use `/logout` to force re-auth.
+
+### Expose Publicly (ngrok)
+```bash
+ngrok config add-authtoken <YOUR_NGROK_TOKEN>
+ngrok http 8080
+# Share:
+# https://<subdomain>.ngrok-free.dev/?mode=proxy
+```
+
+### Notes
+- `.env` is git-ignored; secrets are never committed.
+- If the miner’s IP changes, update `MINER_IP` and restart the proxy.
+- If `/api/stats` returns WiFiManager HTML, ensure you are using the proxy URL with `?mode=proxy`.
+
 ## License
 
 Follows the same license as the original NerdMiner_v2 project.

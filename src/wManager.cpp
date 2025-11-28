@@ -677,24 +677,6 @@ void setupCustomWebPages() {
         wm.server->send(200, "application/json", json);
     });
 
-    // Endpoint to start WiFiManager web portal on current network (STA) without reboot
-    wm.server->on("/startportal", [](){
-        IPAddress staIP = WiFi.localIP();
-        bool already = wm.getWebPortalActive();
-        if (!already) {
-            wm.startWebPortal();
-        }
-        String msg = String("<html><head><meta charset='UTF-8'></head><body style='background:#000;color:#0f0;font-family:monospace;padding:20px'>") +
-                     String("<h2>WiFiManager Portal ") + (already?"Already Active":"Started") + String("</h2>") +
-                     String("<p>Portal is available on the current network.</p>") +
-                     String("<p>Open: <a style='color:#0ff' href='http://") + staIP.toString() + String("/settings' target='_blank'>http://") + staIP.toString() + String("/settings</a></p>") +
-                     String("</body></html>");
-        wm.server->sendHeader("Access-Control-Allow-Origin", "*");
-        wm.server->sendHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-        wm.server->sendHeader("Access-Control-Allow-Headers", "*");
-        wm.server->send(200, "text/html; charset=UTF-8", msg);
-    });
-
     // Endpoint to restart into configuration portal (useful if /settings not reachable)
     wm.server->on("/config", [](){
         wm.server->sendHeader("Access-Control-Allow-Origin", "*");

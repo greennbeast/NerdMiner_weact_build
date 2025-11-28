@@ -82,6 +82,7 @@
                 <input type='text' id='minerIP' placeholder='Miner IP Address' value=''>
                 <button onclick='connectMiner()'>CONNECT</button>
                 <button onclick='disconnectMiner()'>DISCONNECT</button>
+                <button onclick='openSettings()'>WIFI CONFIG</button>
                 <button onclick='toggleDebug()'>DEBUG</button>
                 <label class='autoconnect'>
                     <input type='checkbox' id='autoConnect'> Auto-connect
@@ -401,6 +402,22 @@
             // Safely clear any retry timer if present
             try { clearRetry(); } catch(_) {}
             setStatus('Disconnected. Enter IP or use Saved Miners');
+        }
+
+        // Open the device settings page (WiFi/pool) in a new tab
+        function openSettings(){
+            if (!minerIP) {
+                const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
+                if (savedIP) minerIP = savedIP;
+            }
+            const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+            const url = useProxy ? '/settings' : ('http://' + minerIP + '/settings');
+            if (!minerIP && !useProxy) {
+                setStatus('Enter IP or enable proxy mode to open settings', true);
+                return;
+            }
+            try { window.open(url, '_blank'); setStatus('Opening WiFi config...'); }
+            catch(e){ setStatus('Failed to open settings', true); }
         }
 
         // Some builds removed the retry scheduler; provide a safe no-op.

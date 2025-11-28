@@ -161,6 +161,17 @@ app.use('/config', (req, res, next) => {
   })(req, res, next);
 });
 
+app.use('/startportal', (req, res, next) => {
+  const target = resolveTargetFromReq(req);
+  return createProxyMiddleware({
+    target,
+    changeOrigin: true,
+    xfwd: true,
+    followRedirects: true,
+    onProxyReq: (proxyReq) => proxyReq.setHeader('Cache-Control', 'no-store'),
+  })(req, res, next);
+});
+
 // Serve the dashboard at root
 app.get('/', (_req, res) => {
   res.sendFile(path.join(__dirname, 'nerdminer-dashboard.html'));

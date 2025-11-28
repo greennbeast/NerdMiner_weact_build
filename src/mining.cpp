@@ -637,6 +637,17 @@ void minerWorkerSw(void * task_id)
   uint32_t wdt_counter = 0;
   while (1)
   {
+    // Temperature throttling check
+    float current_temp = temperatureRead();
+    if (current_temp >= MAX_TEMP_CELSIUS) {
+      if (miner_id == 0) { // Only print once per check
+        Serial.printf("[THERMAL] Temperature %.1f°C >= %.0f°C, throttling mining...\n", current_temp, MAX_TEMP_CELSIUS);
+      }
+      vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait 1 second
+      esp_task_wdt_reset();
+      continue;
+    }
+    
     {
       std::lock_guard<std::mutex> lock(s_job_mutex);
       if (result)
@@ -844,6 +855,17 @@ void minerWorkerHw(void * task_id)
 
   while (1)
   {
+    // Temperature throttling check
+    float current_temp = temperatureRead();
+    if (current_temp >= MAX_TEMP_CELSIUS) {
+      if (miner_id == 0) { // Only print once per check
+        Serial.printf("[THERMAL] Temperature %.1f°C >= %.0f°C, throttling mining...\n", current_temp, MAX_TEMP_CELSIUS);
+      }
+      vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait 1 second
+      esp_task_wdt_reset();
+      continue;
+    }
+    
     {
       std::lock_guard<std::mutex> lock(s_job_mutex);
       if (result)
@@ -1086,6 +1108,17 @@ void minerWorkerHw(void * task_id)
 
   while (1)
   {
+    // Temperature throttling check
+    float current_temp = temperatureRead();
+    if (current_temp >= MAX_TEMP_CELSIUS) {
+      if (miner_id == 0) { // Only print once per check
+        Serial.printf("[THERMAL] Temperature %.1f°C >= %.0f°C, throttling mining...\n", current_temp, MAX_TEMP_CELSIUS);
+      }
+      vTaskDelay(1000 / portTICK_PERIOD_MS); // Wait 1 second
+      esp_task_wdt_reset();
+      continue;
+    }
+    
     {
       std::lock_guard<std::mutex> lock(s_job_mutex);
       if (result)

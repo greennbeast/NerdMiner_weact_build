@@ -499,7 +499,7 @@
                 "ACTIVE_LED=LOW",
                 "INACTIVE_LED=HIGH",
                 "LV_CONF_INCLUDE_SIMPLE",
-                "MINER_WORKER_COUNT=4",
+                "MINER_WORKER_COUNT=3",
                 "HARDWARE_SHA265=1",
                 "CONFIG_FREERTOS_HZ=1000",
                 "HAVE_CONFIG_H",

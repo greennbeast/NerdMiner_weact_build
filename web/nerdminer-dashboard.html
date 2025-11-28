@@ -95,6 +95,7 @@
                     <button onclick='renameSelected()'>RENAME</button>
                     <button onclick='deleteSelected()'>DELETE</button>
                     <button onclick='connectAllSaved()'>CONNECT ALL</button>
+                    <button onclick='disconnectAll()'>DISCONNECT ALL</button>
                 </div>
             </div>
             <div class='status' id='status'>Enter miner IP and click CONNECT</div>
@@ -191,6 +192,9 @@
                 <div class='stat-label'>Current Pool</div>
                 <div class='stat-value stat-small' id='pool'>---</div>
             </div>
+
+            <!-- Per-miner tiles -->
+            <div class='dashboard' id='minerTiles'></div>
         </div>
 
 
@@ -207,6 +211,7 @@
         let minerIP = '';
         let multiMinerIPs = [];
         let multiUpdateInterval = null;
+        const tilesEl = () => document.getElementById('minerTiles');
         let updateInterval = null;
         // Simple polling only; avoid extra retry timers
         let consecutiveFailures = 0;
@@ -345,6 +350,13 @@
                         if (multiUpdateInterval) clearInterval(multiUpdateInterval);
                         await updateMultiStats();
                         multiUpdateInterval = setInterval(updateMultiStats, 2000);
+                    }
+
+                    function disconnectAll(){
+                        if (multiUpdateInterval) clearInterval(multiUpdateInterval);
+                        multiMinerIPs = [];
+                        if (tilesEl()) tilesEl().innerHTML = '';
+                        setStatus('Disconnected all saved miners');
                     }
             
             // Stop existing updates
@@ -674,6 +686,29 @@
                 });
                 document.getElementById('workers').innerHTML = workersHtml;
                 setStatus(`Connected to ${count} miners • Total ${aggHash.toFixed(2)} KH/s`);
+
+                // Build per-miner tiles: name/IP, hashrate, 1h avg, temp, uptime
+                const container = tilesEl();
+                if (container) {
+                    container.innerHTML = '';
+                    data.forEach((d, idx) => {
+                        const ip = multiMinerIPs[idx] || 'unknown';
+                        const tile = document.createElement('div');
+                        tile.className = 'stat-box';
+                        const healthClass = (d.netok === 0) ? 'color:#ff0' : 'color:#0a0';
+                        tile.innerHTML = `
+                            <div class='stat-label' style='display:flex;justify-content:space-between;align-items:center'>
+                                <span>Miner: ${ip}</span>
+                                <span style='${healthClass}'>${d.netok===0?'No Internet':'OK'}</span>
+                            </div>
+                            <div class='stat-value stat-small' style='margin-top:6px'>${Number(d.hashrate||0).toFixed(2)} KH/s</div>
+                            <div style='font-size:12px;color:#0a0;margin-top:6px'>1h Avg: ${(Number(d.avghashrate||0).toFixed(2))} KH/s</div>
+                            <div style='font-size:12px;color:#0a0;margin-top:6px'>Uptime: ${d.uptime||'---'}</div>
+                            <div style='font-size:12px;color:#0a0;margin-top:6px'>Temp: ${d.temp!==undefined?d.temp+'°C':'---'}</div>
+                        `;
+                        container.appendChild(tile);
+                    });
+                }
             } catch (e) {
                 clearTimeout(timer);
                 setStatus('Multi-miner update failed', true);

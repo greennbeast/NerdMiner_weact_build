@@ -645,8 +645,12 @@ void setupCustomWebPages() {
         if (poolName.length() && Settings.PoolPort > 0) {
             poolName += ":" + String(Settings.PoolPort);
         }
+        // Rolling average window length (seconds). Currently set to 1 hour.
+        const uint32_t avgWindowSeconds = 3600;
+
         String json = "{\"hashrate\":" + String(currentHashRate, 2) + 
                       ",\"avghashrate\":" + String(rollingAvgHashRate, 2) +
+                      ",\"avgwindowseconds\":" + String(avgWindowSeconds) +
                       ",\"totalavghashrate\":" + String(totalAvgHashRate, 2) +
                       ",\"workers\":" + workerRatesJson +
                   ",\"shares\":" + String(shares) + 

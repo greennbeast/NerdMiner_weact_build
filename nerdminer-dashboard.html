@@ -162,6 +162,13 @@
     </div>
 
     <script>
+        // Helper: build API URL. If mode=proxy, use same-origin /api
+        function apiUrl(p) {
+            try {
+                const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+                return useProxy ? p : ('http://' + minerIP + p);
+            } catch(_) { return 'http://' + minerIP + p; }
+        }
         let minerIP = '';
         let updateInterval = null;
         // Simple polling only; avoid extra retry timers
@@ -299,7 +306,7 @@
             // Timeout-aware fetch
             const controller = new AbortController();
             const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
-            fetch('http://' + minerIP + '/api/stats', { signal: controller.signal, cache: 'no-store' })
+            fetch(apiUrl('/api/stats'), { signal: controller.signal, cache: 'no-store' })
                 .then(r => r.json())
                 .then(d => {
                     clearTimeout(timer);
@@ -440,6 +447,13 @@
                 document.getElementById('minerIP').value = savedIP;
                 document.getElementById('autoConnect').checked = savedAuto;
                 populateList();
+                const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+                if (useProxy) {
+                    document.getElementById('minerIP').value = 'proxy';
+                    setStatus('Proxy mode: using same-origin /api');
+                    connectMiner();
+                    return;
+                }
                 if (savedIP && savedAuto) {
                     setStatus('Auto-connecting to ' + savedIP + '...');
                     connectMiner();
@@ -453,7 +467,7 @@
             const controller = new AbortController();
             const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
             
-            fetch('http://' + minerIP + '/api/stats', { signal: controller.signal, cache: 'no-store' })
+            fetch(apiUrl('/api/stats'), { signal: controller.signal, cache: 'no-store' })
                 .then(r => r.json())
                 .then(d => {
                     renderTickLocked = true;

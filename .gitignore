@@ -1,3 +1,7 @@
 .pio
 logs/
+node_modules/
+ngrok.log
+.env
+
 

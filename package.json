@@ -1,0 +1,16 @@
+{
+  "name": "nerdminer-dashboard-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local server to host NerdMiner dashboard and proxy /api to ESP32",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:proxy": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-proxy-middleware": "^3.0.1"
+  }
+}

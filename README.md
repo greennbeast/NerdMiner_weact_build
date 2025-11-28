@@ -107,8 +107,15 @@ This project is a fork of [NerdMiner_v2](https://github.com/BitMaker-hub/NerdMin
 Use the included Node.js proxy to serve the dashboard locally and safely expose it on the web.
 
 ### Requirements
+- PlatformIO (VS Code extension) for firmware build/upload
 - Node.js (macOS: `brew install node`)
 - Optional: ngrok for public URL (`brew install ngrok`)
+
+### Firmware First
+Build and upload firmware to your ESP32 before running the proxy:
+```bash
+pio run -t upload
+```
 
 ### Setup
 1. Install deps:

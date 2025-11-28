@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <title>NerdMiner Dashboard</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Courier New',monospace;background:#000;color:#0f0;padding:10px}
+        .container{max-width:800px;margin:0 auto}
+        .header{text-align:center;padding:20px;border:3px solid #0f0;margin-bottom:15px;background:#001100}
+        .header h1{font-size:28px;margin-bottom:5px;letter-spacing:2px}
+        .header .chipid{font-size:12px;color:#0a0;letter-spacing:1px}
+        .header .ip-config{margin-top:15px;padding:10px;border-top:1px solid #0a0;display:flex;justify-content:center;align-items:center;gap:10px}
+        .header .ip-config{margin-top:15px;padding:10px;border-top:1px solid #0a0;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
+        .header input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;width:200px;text-align:center}
+        .header button{background:#0f0;color:#000;border:none;padding:8px 15px;margin-left:10px;cursor:pointer;font-weight:bold}
+        .header button:hover{background:#0ff}
+        .autoconnect{display:flex;align-items:center;gap:6px;font-size:12px;color:#0a0}
+        .saved{display:flex;align-items:center;gap:8px}
+        .saved select{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;}
+        .saved input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;width:200px}
+        .status{text-align:center;padding:5px;font-size:11px;color:#0a0}
+        .status.error{color:#f00}
+        .health{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:6px;font-size:12px;color:#0a0}
+        .health-dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:#555}
+        .health-dot.ok{background:#0f0}
+        .health-dot.bad{background:#f00}
+        .debug{margin-top:10px;border:2px dashed #0a0;padding:10px;font-size:11px;color:#0a0;background:#000}
+        .debug pre{white-space:pre-wrap;word-wrap:break-word;color:#0f0}
+        .dashboard{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}
+        .stat-box{border:2px solid #0f0;padding:15px;background:#001a00;text-align:center}
+        .stat-box.large{grid-column:1/-1}
+        .stat-label{font-size:11px;color:#0a0;margin-bottom:5px;text-transform:uppercase}
+        .stat-value{font-size:36px;font-weight:bold;color:#0f0;font-family:monospace}
+        .stat-value.mega{font-size:48px}
+        .stat-small{font-size:20px}
+        .settings-panel{border:3px solid #0f0;background:#001100;padding:20px}
+        .settings-panel h2{text-align:center;margin-bottom:20px;font-size:20px;border-bottom:2px solid #0f0;padding-bottom:10px}
+        .form-group{margin-bottom:15px}
+        label{display:block;font-size:12px;margin-bottom:5px;color:#0f0;text-transform:uppercase}
+        input,select{width:100%;padding:10px;background:#000;color:#0f0;border:2px solid #0f0;font-family:'Courier New',monospace;font-size:14px}
+        input:focus,select:focus{outline:none;border-color:#0ff;background:#001a1a}
+        .btn{width:100%;padding:15px;background:#0f0;color:#000;border:none;font-size:16px;font-weight:bold;cursor:pointer;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:2px;margin-top:10px}
+        .btn:hover{background:#0ff;box-shadow:0 0 10px #0f0}
+        .checkbox-inline{display:inline-block;width:auto;margin-left:10px}
+        @media(max-width:600px){.dashboard{grid-template-columns:1fr}.stat-box.large{grid-column:1}}
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <h1>NERD MINER</h1>
+            <div class='chipid' id='chipid'>CHIP ID: ---</div>
+            <div class='ip-config'>
+                <input type='text' id='minerIP' placeholder='Miner IP Address' value=''>
+                <button onclick='connectMiner()'>CONNECT</button>
+                <button onclick='disconnectMiner()'>DISCONNECT</button>
+                <button onclick='toggleDebug()'>DEBUG</button>
+                <label class='autoconnect'>
+                    <input type='checkbox' id='autoConnect'> Auto-connect
+                </label>
+                <div class='saved'>
+                    <select id='savedMiners' onchange='onSelectSaved()'>
+                        <option value=''>Saved Miners...</option>
+                    </select>
+                    <input type='text' id='minerName' placeholder='Friendly name (optional)'>
+                    <button onclick='saveCurrent()'>SAVE CURRENT</button>
+                    <button onclick='renameSelected()'>RENAME</button>
+                    <button onclick='deleteSelected()'>DELETE</button>
+                </div>
+            </div>
+            <div class='status' id='status'>Enter miner IP and click CONNECT</div>
+            <div class='health'><span class='health-dot' id='healthDot'></span><span id='healthText'>Idle</span></div>
+            <div class='debug' id='debug' style='display:none;'>
+                <div style='margin-bottom:6px;'>Debug: latest /api/stats payload</div>
+                <pre id='debugPayload'>---</pre>
+            </div>
+        </div>
+        
+        <div class='dashboard'>
+            <!-- Priority: Live performance first -->
+            <div class='stat-box large'>
+                <div class='stat-label'>Worker Hash Rates (KH/s)</div>
+                <div id='workers' style='font-size:18px;line-height:1.4'></div>
+                <div style='margin-top:10px;padding-top:10px;border-top:1px solid #0a0'>
+                    <div style='font-size:12px;color:#0a0'>TOTAL HASH RATE (KH/s)</div>
+                    <div class='stat-value' style='font-size:36px' id='hashrate'>---</div>
+                </div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>32 Bit Shares</div>
+                <div class='stat-value stat-small' id='shares'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Valid Blocks</div>
+                <div class='stat-value stat-small' id='valids'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Total Hashes (M)</div>
+                <div class='stat-value stat-small' id='mhashes'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Device Uptime</div>
+                <div class='stat-value stat-small' id='uptime'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Temperature (°C)</div>
+                <div class='stat-value stat-small' id='temp'>---</div>
+            </div>
+            <!-- Priority: Global network context -->
+            <div class='stat-box'>
+                <div class='stat-label'>BTC Price (USD)</div>
+                <div class='stat-value stat-small' id='btcprice'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Network Difficulty</div>
+                <div class='stat-value stat-small' id='difficulty'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Global Hashrate</div>
+                <div class='stat-value stat-small' id='globalhash'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Medium Fee (sat/vB)</div>
+                <div class='stat-value stat-small' id='mediumfee'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Current Block</div>
+                <div class='stat-value stat-small' id='currentblock'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Current Time</div>
+                <div class='stat-value stat-small' id='time'>---</div>
+            </div>
+            <!-- Extra miner info -->
+            <div class='stat-box'>
+                <div class='stat-label'>Block Templates</div>
+                <div class='stat-value stat-small' id='templates'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Best Difficulty</div>
+                <div class='stat-value stat-small' id='bestdiff'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Halving (Blocks)</div>
+                <div class='stat-value stat-small' id='halving'>---</div>
+            </div>
+            <div class='stat-box'>
+                <div class='stat-label'>Current Pool</div>
+                <div class='stat-value stat-small' id='pool'>---</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let minerIP = '';
+        let updateInterval = null;
+        // Simple polling only; avoid extra retry timers
+        let consecutiveFailures = 0;
+        const FAILURE_THRESHOLD = 3; // show error after 3 misses
+        const FETCH_TIMEOUT_MS = 8000; // 8s per request
+        const STORAGE_KEY_IP = 'nerdminer.ip';
+        const STORAGE_KEY_AUTO = 'nerdminer.autoconnect';
+        const STORAGE_KEY_LIST = 'nerdminer.list'; // stores array of {name, ip}
+        const SCAN_TIMEOUT_MS = 800;
+        const SCAN_CONCURRENCY = 20;
+        // Render lock to avoid late overwrites within the same tick
+        let renderTickLocked = false;
+
+        let lastStatusIsError = false;
+        function setStatus(msg, isError = false) {
+            const status = document.getElementById('status');
+            status.textContent = msg;
+            status.className = isError ? 'status error' : 'status';
+            lastStatusIsError = isError;
+            // Update health indicator
+            const dot = document.getElementById('healthDot');
+            const txt = document.getElementById('healthText');
+            if (dot && txt) {
+                dot.className = 'health-dot ' + (isError ? 'bad' : 'ok');
+                txt.textContent = isError ? 'Disconnected' : 'Connected';
+            }
+        }
+
+        function connectMiner() {
+            minerIP = document.getElementById('minerIP').value.trim();
+            if (!minerIP) {
+                setStatus('Please enter miner IP address', true);
+                return;
+            }
+            // Persist settings
+            try {
+                localStorage.setItem(STORAGE_KEY_IP, minerIP);
+                const auto = document.getElementById('autoConnect').checked;
+                localStorage.setItem(STORAGE_KEY_AUTO, auto ? '1' : '0');
+                // Add to saved list automatically if not present
+                addToList(minerIP);
+            } catch(e) {}
+                    function onSelectSaved(){
+                        const sel = document.getElementById('savedMiners');
+                        const value = sel.value;
+                        if (!value) return;
+                        const entry = getList().find(e => e.ip === value);
+                        document.getElementById('minerIP').value = entry ? entry.ip : value;
+                        document.getElementById('minerName').value = entry && entry.name ? entry.name : '';
+                        connectMiner();
+                    }
+
+                    function saveCurrent(){
+                        const ip = document.getElementById('minerIP').value.trim();
+                        if (!ip) { setStatus('Enter IP to save', true); return; }
+                        const name = document.getElementById('minerName').value.trim();
+                        addToList(ip, name);
+                        populateList();
+                        setStatus('Saved ' + (name ? name + ' ('+ip+')' : ip));
+                    }
+
+                    function deleteSelected(){
+                        const sel = document.getElementById('savedMiners');
+                        const ip = sel.value;
+                        if (!ip) return;
+                        try {
+                            const list = getList().filter(x => x.ip !== ip);
+                            localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(list));
+                            populateList();
+                            setStatus('Deleted ' + ip);
+                        } catch(e) {}
+                    }
+
+                    function renameSelected(){
+                        const sel = document.getElementById('savedMiners');
+                        const ip = sel.value;
+                        if (!ip) { setStatus('Select a saved miner to rename', true); return; }
+                        const newName = document.getElementById('minerName').value.trim();
+                        try {
+                            const list = getList();
+                            const idx = list.findIndex(e => e.ip === ip);
+                            if (idx < 0) { setStatus('Miner not found in list', true); return; }
+                            list[idx].name = newName;
+                            localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(list));
+                            populateList();
+                            setStatus('Renamed to ' + (newName ? newName + ' ('+ip+')' : ip));
+                        } catch(e) {}
+                    }
+
+                    function getList(){
+                        try {
+                            const raw = localStorage.getItem(STORAGE_KEY_LIST);
+                            if (!raw) return [];
+                            const arr = JSON.parse(raw);
+                            if (!Array.isArray(arr)) return [];
+                            // normalize entries
+                            return arr.map(e => ({ name: e.name || '', ip: e.ip }))
+                                      .filter(e => !!e.ip);
+                        } catch(e) { return []; }
+                    }
+
+                    function addToList(ip, name=''){
+                        try {
+                            const list = getList();
+                            const idx = list.findIndex(e => e.ip === ip);
+                            if (idx >= 0) {
+                                // update name
+                                list[idx].name = name || list[idx].name || '';
+                            } else {
+                                list.push({ name, ip });
+                            }
+                            localStorage.setItem(STORAGE_KEY_LIST, JSON.stringify(list));
+                        } catch(e) {}
+                    }
+
+                    function populateList(){
+                        const sel = document.getElementById('savedMiners');
+                        sel.innerHTML = "<option value=''>Saved Miners...</option>";
+                        const list = getList();
+                        for (const entry of list) {
+                            const opt = document.createElement('option');
+                            opt.value = entry.ip;
+                            opt.textContent = entry.name ? `${entry.name} (${entry.ip})` : entry.ip;
+                            sel.appendChild(opt);
+                        }
+                    }
+            
+            // Stop existing updates
+            if (updateInterval) clearInterval(updateInterval);
+            
+            setStatus('Connecting to ' + minerIP + '...');
+            
+            // Try to fetch chip ID
+            // Timeout-aware fetch
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+            fetch('http://' + minerIP + '/api/stats', { signal: controller.signal, cache: 'no-store' })
+                .then(r => r.json())
+                .then(d => {
+                    clearTimeout(timer);
+                    // Mark connection healthy on successful fetch
+                    if (lastStatusIsError) {
+                        setStatus('Connected! Updating every 2 seconds');
+                    }
+                    consecutiveFailures = 0;
+                    setStatus('Connected! Updating every 2 seconds');
+                    // Update health indicator immediately on initial connect
+                    const dot0 = document.getElementById('healthDot');
+                    const txt0 = document.getElementById('healthText');
+                    if (dot0 && txt0) { dot0.className = 'health-dot ok'; txt0.textContent = 'Connected'; }
+                    // Update chip ID from API
+                    if (d.chipid) {
+                        document.getElementById('chipid').textContent = 'CHIP ID: ' + d.chipid;
+                    }
+                    updateStats();
+                    updateInterval = setInterval(updateStats, 2000);
+                })
+                .catch(e => {
+                    setStatus('Connection failed! Check IP address and network', true);
+                    console.error(e);
+                });
+        }
+
+        function disconnectMiner(){
+            clearInterval(updateInterval);
+            updateInterval = null;
+            // Safely clear any retry timer if present
+            try { clearRetry(); } catch(_) {}
+            setStatus('Disconnected. Enter IP or use Saved Miners');
+        }
+
+        // Some builds removed the retry scheduler; provide a safe no-op.
+        function clearRetry(){ /* no-op: retry scheduler not used */ }
+
+        function toggleDebug(){
+            const current = localStorage.getItem('nerdminer.debug') === '1';
+            localStorage.setItem('nerdminer.debug', current ? '0' : '1');
+            const dbg = document.getElementById('debug');
+            const payload = document.getElementById('debugPayload');
+            if (current) {
+                // Disabling
+                dbg.style.display = 'none';
+                setStatus('Debug disabled');
+            } else {
+                // Enabling
+                dbg.style.display = 'block';
+                if (payload) payload.textContent = 'Waiting for next update...';
+                setStatus('Debug enabled');
+            }
+        }
+
+        // Removed retry scheduler to keep stable 2s polling
+
+        // Try common mDNS names first, then scan subnets
+        async function findMiner() {
+            setStatus('Searching for miner on local network...');
+            const candidates = [
+                'http://nerdminer.local',
+                'http://esp32.local'
+            ];
+
+            // Attempt mDNS endpoints
+            for (const base of candidates) {
+                try {
+                    const c = await fetch(base + '/api/stats', { method: 'GET', cache: 'no-store' });
+                    if (c.ok) {
+                        const d = await c.json();
+                        const url = new URL(base);
+                        document.getElementById('minerIP').value = url.hostname;
+                        connectMiner();
+                        return;
+                    }
+                } catch(_) {}
+            }
+
+            // Fallback: scan common private ranges 192.168.0.x and 192.168.1.x
+            const subnets = ['192.168.0.', '192.168.1.'];
+            const ips = [];
+            for (const sn of subnets) {
+                for (let i = 1; i < 255; i++) ips.push(sn + i);
+            }
+
+            const found = await scanForApi(ips);
+            if (found) {
+                document.getElementById('minerIP').value = found;
+                connectMiner();
+            } else {
+                setStatus('No miner found. Enter IP and CONNECT.', true);
+            }
+        }
+
+        async function scanForApi(ipList) {
+            let index = 0;
+            const queue = [];
+            let foundIP = null;
+
+            async function tryIP(ip) {
+                if (foundIP) return; // stop if already found
+                const controller = new AbortController();
+                const timer = setTimeout(() => controller.abort(), SCAN_TIMEOUT_MS);
+                try {
+                    const r = await fetch('http://' + ip + '/api/stats', { method: 'GET', cache: 'no-store', signal: controller.signal });
+                    clearTimeout(timer);
+                    if (r.ok) {
+                        const d = await r.json();
+                        if (d && (d.hashrate !== undefined || d.templates !== undefined)) {
+                            foundIP = ip;
+                        }
+                    }
+                } catch(_) { clearTimeout(timer); }
+            }
+
+            while (index < ipList.length && !foundIP) {
+                const batch = [];
+                for (let i = 0; i < SCAN_CONCURRENCY && index < ipList.length; i++, index++) {
+                    batch.push(tryIP(ipList[index]));
+                }
+                await Promise.race([
+                    Promise.allSettled(batch),
+                    new Promise(res => setTimeout(res, SCAN_TIMEOUT_MS + 100))
+                ]);
+            }
+
+            if (foundIP) {
+                try { localStorage.setItem(STORAGE_KEY_IP, foundIP); } catch(_) {}
+            }
+            return foundIP;
+        }
+
+        // Initialize form from storage and optionally auto-connect
+        (function initFromStorage(){
+            try {
+                const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
+                const savedAuto = localStorage.getItem(STORAGE_KEY_AUTO) === '1';
+                document.getElementById('minerIP').value = savedIP;
+                document.getElementById('autoConnect').checked = savedAuto;
+                populateList();
+                if (savedIP && savedAuto) {
+                    setStatus('Auto-connecting to ' + savedIP + '...');
+                    connectMiner();
+                }
+            } catch(e) {}
+        })();
+
+        function updateStats() {
+            if (!minerIP) return;
+            
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+            
+            fetch('http://' + minerIP + '/api/stats', { signal: controller.signal, cache: 'no-store' })
+                .then(r => r.json())
+                .then(d => {
+                    renderTickLocked = true;
+                    clearTimeout(timer);
+                    consecutiveFailures = 0;
+                    // Immediately write key fields so they don't get overwritten later
+                    try {
+                        document.getElementById('temp').textContent = (d.temp !== undefined && d.temp !== null) ? (d.temp + '°C') : document.getElementById('temp').textContent;
+                        document.getElementById('btcprice').textContent = (d.btcprice !== undefined && d.btcprice !== null) ? ('$' + Number(d.btcprice).toLocaleString()) : document.getElementById('btcprice').textContent;
+                        document.getElementById('currentblock').textContent = (d.currentblock !== undefined && d.currentblock !== null) ? d.currentblock : document.getElementById('currentblock').textContent;
+                        document.getElementById('time').textContent = (typeof d.time === 'string' && d.time.length) ? d.time : document.getElementById('time').textContent;
+                        document.getElementById('difficulty').textContent = (d.difficulty !== undefined && d.difficulty !== null) ? d.difficulty : document.getElementById('difficulty').textContent;
+                        document.getElementById('globalhash').textContent = (d.globalhash !== undefined && d.globalhash !== null) ? d.globalhash : document.getElementById('globalhash').textContent;
+                        document.getElementById('mediumfee').textContent = (d.mediumfee !== undefined && d.mediumfee !== null) ? d.mediumfee : document.getElementById('mediumfee').textContent;
+                        document.getElementById('halving').textContent = (d.halving !== undefined && d.halving !== null) ? Number(d.halving).toLocaleString() : document.getElementById('halving').textContent;
+                        document.getElementById('pool').textContent = (d.pool !== undefined && d.pool !== null && String(d.pool).length) ? String(d.pool) : document.getElementById('pool').textContent;
+                    } catch(_) {}
+                    
+                    // Update debug payload FIRST before any other DOM ops
+                    const payload = document.getElementById('debugPayload');
+                    if (payload && localStorage.getItem('nerdminer.debug') === '1') {
+                        payload.textContent = JSON.stringify(d, null, 2);
+                    }
+                    
+                    if (lastStatusIsError) {
+                        setStatus('Connected! Updating every 2 seconds');
+                        lastStatusIsError = false;
+                    }
+                    // Mark health good on successful poll
+                    const dot = document.getElementById('healthDot');
+                    const txt = document.getElementById('healthText');
+                    if (dot && txt) { dot.className = 'health-dot ok'; txt.textContent = 'Connected'; }
+                    
+                    // Display individual worker hash rates
+                    if (d.workers && d.workers.length > 0) {
+                        let workersHtml = '';
+                        for (let i = 0; i < d.workers.length; i++) {
+                            workersHtml += 'Worker ' + (i+1) + ': <span style="color:#0ff">' + d.workers[i].toFixed(2) + '</span> KH/s<br>';
+                        }
+                        document.getElementById('workers').innerHTML = workersHtml;
+                    }
+                    document.getElementById('hashrate').textContent = d.hashrate !== undefined && d.hashrate !== null ? Number(d.hashrate).toFixed(2) : '---';
+                    document.getElementById('shares').textContent = d.shares !== undefined ? d.shares : '---';
+                    document.getElementById('valids').textContent = d.valids !== undefined ? d.valids : '---';
+                    document.getElementById('templates').textContent = d.templates !== undefined ? d.templates : '---';
+                    document.getElementById('mhashes').textContent = d.mhashes !== undefined ? d.mhashes : '---';
+                    document.getElementById('uptime').textContent = d.uptime || '---';
+                    document.getElementById('bestdiff').textContent = d.bestdiff || '---';
+                    document.getElementById('blocks').textContent = d.blocks !== undefined ? d.blocks : '---';
+                    // Short status summary
+                    setStatus(`Connected • T:${(d.temp!==undefined&&d.temp!==null)?d.temp:'-'}°C • $${(d.btcprice||0).toLocaleString()} • blk:${d.currentblock||'-'} • ${d.time||'-'}`);
+                    
+                    // Debug payload already updated at top of function
+                    
+                    // Pool name will be updated in the re-assert block below
+                    
+                    // Show network health warning if netok is false
+                    if (d.netok === 0) {
+                        const txt = document.getElementById('healthText');
+                        if (txt && txt.textContent === 'Connected') {
+                            txt.textContent = 'Connected (No Internet)';
+                        }
+                    }
+
+                    // Final re-assert: ensure values stick after any late overwrites
+                    setTimeout(() => {
+                        try {
+                            const el = (id) => document.getElementById(id);
+                            if (el('temp')) el('temp').textContent = (d.temp !== undefined && d.temp !== null) ? (d.temp + '°C') : el('temp').textContent;
+                            if (el('btcprice')) el('btcprice').textContent = (d.btcprice !== undefined && d.btcprice !== null) ? ('$' + Number(d.btcprice).toLocaleString()) : el('btcprice').textContent;
+                            if (el('currentblock')) el('currentblock').textContent = (d.currentblock !== undefined && d.currentblock !== null) ? d.currentblock : el('currentblock').textContent;
+                            if (el('time')) el('time').textContent = (typeof d.time === 'string' && d.time.length) ? d.time : el('time').textContent;
+                            if (el('difficulty')) el('difficulty').textContent = (d.difficulty !== undefined && d.difficulty !== null) ? d.difficulty : el('difficulty').textContent;
+                            if (el('globalhash')) el('globalhash').textContent = (d.globalhash !== undefined && d.globalhash !== null) ? d.globalhash : el('globalhash').textContent;
+                            if (el('mediumfee')) el('mediumfee').textContent = (d.mediumfee !== undefined && d.mediumfee !== null) ? d.mediumfee : el('mediumfee').textContent;
+                            if (el('halving')) el('halving').textContent = (d.halving !== undefined && d.halving !== null) ? Number(d.halving).toLocaleString() : el('halving').textContent;
+                            if (el('pool')) el('pool').textContent = (d.pool !== undefined && d.pool !== null && String(d.pool).length) ? String(d.pool) : el('pool').textContent;
+                            // Hard fallback: if still showing '---', sync from debug JSON
+                            const payloadEl = document.getElementById('debugPayload');
+                            if (payloadEl) {
+                                try {
+                                    const jd = JSON.parse(payloadEl.textContent || '{}');
+                                    if (el('temp') && el('temp').textContent === '---' && jd.temp !== undefined) el('temp').textContent = jd.temp + '°C';
+                                    if (el('btcprice') && el('btcprice').textContent === '---' && jd.btcprice !== undefined) el('btcprice').textContent = '$' + Number(jd.btcprice).toLocaleString();
+                                    if (el('currentblock') && el('currentblock').textContent === '---' && jd.currentblock !== undefined) el('currentblock').textContent = jd.currentblock;
+                                    if (el('time') && el('time').textContent === '---' && jd.time !== undefined) el('time').textContent = jd.time;
+                                    if (el('difficulty') && el('difficulty').textContent === '---' && jd.difficulty !== undefined) el('difficulty').textContent = jd.difficulty;
+                                    if (el('globalhash') && el('globalhash').textContent === '---' && jd.globalhash !== undefined) el('globalhash').textContent = jd.globalhash || '---';
+                                    if (el('mediumfee') && el('mediumfee').textContent === '---' && jd.mediumfee !== undefined) el('mediumfee').textContent = jd.mediumfee;
+                                    if (el('halving') && el('halving').textContent === '---' && jd.halving !== undefined) el('halving').textContent = Number(jd.halving).toLocaleString();
+                                    if (el('pool') && el('pool').textContent === '---' && jd.pool !== undefined && String(jd.pool).length) el('pool').textContent = String(jd.pool);
+                                } catch(_) {}
+                            }
+                            // Unlock for next tick
+                            renderTickLocked = false;
+                        } catch(_) {}
+                    }, 0);
+                })
+                .catch(e => {
+                    clearTimeout(timer);
+                    consecutiveFailures++;
+                    const dot = document.getElementById('healthDot');
+                    const txt = document.getElementById('healthText');
+                    if (consecutiveFailures >= FAILURE_THRESHOLD && !lastStatusIsError) {
+                        setStatus('Lost connection to miner', true);
+                        lastStatusIsError = true;
+                        if (dot && txt) { dot.className = 'health-dot bad'; txt.textContent = 'Disconnected'; }
+                    } else {
+                        // Brief hiccup; show warning state without flipping status bar
+                        if (dot && txt) { dot.className = 'health-dot bad'; txt.textContent = 'Retrying...'; }
+                    }
+                    // Keep the interval; next tick will attempt again
+                    renderTickLocked = false;
+                });
+        }
+
+
+    </script>
+</body>
+</html>

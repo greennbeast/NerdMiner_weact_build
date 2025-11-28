@@ -1,0 +1,26 @@
+22:00:01.468 > ets Jul 29 2019 12:21:46
+22:00:01.469 > 
+22:00:01.469 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+22:00:01.473 > configsip: 0, SPIWP:0xee
+22:00:01.476 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+22:00:01.481 > mode:DIO, clock div:2
+22:00:01.484 > load:0x3fff0030,len:1184
+22:00:01.487 > load:0x40078000,len:13232
+22:00:01.490 > load:0x40080400,len:3028
+22:00:01.490 > entry 0x400805e4
+22:00:02.080 > 
+22:00:02.080 > *** NerdMiner Multi-threaded Micro-benchmark Mode ***
+22:00:02.082 > Spawning 2 worker(s). Reporting every 5000 ms
+22:00:35.995 > ets Jul 29 2019 12:21:46
+22:00:35.997 > 
+22:00:35.997 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+22:00:36.000 > configsip: 0, SPIWP:0xee
+22:00:36.005 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+22:00:36.008 > mode:DIO, clock div:2
+22:00:36.011 > load:0x3fff0030,len:1184
+22:00:36.014 > load:0x40078000,len:13232
+22:00:36.017 > load:0x40080400,len:3028
+22:00:36.017 > entry 0x400805e4
+22:00:36.607 > 
+22:00:36.608 > *** NerdMiner Multi-threaded Micro-benchmark Mode ***
+22:00:36.610 > Spawning 2 worker(s). Reporting every 5000 ms

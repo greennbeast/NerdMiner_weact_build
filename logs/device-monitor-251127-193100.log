@@ -1,0 +1,133 @@
+19:31:08.450 > ets Jul 29 2019 12:21:46
+19:31:08.451 > 
+19:31:08.451 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:31:08.455 > configsip: 0, SPIWP:0xee
+19:31:08.457 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:31:08.463 > mode:DIO, clock div:2
+19:31:08.466 > load:0x3fff0030,len:1184
+19:31:08.469 > load:0x40078000,len:13232
+19:31:08.472 > load:0x40080400,len:3028
+19:31:08.472 > entry 0x400805e4
+19:31:09.075 > NerdMiner v2 starting......
+19:31:09.075 > OLED 0.96 128x64 display driver initialized
+19:31:09.080 > I2C init: SDA=21, SCL=22
+19:31:09.083 > Scanning I2C bus...
+19:31:09.083 >   Found device at 0x3C
+19:31:09.495 > Initializing SSD1306 128x64...
+19:31:11.528 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+19:31:11.534 > DEBUG: Successfully read from flash
+19:31:11.537 > DEBUG: Raw flash data: '����������������������������������������������������������������������������������������������������������������������������������"F�A?�'
+19:31:11.549 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+19:31:11.555 > DEBUG: Using default AP name
+19:31:11.648 > SPIFS: Mounting File System...
+19:31:11.724 > SPIFS: Mounted
+19:31:11.724 > SPIFS: Loading config file
+19:31:11.727 > {
+19:31:11.727 >   "poolString": "public-pool.io",
+19:31:11.730 >   "portNumber": 21496,
+19:31:11.732 >   "poolPassword": "x",
+19:31:11.735 >   "btcString": "bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2",
+19:31:11.741 >   "gmtZone": 2,
+19:31:11.741 >   "saveStatsToNVS": false,
+19:31:11.743 >   "invertColors": false,
+19:31:11.746 >   "Brightness": 250
+19:31:11.749 > }
+19:31:11.749 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+19:31:11.755 > AllDone: 
+19:31:11.755 > *wm:AutoConnect 
+19:31:11.757 > *wm:Connecting to SAVED AP: IoT
+19:31:12.469 > *wm:AutoConnect: SUCCESS 
+19:31:12.470 > *wm:STA IP Address: 192.168.0.185
+19:31:12.472 > 
+19:31:12.475 > WiFi connected
+19:31:12.475 > IP address: 192.168.0.185
+19:31:12.479 > PoolString: public-pool.io
+19:31:12.480 > portNumber: 21496
+19:31:12.480 > poolPassword: x
+19:31:12.482 > btcString: bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2
+19:31:12.488 > TimeZone fromUTC: 2
+19:31:12.488 > PoolString: public-pool.io
+19:31:12.490 > portNumber: 21496
+19:31:12.493 > poolPassword: x
+19:31:12.493 > btcString: bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2
+19:31:12.499 > TimeZone fromUTC: 2
+19:31:12.501 > 
+19:31:12.501 > Initiating tasks...
+19:31:12.505 > [MONITOR] started
+19:31:12.505 > 
+19:31:12.505 > 
+19:31:12.505 > [WORKER] Started. Running (Stratum) on core 1
+19:31:12.510 > Client not connected, trying to connect...
+19:31:12.513 > [MINER] 1 Started minerWorkerHwEsp32D Task!
+19:31:12.518 > TimeClient setup done
+19:31:12.518 > [MINER] 2 Started minerWorkerHwEsp32D Task!
+19:31:12.524 > [MINER] 0 Started minerWorkerHwEsp32D Task!
+19:31:12.526 > CONNECTED - Current ip: 192.168.0.185
+19:31:12.529 > Resolved DNS and save ip (first time) got: 38.51.144.240
+19:31:12.891 > [WORKER] ==> Mining subscribe
+19:31:12.892 >   Sending  : {"id": 1, "method": "mining.subscribe", "params": ["NerdMinerV2/V1.8.3"]}
+19:31:12.900 > 
+19:31:12.900 > TimeClient NTPupdateTime >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+19:31:13.096 >   Receiving: {"id":1,"error":null,"result":[[["mining.notify","bbd41447"]],"bbd41447",4]}
+19:31:13.102 >     sub_details: bbd41447
+19:31:13.105 >     extranonce1: bbd41447
+19:31:13.107 >     extranonce2_size: 4
+19:31:13.110 > [WORKER] ==> Autorize work
+19:31:13.113 >   Sending  : {"params": ["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2", "x"], "id": 2, "method": "mining.authorize"}
+19:31:13.121 > 
+19:31:14.334 >   Sending  : {"id":3,"method":"mining.suggest_difficulty","params":[0.00015]}
+19:31:14.347 >   Receiving: {"id":2,"error":null,"result":true}
+19:31:14.350 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[100000]}
+19:31:14.356 >     Parsing Method [SET DIFFICULTY]
+19:31:14.361 >     difficulty: 100000.000000000000
+19:31:14.364 >   Receiving: {"id":null,"method":"mining.notify","params":["29d97fc","2c961de89ffca03c18988ecde80c71306f0d174200012bc30000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703311f0e5075626c69632d506f6f6c","ffffffff021deab2120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9ed90f6c9dcb56b42f92c2a00fb91c2baee5923d5dfc62901c7badc4bdb45753a8900000000",["3ea2836ebb3d5582abfd2464599914e26122fa164f36dfed22ce195d7a06d3d9","325c933ae31cf53c1a9b4bb4d21d0645e55ae074ec5b5e32d4775cde009e456b","9fd7c5f54bc485ccc20735b9cbe289373749dbf676075202e6cc71254f75f406","e44c810b256d207b9c5f75a2a2a517d9e1a40fefe5a24a603597355d223a040e","f7a9e0c1486ee9ef108bbe21d440e49d4dd5796cb892850f74ab65866e006e8e","7e60c493fab5c04db5b46b0cbe1122c1607a604ed70bde7f1de339aac27499bf","2117a22b46c0c073866996c98e5fa639ee68810fe007591e1259a7f31ddb692b","64ecfe1ad3f77abb418a33845da65dddcd63e658f9d624d794dea66f563a49da","17e9534eec012f614363b478a6f75bd69e5fb79878e27fd08836d664231dcb1e","01e87911bb3be32062b5094dfafc49f0c67ffb66e83f72e2510db068c35d0406","1f7b2100fa0df279d5c70cb30ab087ee811f1298015c37d44c6f3f0aa1cc2e11"],"20000000","1701e2a0","6928ed19",true]}
+19:31:14.469 >     Parsing Method [MINING NOTIFY]
+19:31:14.472 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+19:31:14.478 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703311f0e5075626c69632d506f6f6cbbd4144700000001ffffffff021deab2120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9ed90f6c9dcb56b42f92c2a00fb91c2baee5923d5dfc62901c7badc4bdb45753a8900000000
+19:31:14.506 >     merkle sha         : b58898fffb05b472cf53781422e8631d9e297e0f879e55b7aea3273003d889d9
+19:31:14.762 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[0.00015]}
+19:31:14.768 >     Parsing Method [SET DIFFICULTY]
+19:31:14.770 >     difficulty: 0.000150000000
+19:31:16.643 > 
+19:31:16.643 > ####### Pool Data OK!
+19:31:16.647 > Pool workers:1  poolHash:0.0000
+19:31:16.649 > WiFi: IoT 192.168.0.185
+19:31:16.649 > >>> [i] Miner: newJob>true / inRun>true) - Client: connected>true / subscribed>true / wificonnected>true
+19:31:16.796 > >>> shares:0  valids:0  Khashes:655  avg:76.91 KH/s
+19:31:16.799 > Pool workers:1  poolHash:0.0000
+19:31:16.801 > WiFi: IoT 192.168.0.185
+19:31:17.451 >   Sending  : {"id":4,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2","29d97fc","00000001","6928ed19","da63a6a3"]}
+19:31:17.466 >    - Current diff share: 0.000456952413
+19:31:17.468 >    - Current pool diff : 0.000150000000
+19:31:17.471 >    - TX SHARE: 4b760a04d3539539dad57dc46344dbabc69485e426c67f933fb8d7608c080000
+19:31:17.835 > >>> shares:0  valids:0  Khashes:983  avg:156.5 KH/s
+19:31:17.838 > Pool workers:1  poolHash:0.0000
+19:31:17.841 > WiFi: IoT 192.168.0.185
+19:31:18.874 > >>> shares:0  valids:0  Khashes:1376  avg:211.9 KH/s
+19:31:18.877 > Pool workers:1  poolHash:0.0000
+19:31:18.879 > WiFi: IoT 192.168.0.185
+19:31:19.085 >   Receiving: {"id":null,"method":"mining.notify","params":["29dabe8","2c961de89ffca03c18988ecde80c71306f0d174200012bc30000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703311f0e5075626c69632d506f6f6c","ffffffff027d0cb5120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9ed4d6038a1069490af1803947d6372be6b8ea6d7f1a65134b169669adf04080a2600000000",["3ea2836ebb3d5582abfd2464599914e26122fa164f36dfed22ce195d7a06d3d9","325c933ae31cf53c1a9b4bb4d21d0645e55ae074ec5b5e32d4775cde009e456b","9fd7c5f54bc485ccc20735b9cbe289373749dbf676075202e6cc71254f75f406","634573831ab857d2f1c5ef58ea9449f6fa87f6212f55194b8f26c47eeac7ce6e","c153370e15ef457cbd64bc53bedb964fae0642dcd67896b0e5f94c64a22f00f5","0eb408d6bce3d713f960ae0ab94991529ba21ab2e1ea3cbec8fc6a91cc497860","35b4e463c7f7cd3e883845bf636c487e56f944e409ece17676d7170ac29ff88e","848f934ddb3a9076dc0a54e7e58227308f2decb48684f598ce57cbcd60ff3157","906e0c2919f0ded8bfee08d86092912514066e5720d49bc11a43ea5fed929b85","4cad64d13d7b3a69ebf86e7a274c9a81624f3f1428f0b30f5908cc782ef3ea6e","7048cf18c7688d887a40ffff4fb1c93b3094e946e99fa7f88c8b330770ba34f7"],"20000000","1701e2a0","6928ed55",false]}
+19:31:19.188 >     Parsing Method [MINING NOTIFY]
+19:31:19.191 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+19:31:19.199 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703311f0e5075626c69632d506f6f6cbbd4144700000001ffffffff027d0cb5120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9ed4d6038a1069490af1803947d6372be6b8ea6d7f1a65134b169669adf04080a2600000000
+19:31:19.227 >     merkle sha         : bb06455683cb60a5758012eb95e366ba37a30bbf28f63f72cf5ff0527f1e68b4
+19:31:19.912 > >>> shares:0  valids:0  Khashes:1707  avg:233.3 KH/s
+19:31:19.914 > Pool workers:1  poolHash:0.0000
+19:31:19.917 > WiFi: IoT 192.168.0.185
+19:31:19.989 > wʏ�ets Jul 29 2019 12:21:46
+19:31:20.101 > 
+19:31:20.101 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+19:31:20.109 > waiting for download
+19:31:20.317 >    �      �t0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:31:22.458 > configsip: 0, SPIWP:0xee
+19:31:22.460 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:31:22.465 > mode:DIO, clock div:2
+19:31:22.468 > load:0x3fff0030,len:1184
+19:31:22.471 > load:0x40078000,len:13232
+19:31:22.474 > load:0x40080400,len:3028
+19:31:22.474 > entry 0x400805e4
+19:31:23.100 > ets Jul 29 2019 12:21:46
+19:31:23.100 > 
+19:31:23.100 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+19:31:23.108 > waiting for download
+19:31:23.810 >   �    ��      ��      

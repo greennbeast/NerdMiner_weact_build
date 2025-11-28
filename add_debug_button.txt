@@ -1,0 +1,30 @@
+Instructions to add DEBUG button to nerdminer-dashboard.html:
+
+1. Find line 54 that says:
+                <button onclick='disconnectMiner()'>DISCONNECT</button>
+
+2. Add this line right after it:
+                <button onclick='toggleDebug()'>DEBUG</button>
+
+3. Find line 308 that says:
+        function disconnectMiner(){
+            clearInterval(updateInterval);
+            updateInterval = null;
+            clearRetry();
+            setStatus('Disconnected. Enter IP or use Saved Miners');
+        }
+
+4. Add these lines right after the disconnectMiner function (after line 313):
+
+        function toggleDebug(){
+            try {
+                const current = localStorage.getItem('nerdminer.debug') === '1';
+                localStorage.setItem('nerdminer.debug', current ? '0' : '1');
+                const dbg = document.getElementById('debug');
+                dbg.style.display = current ? 'none' : 'block';
+                setStatus(current ? 'Debug disabled' : 'Debug enabled');
+            } catch(e) {}
+        }
+
+5. Save the file and reload the dashboard in your browser.
+6. Click the DEBUG button to show/hide the raw JSON payload from /api/stats.

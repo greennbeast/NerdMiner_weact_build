@@ -1,0 +1,2410 @@
+21:45:42.558 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+21:45:42.558 > DEBUG: Successfully read from flash
+21:45:42.558 > DEBUG: Raw flash data: '�����������������������������������������������������������������������������������������������������������������������������������A?�'
+21:45:42.558 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+21:45:42.558 > DEBUG: Using default AP name
+21:45:42.577 > SPIFS: Mounting File System...
+21:45:42.580 > E (2679) SPIFFS: mount failed, -10025
+21:45:42.583 > [  2687][E][SPIFFS.cpp:89] begin(): Mounting SPIFFS failed! Error: -1
+21:45:42.588 > E (2681) SPIFFS: mount failed, -10025
+21:45:42.591 > [  2689][E][esp32-hal-misc.c:128] disableCore0WDT(): Failed to remove Core 0 IDLE task from WDT
+21:45:46.188 > SPIFS: Mounted
+21:45:46.247 > SPIFS: No config file available!
+21:45:46.249 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+21:45:46.257 > AllDone: 
+21:45:46.257 > Setup 128x64...
+21:45:46.290 > *wm:StartAP with SSID:  NerdMinerAP
+21:45:47.359 > *wm:AP IP address: 192.168.4.1
+21:45:47.361 > Entered Configuration Mode
+21:45:47.362 > Setup 128x64...
+21:45:47.391 > Config SSID: NerdMinerAP
+21:45:47.391 > Config IP Address: 192.168.4.1
+21:45:47.394 > *wm:Starting Web Portal 
+21:48:46.291 > *wm:config portal has timed out 
+21:48:47.324 > *wm:config portal exiting 
+21:48:47.324 > PoolString: public-pool.io
+21:48:47.326 > portNumber: 21496
+21:48:47.329 > poolPassword: x
+21:48:47.329 > btcString: yourBtcAddress
+21:48:47.332 > TimeZone fromUTC: 2
+21:48:47.335 > 
+21:48:47.335 > Initiating tasks...
+21:48:47.337 > [MONITOR] started
+21:48:47.337 > 
+21:48:47.337 > 
+21:48:47.337 > [WORKER] Started. Running (Stratum) on core 1
+21:48:47.343 > [MINER] 1 Started minerWorkerHwEsp32D Task!
+21:48:47.346 > [MINER] 0 Started minerWorkerHwEsp32D Task!
+21:48:47.348 > TimeClient setup done
+21:48:47.351 > [Error] - current status: 6
+21:48:47.372 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:47.374 > Pool workers:0  poolHash:
+21:48:47.377 > WiFi:  0.0.0.0
+21:48:47.377 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:48.419 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:48.422 > Pool workers:0  poolHash:
+21:48:48.425 > WiFi:  0.0.0.0
+21:48:48.425 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:49.467 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:49.470 > Pool workers:0  poolHash:
+21:48:49.472 > WiFi:  0.0.0.0
+21:48:49.472 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:50.514 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:50.516 > Pool workers:0  poolHash:
+21:48:50.520 > WiFi:  0.0.0.0
+21:48:50.520 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:51.561 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:51.563 > Pool workers:0  poolHash:
+21:48:51.570 > WiFi:  0.0.0.0
+21:48:51.570 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:52.608 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:52.610 > Pool workers:0  poolHash:
+21:48:52.616 > WiFi:  0.0.0.0
+21:48:52.616 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:53.655 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:53.658 > Pool workers:0  poolHash:
+21:48:53.662 > WiFi:  0.0.0.0
+21:48:53.662 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:54.703 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:54.704 > Pool workers:0  poolHash:
+21:48:54.707 > WiFi:  0.0.0.0
+21:48:54.707 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:55.749 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:55.753 > Pool workers:0  poolHash:
+21:48:55.754 > WiFi:  0.0.0.0
+21:48:55.754 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:56.796 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:56.798 > Pool workers:0  poolHash:
+21:48:56.801 > WiFi:  0.0.0.0
+21:48:56.801 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:57.843 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:57.846 > Pool workers:0  poolHash:
+21:48:57.849 > WiFi:  0.0.0.0
+21:48:57.849 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:58.890 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:58.894 > Pool workers:0  poolHash:
+21:48:58.895 > WiFi:  0.0.0.0
+21:48:58.895 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:48:59.937 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:48:59.941 > Pool workers:0  poolHash:
+21:48:59.942 > WiFi:  0.0.0.0
+21:48:59.942 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:00.983 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:00.986 > Pool workers:0  poolHash:
+21:49:00.989 > WiFi:  0.0.0.0
+21:49:00.989 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:02.032 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:02.033 > Pool workers:0  poolHash:
+21:49:02.036 > WiFi:  0.0.0.0
+21:49:02.036 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:03.078 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:03.084 > Pool workers:0  poolHash:
+21:49:03.084 > WiFi:  0.0.0.0
+21:49:03.084 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:04.125 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:04.127 > Pool workers:0  poolHash:
+21:49:04.132 > WiFi:  0.0.0.0
+21:49:04.132 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:05.173 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:05.174 > Pool workers:0  poolHash:
+21:49:05.177 > WiFi:  0.0.0.0
+21:49:05.177 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:06.219 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:06.221 > Pool workers:0  poolHash:
+21:49:06.224 > WiFi:  0.0.0.0
+21:49:06.224 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:07.266 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:07.269 > Pool workers:0  poolHash:
+21:49:07.271 > WiFi:  0.0.0.0
+21:49:07.271 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:08.313 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:08.315 > Pool workers:0  poolHash:
+21:49:08.319 > WiFi:  0.0.0.0
+21:49:08.319 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:09.360 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:09.362 > Pool workers:0  poolHash:
+21:49:09.367 > WiFi:  0.0.0.0
+21:49:09.367 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:10.406 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:10.409 > Pool workers:0  poolHash:
+21:49:10.412 > WiFi:  0.0.0.0
+21:49:10.412 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:11.453 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:11.457 > Pool workers:0  poolHash:
+21:49:11.459 > WiFi:  0.0.0.0
+21:49:11.459 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:12.500 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:12.503 > Pool workers:0  poolHash:
+21:49:12.506 > WiFi:  0.0.0.0
+21:49:12.506 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:13.548 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:13.550 > Pool workers:0  poolHash:
+21:49:13.553 > WiFi:  0.0.0.0
+21:49:13.553 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:14.595 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:14.598 > Pool workers:0  poolHash:
+21:49:14.600 > WiFi:  0.0.0.0
+21:49:14.600 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:15.642 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:15.644 > Pool workers:0  poolHash:
+21:49:15.648 > WiFi:  0.0.0.0
+21:49:15.648 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:16.690 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:16.695 > Pool workers:0  poolHash:
+21:49:16.695 > WiFi:  0.0.0.0
+21:49:16.695 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:17.736 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:49:17.740 > Pool workers:0  poolHash:
+21:49:17.744 > WiFi:  0.0.0.0
+21:49:17.772 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:17.775 > Pool workers:0  poolHash:
+21:49:17.777 > WiFi:  0.0.0.0
+21:49:17.777 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:18.819 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:18.822 > Pool workers:0  poolHash:
+21:49:18.825 > WiFi:  0.0.0.0
+21:49:18.825 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:19.866 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:19.869 > Pool workers:0  poolHash:
+21:49:19.871 > WiFi:  0.0.0.0
+21:49:19.871 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:20.913 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:20.916 > Pool workers:0  poolHash:
+21:49:20.919 > WiFi:  0.0.0.0
+21:49:20.919 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:21.961 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:21.963 > Pool workers:0  poolHash:
+21:49:21.966 > WiFi:  0.0.0.0
+21:49:21.966 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:23.008 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:23.010 > Pool workers:0  poolHash:
+21:49:23.013 > WiFi:  0.0.0.0
+21:49:23.013 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:24.054 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:24.058 > Pool workers:0  poolHash:
+21:49:24.061 > WiFi:  0.0.0.0
+21:49:24.061 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:25.104 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:25.105 > Pool workers:0  poolHash:
+21:49:25.106 > WiFi:  0.0.0.0
+21:49:25.106 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:26.148 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:26.151 > Pool workers:0  poolHash:
+21:49:26.154 > WiFi:  0.0.0.0
+21:49:26.154 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:27.195 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:27.198 > Pool workers:0  poolHash:
+21:49:27.200 > WiFi:  0.0.0.0
+21:49:27.200 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:28.244 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:28.245 > Pool workers:0  poolHash:
+21:49:28.248 > WiFi:  0.0.0.0
+21:49:28.248 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:29.289 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:29.292 > Pool workers:0  poolHash:
+21:49:29.295 > WiFi:  0.0.0.0
+21:49:29.295 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:30.336 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:30.339 > Pool workers:0  poolHash:
+21:49:30.341 > WiFi:  0.0.0.0
+21:49:30.341 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:31.384 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:31.386 > Pool workers:0  poolHash:
+21:49:31.389 > WiFi:  0.0.0.0
+21:49:31.389 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:32.430 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:32.433 > Pool workers:0  poolHash:
+21:49:32.435 > WiFi:  0.0.0.0
+21:49:32.435 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:33.478 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:33.480 > Pool workers:0  poolHash:
+21:49:33.483 > WiFi:  0.0.0.0
+21:49:33.483 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:34.524 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:34.527 > Pool workers:0  poolHash:
+21:49:34.529 > WiFi:  0.0.0.0
+21:49:34.529 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:35.571 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:35.574 > Pool workers:0  poolHash:
+21:49:35.578 > WiFi:  0.0.0.0
+21:49:35.578 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:36.619 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:36.621 > Pool workers:0  poolHash:
+21:49:36.623 > WiFi:  0.0.0.0
+21:49:36.623 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:37.665 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:37.668 > Pool workers:0  poolHash:
+21:49:37.670 > WiFi:  0.0.0.0
+21:49:37.670 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:38.713 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:38.715 > Pool workers:0  poolHash:
+21:49:38.718 > WiFi:  0.0.0.0
+21:49:38.718 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:39.761 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:39.762 > Pool workers:0  poolHash:
+21:49:39.765 > WiFi:  0.0.0.0
+21:49:39.765 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:40.806 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:40.809 > Pool workers:0  poolHash:
+21:49:40.812 > WiFi:  0.0.0.0
+21:49:40.812 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:41.853 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:41.856 > Pool workers:0  poolHash:
+21:49:41.861 > WiFi:  0.0.0.0
+21:49:41.861 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:42.902 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:42.903 > Pool workers:0  poolHash:
+21:49:42.906 > WiFi:  0.0.0.0
+21:49:42.906 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:43.948 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:43.950 > Pool workers:0  poolHash:
+21:49:43.953 > WiFi:  0.0.0.0
+21:49:43.953 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:44.995 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:44.997 > Pool workers:0  poolHash:
+21:49:45.000 > WiFi:  0.0.0.0
+21:49:45.000 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:46.042 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:46.045 > Pool workers:0  poolHash:
+21:49:46.047 > WiFi:  0.0.0.0
+21:49:46.047 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:47.089 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:47.091 > Pool workers:0  poolHash:
+21:49:47.095 > WiFi:  0.0.0.0
+21:49:47.095 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:48.136 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:49:48.138 > Pool workers:0  poolHash:
+21:49:48.142 > WiFi:  0.0.0.0
+21:49:48.169 > OLED Screen3 WiFi:  0.0.0.0
+21:49:48.169 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:49.213 > OLED Screen3 WiFi:  0.0.0.0
+21:49:49.213 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:50.256 > OLED Screen3 WiFi:  0.0.0.0
+21:49:50.256 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:51.300 > OLED Screen3 WiFi:  0.0.0.0
+21:49:51.301 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:52.348 > OLED Screen3 WiFi:  0.0.0.0
+21:49:52.349 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:53.389 > OLED Screen3 WiFi:  0.0.0.0
+21:49:53.389 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:54.432 > OLED Screen3 WiFi:  0.0.0.0
+21:49:54.433 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:55.477 > OLED Screen3 WiFi:  0.0.0.0
+21:49:55.477 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:56.520 > OLED Screen3 WiFi:  0.0.0.0
+21:49:56.521 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:57.564 > OLED Screen3 WiFi:  0.0.0.0
+21:49:57.565 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:58.609 > OLED Screen3 WiFi:  0.0.0.0
+21:49:58.612 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:49:59.653 > OLED Screen3 WiFi:  0.0.0.0
+21:49:59.654 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:00.697 > OLED Screen3 WiFi:  0.0.0.0
+21:50:00.698 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:01.741 > OLED Screen3 WiFi:  0.0.0.0
+21:50:01.741 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:02.784 > OLED Screen3 WiFi:  0.0.0.0
+21:50:02.784 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:03.828 > OLED Screen3 WiFi:  0.0.0.0
+21:50:03.828 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:04.873 > OLED Screen3 WiFi:  0.0.0.0
+21:50:04.873 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:05.918 > OLED Screen3 WiFi:  0.0.0.0
+21:50:05.918 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:06.961 > OLED Screen3 WiFi:  0.0.0.0
+21:50:06.961 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:08.005 > OLED Screen3 WiFi:  0.0.0.0
+21:50:08.008 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:09.049 > OLED Screen3 WiFi:  0.0.0.0
+21:50:09.050 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:10.094 > OLED Screen3 WiFi:  0.0.0.0
+21:50:10.094 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:11.137 > OLED Screen3 WiFi:  0.0.0.0
+21:50:11.137 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:12.181 > OLED Screen3 WiFi:  0.0.0.0
+21:50:12.181 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:13.225 > OLED Screen3 WiFi:  0.0.0.0
+21:50:13.225 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:14.274 > OLED Screen3 WiFi:  0.0.0.0
+21:50:14.275 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:15.313 > OLED Screen3 WiFi:  0.0.0.0
+21:50:15.315 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:16.357 > OLED Screen3 WiFi:  0.0.0.0
+21:50:16.357 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:17.401 > OLED Screen3 WiFi:  0.0.0.0
+21:50:17.401 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:18.448 > OLED Screen3 WiFi:  0.0.0.0
+21:50:18.480 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:18.483 > Pool workers:0  poolHash:
+21:50:18.485 > WiFi:  0.0.0.0
+21:50:18.485 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:19.527 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:19.529 > Pool workers:0  poolHash:
+21:50:19.533 > WiFi:  0.0.0.0
+21:50:19.533 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:20.574 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:20.577 > Pool workers:0  poolHash:
+21:50:20.581 > WiFi:  0.0.0.0
+21:50:20.581 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:21.621 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:21.623 > Pool workers:0  poolHash:
+21:50:21.627 > WiFi:  0.0.0.0
+21:50:21.627 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:22.669 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:22.671 > Pool workers:0  poolHash:
+21:50:22.674 > WiFi:  0.0.0.0
+21:50:22.674 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:23.715 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:23.719 > Pool workers:0  poolHash:
+21:50:23.720 > WiFi:  0.0.0.0
+21:50:23.720 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:24.762 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:24.766 > Pool workers:0  poolHash:
+21:50:24.767 > WiFi:  0.0.0.0
+21:50:24.767 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:25.809 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:25.811 > Pool workers:0  poolHash:
+21:50:25.814 > WiFi:  0.0.0.0
+21:50:25.814 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:26.860 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:26.861 > Pool workers:0  poolHash:
+21:50:26.861 > WiFi:  0.0.0.0
+21:50:26.861 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:27.903 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:27.907 > Pool workers:0  poolHash:
+21:50:27.908 > WiFi:  0.0.0.0
+21:50:27.908 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:28.950 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:28.953 > Pool workers:0  poolHash:
+21:50:28.956 > WiFi:  0.0.0.0
+21:50:28.956 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:29.998 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:30.000 > Pool workers:0  poolHash:
+21:50:30.002 > WiFi:  0.0.0.0
+21:50:30.002 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:31.044 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:31.051 > Pool workers:0  poolHash:
+21:50:31.051 > WiFi:  0.0.0.0
+21:50:31.051 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:32.091 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:32.096 > Pool workers:0  poolHash:
+21:50:32.097 > WiFi:  0.0.0.0
+21:50:32.097 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:33.138 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:33.141 > Pool workers:0  poolHash:
+21:50:33.144 > WiFi:  0.0.0.0
+21:50:33.144 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:34.185 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:34.188 > Pool workers:0  poolHash:
+21:50:34.190 > WiFi:  0.0.0.0
+21:50:34.190 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:35.232 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:35.235 > Pool workers:0  poolHash:
+21:50:35.237 > WiFi:  0.0.0.0
+21:50:35.237 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:36.280 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:36.282 > Pool workers:0  poolHash:
+21:50:36.286 > WiFi:  0.0.0.0
+21:50:36.286 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:37.326 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:37.329 > Pool workers:0  poolHash:
+21:50:37.332 > WiFi:  0.0.0.0
+21:50:37.332 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:38.373 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:38.375 > Pool workers:0  poolHash:
+21:50:38.378 > WiFi:  0.0.0.0
+21:50:38.378 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:39.420 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:39.423 > Pool workers:0  poolHash:
+21:50:39.425 > WiFi:  0.0.0.0
+21:50:39.425 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:40.467 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:40.470 > Pool workers:0  poolHash:
+21:50:40.473 > WiFi:  0.0.0.0
+21:50:40.473 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:41.516 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:41.517 > Pool workers:0  poolHash:
+21:50:41.519 > WiFi:  0.0.0.0
+21:50:41.519 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:42.561 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:42.564 > Pool workers:0  poolHash:
+21:50:42.566 > WiFi:  0.0.0.0
+21:50:42.566 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:43.608 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:43.611 > Pool workers:0  poolHash:
+21:50:43.614 > WiFi:  0.0.0.0
+21:50:43.614 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:44.657 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:44.658 > Pool workers:0  poolHash:
+21:50:44.660 > WiFi:  0.0.0.0
+21:50:44.660 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:45.702 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:45.705 > Pool workers:0  poolHash:
+21:50:45.707 > WiFi:  0.0.0.0
+21:50:45.707 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:46.749 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:46.752 > Pool workers:0  poolHash:
+21:50:46.755 > WiFi:  0.0.0.0
+21:50:46.755 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:47.798 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:47.799 > Pool workers:0  poolHash:
+21:50:47.802 > WiFi:  0.0.0.0
+21:50:47.802 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:48.843 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:48.846 > Pool workers:0  poolHash:
+21:50:48.850 > WiFi:  0.0.0.0
+21:50:48.879 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:48.882 > Pool workers:0  poolHash:
+21:50:48.885 > WiFi:  0.0.0.0
+21:50:48.885 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:49.927 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:49.929 > Pool workers:0  poolHash:
+21:50:49.932 > WiFi:  0.0.0.0
+21:50:49.932 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:50.974 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:50.976 > Pool workers:0  poolHash:
+21:50:50.979 > WiFi:  0.0.0.0
+21:50:50.979 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:52.021 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:52.024 > Pool workers:0  poolHash:
+21:50:52.026 > WiFi:  0.0.0.0
+21:50:52.026 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:53.068 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:53.070 > Pool workers:0  poolHash:
+21:50:53.074 > WiFi:  0.0.0.0
+21:50:53.074 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:54.115 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:54.117 > Pool workers:0  poolHash:
+21:50:54.120 > WiFi:  0.0.0.0
+21:50:54.120 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:55.162 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:55.166 > Pool workers:0  poolHash:
+21:50:55.167 > WiFi:  0.0.0.0
+21:50:55.167 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:56.209 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:56.211 > Pool workers:0  poolHash:
+21:50:56.216 > WiFi:  0.0.0.0
+21:50:56.216 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:57.257 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:57.258 > Pool workers:0  poolHash:
+21:50:57.261 > WiFi:  0.0.0.0
+21:50:57.261 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:58.304 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:58.307 > Pool workers:0  poolHash:
+21:50:58.308 > WiFi:  0.0.0.0
+21:50:58.308 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:50:59.350 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:50:59.353 > Pool workers:0  poolHash:
+21:50:59.357 > WiFi:  0.0.0.0
+21:50:59.357 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:00.399 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:00.399 > Pool workers:0  poolHash:
+21:51:00.402 > WiFi:  0.0.0.0
+21:51:00.402 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:01.444 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:01.446 > Pool workers:0  poolHash:
+21:51:01.450 > WiFi:  0.0.0.0
+21:51:01.450 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:02.490 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:02.493 > Pool workers:0  poolHash:
+21:51:02.496 > WiFi:  0.0.0.0
+21:51:02.496 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:03.538 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:03.541 > Pool workers:0  poolHash:
+21:51:03.543 > WiFi:  0.0.0.0
+21:51:03.543 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:04.585 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:04.587 > Pool workers:0  poolHash:
+21:51:04.599 > WiFi:  0.0.0.0
+21:51:04.599 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:05.632 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:05.635 > Pool workers:0  poolHash:
+21:51:05.637 > WiFi:  0.0.0.0
+21:51:05.637 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:06.679 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:06.684 > Pool workers:0  poolHash:
+21:51:06.684 > WiFi:  0.0.0.0
+21:51:06.684 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:07.726 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:07.728 > Pool workers:0  poolHash:
+21:51:07.734 > WiFi:  0.0.0.0
+21:51:07.734 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:08.773 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:08.775 > Pool workers:0  poolHash:
+21:51:08.778 > WiFi:  0.0.0.0
+21:51:08.778 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:09.820 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:09.822 > Pool workers:0  poolHash:
+21:51:09.825 > WiFi:  0.0.0.0
+21:51:09.825 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:10.867 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:10.869 > Pool workers:0  poolHash:
+21:51:10.873 > WiFi:  0.0.0.0
+21:51:10.873 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:11.915 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:11.916 > Pool workers:0  poolHash:
+21:51:11.919 > WiFi:  0.0.0.0
+21:51:11.919 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:12.961 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:12.965 > Pool workers:0  poolHash:
+21:51:12.966 > WiFi:  0.0.0.0
+21:51:12.966 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:14.008 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:14.010 > Pool workers:0  poolHash:
+21:51:14.013 > WiFi:  0.0.0.0
+21:51:14.013 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:15.055 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:15.057 > Pool workers:0  poolHash:
+21:51:15.060 > WiFi:  0.0.0.0
+21:51:15.060 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:16.102 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:16.104 > Pool workers:0  poolHash:
+21:51:16.108 > WiFi:  0.0.0.0
+21:51:16.108 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:17.149 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:17.152 > Pool workers:0  poolHash:
+21:51:17.154 > WiFi:  0.0.0.0
+21:51:17.154 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:18.196 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:18.198 > Pool workers:0  poolHash:
+21:51:18.201 > WiFi:  0.0.0.0
+21:51:18.201 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:19.243 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:19.245 > Pool workers:0  poolHash:
+21:51:19.250 > WiFi:  0.0.0.0
+21:51:19.277 > OLED Screen3 WiFi:  0.0.0.0
+21:51:19.277 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:20.320 > OLED Screen3 WiFi:  0.0.0.0
+21:51:20.321 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:21.365 > OLED Screen3 WiFi:  0.0.0.0
+21:51:21.366 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:22.409 > OLED Screen3 WiFi:  0.0.0.0
+21:51:22.411 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:23.453 > OLED Screen3 WiFi:  0.0.0.0
+21:51:23.453 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:24.496 > OLED Screen3 WiFi:  0.0.0.0
+21:51:24.497 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:25.540 > OLED Screen3 WiFi:  0.0.0.0
+21:51:25.541 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:26.584 > OLED Screen3 WiFi:  0.0.0.0
+21:51:26.587 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:27.628 > OLED Screen3 WiFi:  0.0.0.0
+21:51:27.628 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:28.672 > OLED Screen3 WiFi:  0.0.0.0
+21:51:28.673 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:29.716 > OLED Screen3 WiFi:  0.0.0.0
+21:51:29.717 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:30.761 > OLED Screen3 WiFi:  0.0.0.0
+21:51:30.762 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:31.804 > OLED Screen3 WiFi:  0.0.0.0
+21:51:31.805 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:32.848 > OLED Screen3 WiFi:  0.0.0.0
+21:51:32.849 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:33.892 > OLED Screen3 WiFi:  0.0.0.0
+21:51:33.892 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:34.936 > OLED Screen3 WiFi:  0.0.0.0
+21:51:34.937 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:35.980 > OLED Screen3 WiFi:  0.0.0.0
+21:51:35.981 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:37.024 > OLED Screen3 WiFi:  0.0.0.0
+21:51:37.025 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:38.068 > OLED Screen3 WiFi:  0.0.0.0
+21:51:38.068 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:39.112 > OLED Screen3 WiFi:  0.0.0.0
+21:51:39.113 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:40.156 > OLED Screen3 WiFi:  0.0.0.0
+21:51:40.157 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:41.200 > OLED Screen3 WiFi:  0.0.0.0
+21:51:41.201 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:42.248 > OLED Screen3 WiFi:  0.0.0.0
+21:51:42.249 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:43.288 > OLED Screen3 WiFi:  0.0.0.0
+21:51:43.289 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:44.332 > OLED Screen3 WiFi:  0.0.0.0
+21:51:44.332 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:45.376 > OLED Screen3 WiFi:  0.0.0.0
+21:51:45.376 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:46.423 > OLED Screen3 WiFi:  0.0.0.0
+21:51:46.424 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:47.464 > OLED Screen3 WiFi:  0.0.0.0
+21:51:47.464 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:48.508 > OLED Screen3 WiFi:  0.0.0.0
+21:51:48.509 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:49.554 > OLED Screen3 WiFi:  0.0.0.0
+21:51:49.587 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:49.590 > Pool workers:0  poolHash:
+21:51:49.593 > WiFi:  0.0.0.0
+21:51:49.593 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:50.636 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:50.637 > Pool workers:0  poolHash:
+21:51:50.640 > WiFi:  0.0.0.0
+21:51:50.640 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:51.682 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:51.684 > Pool workers:0  poolHash:
+21:51:51.687 > WiFi:  0.0.0.0
+21:51:51.687 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:52.729 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:52.732 > Pool workers:0  poolHash:
+21:51:52.734 > WiFi:  0.0.0.0
+21:51:52.734 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:53.776 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:53.778 > Pool workers:0  poolHash:
+21:51:53.781 > WiFi:  0.0.0.0
+21:51:53.781 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:54.823 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:54.825 > Pool workers:0  poolHash:
+21:51:54.828 > WiFi:  0.0.0.0
+21:51:54.828 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:55.870 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:51:55.872 > Pool workers:0  poolHash:
+21:51:55.875 > WiFi:  0.0.0.0
+21:51:55.875 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:56.917 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:51:56.920 > Pool workers:0  poolHash:
+21:51:56.922 > WiFi:  0.0.0.0
+21:51:56.922 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:57.963 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:51:57.966 > Pool workers:0  poolHash:
+21:51:57.969 > WiFi:  0.0.0.0
+21:51:57.969 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:51:59.011 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:51:59.013 > Pool workers:0  poolHash:
+21:51:59.016 > WiFi:  0.0.0.0
+21:51:59.016 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:00.058 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:00.060 > Pool workers:0  poolHash:
+21:52:00.063 > WiFi:  0.0.0.0
+21:52:00.063 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:01.105 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:01.107 > Pool workers:0  poolHash:
+21:52:01.113 > WiFi:  0.0.0.0
+21:52:01.113 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:02.152 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:02.154 > Pool workers:0  poolHash:
+21:52:02.157 > WiFi:  0.0.0.0
+21:52:02.157 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:03.198 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:03.201 > Pool workers:0  poolHash:
+21:52:03.204 > WiFi:  0.0.0.0
+21:52:03.204 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:04.246 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:04.249 > Pool workers:0  poolHash:
+21:52:04.251 > WiFi:  0.0.0.0
+21:52:04.251 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:05.294 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:05.295 > Pool workers:0  poolHash:
+21:52:05.298 > WiFi:  0.0.0.0
+21:52:05.298 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:06.341 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:06.342 > Pool workers:0  poolHash:
+21:52:06.345 > WiFi:  0.0.0.0
+21:52:06.345 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:07.387 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:07.393 > Pool workers:0  poolHash:
+21:52:07.393 > WiFi:  0.0.0.0
+21:52:07.393 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:08.435 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:08.436 > Pool workers:0  poolHash:
+21:52:08.440 > WiFi:  0.0.0.0
+21:52:08.440 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:09.482 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:09.483 > Pool workers:0  poolHash:
+21:52:09.486 > WiFi:  0.0.0.0
+21:52:09.486 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:10.528 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:10.533 > Pool workers:0  poolHash:
+21:52:10.533 > WiFi:  0.0.0.0
+21:52:10.533 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:11.575 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:11.578 > Pool workers:0  poolHash:
+21:52:11.581 > WiFi:  0.0.0.0
+21:52:11.581 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:12.621 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:12.624 > Pool workers:0  poolHash:
+21:52:12.627 > WiFi:  0.0.0.0
+21:52:12.627 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:13.672 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:13.674 > Pool workers:0  poolHash:
+21:52:13.674 > WiFi:  0.0.0.0
+21:52:13.674 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:14.716 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:14.719 > Pool workers:0  poolHash:
+21:52:14.722 > WiFi:  0.0.0.0
+21:52:14.722 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:15.763 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:15.765 > Pool workers:0  poolHash:
+21:52:15.768 > WiFi:  0.0.0.0
+21:52:15.768 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:16.811 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:16.812 > Pool workers:0  poolHash:
+21:52:16.815 > WiFi:  0.0.0.0
+21:52:16.815 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:17.857 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:17.859 > Pool workers:0  poolHash:
+21:52:17.862 > WiFi:  0.0.0.0
+21:52:17.862 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:18.904 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:18.906 > Pool workers:0  poolHash:
+21:52:18.909 > WiFi:  0.0.0.0
+21:52:18.909 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:19.951 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:52:19.955 > Pool workers:0  poolHash:
+21:52:19.957 > WiFi:  0.0.0.0
+21:52:19.987 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:19.989 > Pool workers:0  poolHash:
+21:52:19.992 > WiFi:  0.0.0.0
+21:52:19.992 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:21.034 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:21.037 > Pool workers:0  poolHash:
+21:52:21.040 > WiFi:  0.0.0.0
+21:52:21.040 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:22.081 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:22.084 > Pool workers:0  poolHash:
+21:52:22.087 > WiFi:  0.0.0.0
+21:52:22.087 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:23.128 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:23.131 > Pool workers:0  poolHash:
+21:52:23.135 > WiFi:  0.0.0.0
+21:52:23.135 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:24.175 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:24.178 > Pool workers:0  poolHash:
+21:52:24.180 > WiFi:  0.0.0.0
+21:52:24.180 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:25.222 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:25.224 > Pool workers:0  poolHash:
+21:52:25.230 > WiFi:  0.0.0.0
+21:52:25.230 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:26.269 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:26.272 > Pool workers:0  poolHash:
+21:52:26.274 > WiFi:  0.0.0.0
+21:52:26.274 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:27.316 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:27.319 > Pool workers:0  poolHash:
+21:52:27.321 > WiFi:  0.0.0.0
+21:52:27.321 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:28.363 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:28.367 > Pool workers:0  poolHash:
+21:52:28.370 > WiFi:  0.0.0.0
+21:52:28.370 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:29.410 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:29.412 > Pool workers:0  poolHash:
+21:52:29.416 > WiFi:  0.0.0.0
+21:52:29.416 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:30.457 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:30.460 > Pool workers:0  poolHash:
+21:52:30.463 > WiFi:  0.0.0.0
+21:52:30.463 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:31.504 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:31.507 > Pool workers:0  poolHash:
+21:52:31.509 > WiFi:  0.0.0.0
+21:52:31.509 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:32.551 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:32.553 > Pool workers:0  poolHash:
+21:52:32.556 > WiFi:  0.0.0.0
+21:52:32.556 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:33.600 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:33.601 > Pool workers:0  poolHash:
+21:52:33.604 > WiFi:  0.0.0.0
+21:52:33.604 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:34.645 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:34.648 > Pool workers:0  poolHash:
+21:52:34.650 > WiFi:  0.0.0.0
+21:52:34.650 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:35.692 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:35.695 > Pool workers:0  poolHash:
+21:52:35.697 > WiFi:  0.0.0.0
+21:52:35.697 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:36.739 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:36.742 > Pool workers:0  poolHash:
+21:52:36.745 > WiFi:  0.0.0.0
+21:52:36.745 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:37.788 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:37.789 > Pool workers:0  poolHash:
+21:52:37.792 > WiFi:  0.0.0.0
+21:52:37.792 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:38.833 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:38.835 > Pool workers:0  poolHash:
+21:52:38.838 > WiFi:  0.0.0.0
+21:52:38.838 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:39.880 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:39.883 > Pool workers:0  poolHash:
+21:52:39.885 > WiFi:  0.0.0.0
+21:52:39.885 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:40.928 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:40.930 > Pool workers:0  poolHash:
+21:52:40.932 > WiFi:  0.0.0.0
+21:52:40.932 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:41.975 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:41.978 > Pool workers:0  poolHash:
+21:52:41.979 > WiFi:  0.0.0.0
+21:52:41.979 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:43.023 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:43.025 > Pool workers:0  poolHash:
+21:52:43.027 > WiFi:  0.0.0.0
+21:52:43.027 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:44.069 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:44.071 > Pool workers:0  poolHash:
+21:52:44.073 > WiFi:  0.0.0.0
+21:52:44.073 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:45.115 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:45.118 > Pool workers:0  poolHash:
+21:52:45.121 > WiFi:  0.0.0.0
+21:52:45.121 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:46.162 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:46.165 > Pool workers:0  poolHash:
+21:52:46.169 > WiFi:  0.0.0.0
+21:52:46.169 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:47.209 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:47.212 > Pool workers:0  poolHash:
+21:52:47.214 > WiFi:  0.0.0.0
+21:52:47.214 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:48.256 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:48.259 > Pool workers:0  poolHash:
+21:52:48.261 > WiFi:  0.0.0.0
+21:52:48.261 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:49.303 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:49.306 > Pool workers:0  poolHash:
+21:52:49.308 > WiFi:  0.0.0.0
+21:52:49.308 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:50.350 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:52:50.355 > Pool workers:0  poolHash:
+21:52:50.357 > WiFi:  0.0.0.0
+21:52:50.386 > OLED Screen3 WiFi:  0.0.0.0
+21:52:50.386 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:51.427 > OLED Screen3 WiFi:  0.0.0.0
+21:52:51.428 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:52.471 > OLED Screen3 WiFi:  0.0.0.0
+21:52:52.472 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:53.516 > OLED Screen3 WiFi:  0.0.0.0
+21:52:53.516 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:54.561 > OLED Screen3 WiFi:  0.0.0.0
+21:52:54.562 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:55.603 > OLED Screen3 WiFi:  0.0.0.0
+21:52:55.604 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:56.647 > OLED Screen3 WiFi:  0.0.0.0
+21:52:56.648 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:57.691 > OLED Screen3 WiFi:  0.0.0.0
+21:52:57.691 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:58.736 > OLED Screen3 WiFi:  0.0.0.0
+21:52:58.737 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:52:59.779 > OLED Screen3 WiFi:  0.0.0.0
+21:52:59.780 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:00.823 > OLED Screen3 WiFi:  0.0.0.0
+21:53:00.824 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:01.868 > OLED Screen3 WiFi:  0.0.0.0
+21:53:01.872 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:02.912 > OLED Screen3 WiFi:  0.0.0.0
+21:53:02.913 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:03.955 > OLED Screen3 WiFi:  0.0.0.0
+21:53:03.956 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:05.000 > OLED Screen3 WiFi:  0.0.0.0
+21:53:05.001 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:06.044 > OLED Screen3 WiFi:  0.0.0.0
+21:53:06.044 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:07.088 > OLED Screen3 WiFi:  0.0.0.0
+21:53:07.091 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:08.131 > OLED Screen3 WiFi:  0.0.0.0
+21:53:08.132 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:09.175 > OLED Screen3 WiFi:  0.0.0.0
+21:53:09.176 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:10.220 > OLED Screen3 WiFi:  0.0.0.0
+21:53:10.221 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:11.264 > OLED Screen3 WiFi:  0.0.0.0
+21:53:11.264 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:12.308 > OLED Screen3 WiFi:  0.0.0.0
+21:53:12.308 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:13.351 > OLED Screen3 WiFi:  0.0.0.0
+21:53:13.353 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:14.400 > OLED Screen3 WiFi:  0.0.0.0
+21:53:14.401 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:15.439 > OLED Screen3 WiFi:  0.0.0.0
+21:53:15.440 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:16.483 > OLED Screen3 WiFi:  0.0.0.0
+21:53:16.483 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:17.527 > OLED Screen3 WiFi:  0.0.0.0
+21:53:17.528 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:18.571 > OLED Screen3 WiFi:  0.0.0.0
+21:53:18.571 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:19.615 > OLED Screen3 WiFi:  0.0.0.0
+21:53:19.615 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:20.661 > OLED Screen3 WiFi:  0.0.0.0
+21:53:20.695 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:20.697 > Pool workers:0  poolHash:
+21:53:20.700 > WiFi:  0.0.0.0
+21:53:20.700 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:21.742 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:21.745 > Pool workers:0  poolHash:
+21:53:21.747 > WiFi:  0.0.0.0
+21:53:21.747 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:22.789 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:22.792 > Pool workers:0  poolHash:
+21:53:22.794 > WiFi:  0.0.0.0
+21:53:22.794 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:23.836 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:23.838 > Pool workers:0  poolHash:
+21:53:23.841 > WiFi:  0.0.0.0
+21:53:23.841 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:24.883 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:24.887 > Pool workers:0  poolHash:
+21:53:24.888 > WiFi:  0.0.0.0
+21:53:24.888 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:25.930 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:25.932 > Pool workers:0  poolHash:
+21:53:25.937 > WiFi:  0.0.0.0
+21:53:25.937 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:26.978 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:26.980 > Pool workers:0  poolHash:
+21:53:26.983 > WiFi:  0.0.0.0
+21:53:26.983 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:28.025 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:28.028 > Pool workers:0  poolHash:
+21:53:28.029 > WiFi:  0.0.0.0
+21:53:28.029 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:29.071 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:29.075 > Pool workers:0  poolHash:
+21:53:29.077 > WiFi:  0.0.0.0
+21:53:29.077 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:30.119 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:30.121 > Pool workers:0  poolHash:
+21:53:30.123 > WiFi:  0.0.0.0
+21:53:30.123 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:31.165 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:31.168 > Pool workers:0  poolHash:
+21:53:31.171 > WiFi:  0.0.0.0
+21:53:31.171 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:32.212 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:32.214 > Pool workers:0  poolHash:
+21:53:32.217 > WiFi:  0.0.0.0
+21:53:32.217 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:33.259 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:33.262 > Pool workers:0  poolHash:
+21:53:33.264 > WiFi:  0.0.0.0
+21:53:33.264 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:34.306 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:34.308 > Pool workers:0  poolHash:
+21:53:34.312 > WiFi:  0.0.0.0
+21:53:34.312 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:35.353 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:35.357 > Pool workers:0  poolHash:
+21:53:35.358 > WiFi:  0.0.0.0
+21:53:35.358 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:36.400 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:36.403 > Pool workers:0  poolHash:
+21:53:36.405 > WiFi:  0.0.0.0
+21:53:36.405 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:37.447 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:37.450 > Pool workers:0  poolHash:
+21:53:37.453 > WiFi:  0.0.0.0
+21:53:37.453 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:38.495 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:38.497 > Pool workers:0  poolHash:
+21:53:38.500 > WiFi:  0.0.0.0
+21:53:38.500 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:39.541 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:39.544 > Pool workers:0  poolHash:
+21:53:39.546 > WiFi:  0.0.0.0
+21:53:39.546 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:40.588 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:40.590 > Pool workers:0  poolHash:
+21:53:40.593 > WiFi:  0.0.0.0
+21:53:40.593 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:41.635 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:41.638 > Pool workers:0  poolHash:
+21:53:41.640 > WiFi:  0.0.0.0
+21:53:41.640 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:42.682 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:42.684 > Pool workers:0  poolHash:
+21:53:42.687 > WiFi:  0.0.0.0
+21:53:42.687 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:43.729 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:43.732 > Pool workers:0  poolHash:
+21:53:43.734 > WiFi:  0.0.0.0
+21:53:43.734 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:44.776 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:44.779 > Pool workers:0  poolHash:
+21:53:44.783 > WiFi:  0.0.0.0
+21:53:44.783 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:45.824 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:45.826 > Pool workers:0  poolHash:
+21:53:45.829 > WiFi:  0.0.0.0
+21:53:45.829 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:46.870 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:46.874 > Pool workers:0  poolHash:
+21:53:46.875 > WiFi:  0.0.0.0
+21:53:46.875 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:47.917 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:47.920 > Pool workers:0  poolHash:
+21:53:47.924 > WiFi:  0.0.0.0
+21:53:47.924 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:48.966 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:48.967 > Pool workers:0  poolHash:
+21:53:48.970 > WiFi:  0.0.0.0
+21:53:48.970 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:50.013 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:50.015 > Pool workers:0  poolHash:
+21:53:50.016 > WiFi:  0.0.0.0
+21:53:50.016 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:51.058 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:51.061 > Pool workers:0  poolHash:
+21:53:51.066 > WiFi:  0.0.0.0
+21:53:51.094 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:51.097 > Pool workers:0  poolHash:
+21:53:51.100 > WiFi:  0.0.0.0
+21:53:51.100 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:52.142 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:52.144 > Pool workers:0  poolHash:
+21:53:52.149 > WiFi:  0.0.0.0
+21:53:52.149 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:53.190 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:53.191 > Pool workers:0  poolHash:
+21:53:53.195 > WiFi:  0.0.0.0
+21:53:53.195 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:54.235 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:54.238 > Pool workers:0  poolHash:
+21:53:54.241 > WiFi:  0.0.0.0
+21:53:54.241 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:55.283 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:55.286 > Pool workers:0  poolHash:
+21:53:55.288 > WiFi:  0.0.0.0
+21:53:55.288 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:56.330 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:56.337 > Pool workers:0  poolHash:
+21:53:56.337 > WiFi:  0.0.0.0
+21:53:56.337 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:57.378 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:57.379 > Pool workers:0  poolHash:
+21:53:57.382 > WiFi:  0.0.0.0
+21:53:57.382 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:58.424 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:58.426 > Pool workers:0  poolHash:
+21:53:58.429 > WiFi:  0.0.0.0
+21:53:58.429 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:53:59.471 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:53:59.474 > Pool workers:0  poolHash:
+21:53:59.476 > WiFi:  0.0.0.0
+21:53:59.476 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:00.519 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:00.520 > Pool workers:0  poolHash:
+21:54:00.525 > WiFi:  0.0.0.0
+21:54:00.525 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:01.565 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:01.567 > Pool workers:0  poolHash:
+21:54:01.570 > WiFi:  0.0.0.0
+21:54:01.570 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:02.611 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:02.614 > Pool workers:0  poolHash:
+21:54:02.617 > WiFi:  0.0.0.0
+21:54:02.617 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:03.659 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:03.662 > Pool workers:0  poolHash:
+21:54:03.664 > WiFi:  0.0.0.0
+21:54:03.664 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:04.706 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:04.708 > Pool workers:0  poolHash:
+21:54:04.711 > WiFi:  0.0.0.0
+21:54:04.711 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:05.753 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:05.755 > Pool workers:0  poolHash:
+21:54:05.758 > WiFi:  0.0.0.0
+21:54:05.758 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:06.808 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:06.808 > Pool workers:0  poolHash:
+21:54:06.808 > WiFi:  0.0.0.0
+21:54:06.808 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:07.847 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:07.849 > Pool workers:0  poolHash:
+21:54:07.854 > WiFi:  0.0.0.0
+21:54:07.854 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:08.895 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:08.896 > Pool workers:0  poolHash:
+21:54:08.899 > WiFi:  0.0.0.0
+21:54:08.899 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:09.941 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:09.945 > Pool workers:0  poolHash:
+21:54:09.946 > WiFi:  0.0.0.0
+21:54:09.946 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:10.988 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:10.990 > Pool workers:0  poolHash:
+21:54:10.994 > WiFi:  0.0.0.0
+21:54:10.994 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:12.036 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:12.038 > Pool workers:0  poolHash:
+21:54:12.040 > WiFi:  0.0.0.0
+21:54:12.040 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:13.082 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:13.084 > Pool workers:0  poolHash:
+21:54:13.087 > WiFi:  0.0.0.0
+21:54:13.087 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:14.129 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:14.131 > Pool workers:0  poolHash:
+21:54:14.134 > WiFi:  0.0.0.0
+21:54:14.134 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:15.176 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:15.180 > Pool workers:0  poolHash:
+21:54:15.181 > WiFi:  0.0.0.0
+21:54:15.181 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:16.223 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:16.225 > Pool workers:0  poolHash:
+21:54:16.229 > WiFi:  0.0.0.0
+21:54:16.229 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:17.270 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:17.272 > Pool workers:0  poolHash:
+21:54:17.275 > WiFi:  0.0.0.0
+21:54:17.275 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:18.317 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:18.319 > Pool workers:0  poolHash:
+21:54:18.322 > WiFi:  0.0.0.0
+21:54:18.322 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:19.363 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:19.366 > Pool workers:0  poolHash:
+21:54:19.369 > WiFi:  0.0.0.0
+21:54:19.369 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:20.411 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:20.413 > Pool workers:0  poolHash:
+21:54:20.417 > WiFi:  0.0.0.0
+21:54:20.417 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:21.458 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:21.461 > Pool workers:0  poolHash:
+21:54:21.464 > WiFi:  0.0.0.0
+21:54:21.492 > OLED Screen3 WiFi:  0.0.0.0
+21:54:21.493 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:22.536 > OLED Screen3 WiFi:  0.0.0.0
+21:54:22.536 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:23.579 > OLED Screen3 WiFi:  0.0.0.0
+21:54:23.580 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:24.623 > OLED Screen3 WiFi:  0.0.0.0
+21:54:24.623 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:25.666 > OLED Screen3 WiFi:  0.0.0.0
+21:54:25.667 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:26.711 > OLED Screen3 WiFi:  0.0.0.0
+21:54:26.712 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:27.755 > OLED Screen3 WiFi:  0.0.0.0
+21:54:27.755 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:28.799 > OLED Screen3 WiFi:  0.0.0.0
+21:54:28.799 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:29.843 > OLED Screen3 WiFi:  0.0.0.0
+21:54:29.844 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:30.887 > OLED Screen3 WiFi:  0.0.0.0
+21:54:30.887 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:31.931 > OLED Screen3 WiFi:  0.0.0.0
+21:54:31.932 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:32.974 > OLED Screen3 WiFi:  0.0.0.0
+21:54:32.975 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:34.019 > OLED Screen3 WiFi:  0.0.0.0
+21:54:34.020 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:35.063 > OLED Screen3 WiFi:  0.0.0.0
+21:54:35.066 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:36.107 > OLED Screen3 WiFi:  0.0.0.0
+21:54:36.107 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:37.151 > OLED Screen3 WiFi:  0.0.0.0
+21:54:37.151 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:38.195 > OLED Screen3 WiFi:  0.0.0.0
+21:54:38.195 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:39.240 > OLED Screen3 WiFi:  0.0.0.0
+21:54:39.241 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:40.283 > OLED Screen3 WiFi:  0.0.0.0
+21:54:40.284 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:41.327 > OLED Screen3 WiFi:  0.0.0.0
+21:54:41.327 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:42.371 > OLED Screen3 WiFi:  0.0.0.0
+21:54:42.372 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:43.415 > OLED Screen3 WiFi:  0.0.0.0
+21:54:43.416 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:44.459 > OLED Screen3 WiFi:  0.0.0.0
+21:54:44.459 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:45.503 > OLED Screen3 WiFi:  0.0.0.0
+21:54:45.504 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:46.547 > OLED Screen3 WiFi:  0.0.0.0
+21:54:46.548 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:47.591 > OLED Screen3 WiFi:  0.0.0.0
+21:54:47.591 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:48.638 > OLED Screen3 WiFi:  0.0.0.0
+21:54:48.639 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:49.679 > OLED Screen3 WiFi:  0.0.0.0
+21:54:49.681 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:50.723 > OLED Screen3 WiFi:  0.0.0.0
+21:54:50.723 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:51.770 > OLED Screen3 WiFi:  0.0.0.0
+21:54:51.802 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:51.805 > Pool workers:0  poolHash:
+21:54:51.808 > WiFi:  0.0.0.0
+21:54:51.808 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:52.850 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:52.853 > Pool workers:0  poolHash:
+21:54:52.855 > WiFi:  0.0.0.0
+21:54:52.855 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:53.897 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:53.900 > Pool workers:0  poolHash:
+21:54:53.903 > WiFi:  0.0.0.0
+21:54:53.903 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:54.945 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:54.946 > Pool workers:0  poolHash:
+21:54:54.949 > WiFi:  0.0.0.0
+21:54:54.949 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:55.990 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:55.993 > Pool workers:0  poolHash:
+21:54:55.996 > WiFi:  0.0.0.0
+21:54:55.996 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:57.037 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:57.040 > Pool workers:0  poolHash:
+21:54:57.043 > WiFi:  0.0.0.0
+21:54:57.043 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:58.084 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:58.087 > Pool workers:0  poolHash:
+21:54:58.090 > WiFi:  0.0.0.0
+21:54:58.090 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:54:59.131 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:54:59.134 > Pool workers:0  poolHash:
+21:54:59.137 > WiFi:  0.0.0.0
+21:54:59.137 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:00.178 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:00.181 > Pool workers:0  poolHash:
+21:55:00.184 > WiFi:  0.0.0.0
+21:55:00.184 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:01.226 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:01.228 > Pool workers:0  poolHash:
+21:55:01.231 > WiFi:  0.0.0.0
+21:55:01.231 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:02.273 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:02.275 > Pool workers:0  poolHash:
+21:55:02.279 > WiFi:  0.0.0.0
+21:55:02.279 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:03.319 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:03.322 > Pool workers:0  poolHash:
+21:55:03.325 > WiFi:  0.0.0.0
+21:55:03.325 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:04.366 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:04.369 > Pool workers:0  poolHash:
+21:55:04.371 > WiFi:  0.0.0.0
+21:55:04.371 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:05.413 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:05.416 > Pool workers:0  poolHash:
+21:55:05.418 > WiFi:  0.0.0.0
+21:55:05.418 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:06.460 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:06.463 > Pool workers:0  poolHash:
+21:55:06.466 > WiFi:  0.0.0.0
+21:55:06.466 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:07.508 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:07.510 > Pool workers:0  poolHash:
+21:55:07.513 > WiFi:  0.0.0.0
+21:55:07.513 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:08.555 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:08.557 > Pool workers:0  poolHash:
+21:55:08.560 > WiFi:  0.0.0.0
+21:55:08.560 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:09.601 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:09.604 > Pool workers:0  poolHash:
+21:55:09.611 > WiFi:  0.0.0.0
+21:55:09.611 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:10.649 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:10.651 > Pool workers:0  poolHash:
+21:55:10.654 > WiFi:  0.0.0.0
+21:55:10.654 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:11.696 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:11.699 > Pool workers:0  poolHash:
+21:55:11.701 > WiFi:  0.0.0.0
+21:55:11.701 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:12.742 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:12.745 > Pool workers:0  poolHash:
+21:55:12.748 > WiFi:  0.0.0.0
+21:55:12.748 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:13.791 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:13.792 > Pool workers:0  poolHash:
+21:55:13.795 > WiFi:  0.0.0.0
+21:55:13.795 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:14.836 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:14.839 > Pool workers:0  poolHash:
+21:55:14.842 > WiFi:  0.0.0.0
+21:55:14.842 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:15.884 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:15.886 > Pool workers:0  poolHash:
+21:55:15.889 > WiFi:  0.0.0.0
+21:55:15.889 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:16.930 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:16.933 > Pool workers:0  poolHash:
+21:55:16.936 > WiFi:  0.0.0.0
+21:55:16.936 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:17.978 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:17.980 > Pool workers:0  poolHash:
+21:55:17.983 > WiFi:  0.0.0.0
+21:55:17.983 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:19.025 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:19.027 > Pool workers:0  poolHash:
+21:55:19.030 > WiFi:  0.0.0.0
+21:55:19.030 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:20.072 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:20.074 > Pool workers:0  poolHash:
+21:55:20.077 > WiFi:  0.0.0.0
+21:55:20.077 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:21.119 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:21.121 > Pool workers:0  poolHash:
+21:55:21.124 > WiFi:  0.0.0.0
+21:55:21.124 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:22.166 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:55:22.168 > Pool workers:0  poolHash:
+21:55:22.172 > WiFi:  0.0.0.0
+21:55:22.202 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:22.204 > Pool workers:0  poolHash:
+21:55:22.207 > WiFi:  0.0.0.0
+21:55:22.207 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:23.249 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:23.251 > Pool workers:0  poolHash:
+21:55:23.254 > WiFi:  0.0.0.0
+21:55:23.254 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:24.296 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:24.299 > Pool workers:0  poolHash:
+21:55:24.301 > WiFi:  0.0.0.0
+21:55:24.301 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:25.343 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:25.345 > Pool workers:0  poolHash:
+21:55:25.349 > WiFi:  0.0.0.0
+21:55:25.349 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:26.391 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:26.392 > Pool workers:0  poolHash:
+21:55:26.395 > WiFi:  0.0.0.0
+21:55:26.395 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:27.437 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:27.441 > Pool workers:0  poolHash:
+21:55:27.442 > WiFi:  0.0.0.0
+21:55:27.442 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:28.485 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:28.486 > Pool workers:0  poolHash:
+21:55:28.491 > WiFi:  0.0.0.0
+21:55:28.491 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:29.533 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:29.533 > Pool workers:0  poolHash:
+21:55:29.536 > WiFi:  0.0.0.0
+21:55:29.536 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:30.578 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:30.582 > Pool workers:0  poolHash:
+21:55:30.584 > WiFi:  0.0.0.0
+21:55:30.584 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:31.625 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:31.627 > Pool workers:0  poolHash:
+21:55:31.630 > WiFi:  0.0.0.0
+21:55:31.630 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:32.672 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:32.674 > Pool workers:0  poolHash:
+21:55:32.677 > WiFi:  0.0.0.0
+21:55:32.677 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:33.719 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:33.721 > Pool workers:0  poolHash:
+21:55:33.724 > WiFi:  0.0.0.0
+21:55:33.724 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:34.766 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:34.768 > Pool workers:0  poolHash:
+21:55:34.771 > WiFi:  0.0.0.0
+21:55:34.771 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:35.813 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:35.815 > Pool workers:0  poolHash:
+21:55:35.820 > WiFi:  0.0.0.0
+21:55:35.820 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:36.862 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:36.863 > Pool workers:0  poolHash:
+21:55:36.865 > WiFi:  0.0.0.0
+21:55:36.865 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:37.908 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:37.909 > Pool workers:0  poolHash:
+21:55:37.912 > WiFi:  0.0.0.0
+21:55:37.912 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:38.954 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:38.957 > Pool workers:0  poolHash:
+21:55:38.959 > WiFi:  0.0.0.0
+21:55:38.959 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:40.001 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:40.006 > Pool workers:0  poolHash:
+21:55:40.007 > WiFi:  0.0.0.0
+21:55:40.007 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:41.048 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:41.050 > Pool workers:0  poolHash:
+21:55:41.055 > WiFi:  0.0.0.0
+21:55:41.055 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:42.096 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:42.099 > Pool workers:0  poolHash:
+21:55:42.100 > WiFi:  0.0.0.0
+21:55:42.100 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:43.142 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:43.145 > Pool workers:0  poolHash:
+21:55:43.147 > WiFi:  0.0.0.0
+21:55:43.147 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:44.189 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:44.191 > Pool workers:0  poolHash:
+21:55:44.195 > WiFi:  0.0.0.0
+21:55:44.195 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:45.236 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:45.239 > Pool workers:0  poolHash:
+21:55:45.242 > WiFi:  0.0.0.0
+21:55:45.242 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:46.283 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:46.286 > Pool workers:0  poolHash:
+21:55:46.288 > WiFi:  0.0.0.0
+21:55:46.288 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:47.330 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:47.333 > Pool workers:0  poolHash:
+21:55:47.337 > WiFi:  0.0.0.0
+21:55:47.337 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:48.378 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:48.380 > Pool workers:0  poolHash:
+21:55:48.383 > WiFi:  0.0.0.0
+21:55:48.383 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:49.424 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:49.428 > Pool workers:0  poolHash:
+21:55:49.429 > WiFi:  0.0.0.0
+21:55:49.429 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:50.471 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:50.474 > Pool workers:0  poolHash:
+21:55:50.478 > WiFi:  0.0.0.0
+21:55:50.478 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:51.519 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:51.521 > Pool workers:0  poolHash:
+21:55:51.525 > WiFi:  0.0.0.0
+21:55:51.525 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:52.565 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:55:52.568 > Pool workers:0  poolHash:
+21:55:52.575 > WiFi:  0.0.0.0
+21:55:52.599 > OLED Screen3 WiFi:  0.0.0.0
+21:55:52.599 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:53.645 > OLED Screen3 WiFi:  0.0.0.0
+21:55:53.646 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:54.687 > OLED Screen3 WiFi:  0.0.0.0
+21:55:54.687 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:55.730 > OLED Screen3 WiFi:  0.0.0.0
+21:55:55.732 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:56.774 > OLED Screen3 WiFi:  0.0.0.0
+21:55:56.775 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:57.818 > OLED Screen3 WiFi:  0.0.0.0
+21:55:57.818 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:58.862 > OLED Screen3 WiFi:  0.0.0.0
+21:55:58.863 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:55:59.907 > OLED Screen3 WiFi:  0.0.0.0
+21:55:59.908 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:00.951 > OLED Screen3 WiFi:  0.0.0.0
+21:56:00.951 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:01.994 > OLED Screen3 WiFi:  0.0.0.0
+21:56:01.995 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:03.039 > OLED Screen3 WiFi:  0.0.0.0
+21:56:03.042 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:04.082 > OLED Screen3 WiFi:  0.0.0.0
+21:56:04.082 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:05.128 > OLED Screen3 WiFi:  0.0.0.0
+21:56:05.129 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:06.171 > OLED Screen3 WiFi:  0.0.0.0
+21:56:06.172 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:07.215 > OLED Screen3 WiFi:  0.0.0.0
+21:56:07.215 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:08.259 > OLED Screen3 WiFi:  0.0.0.0
+21:56:08.259 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:09.304 > OLED Screen3 WiFi:  0.0.0.0
+21:56:09.305 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:10.347 > OLED Screen3 WiFi:  0.0.0.0
+21:56:10.347 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:11.390 > OLED Screen3 WiFi:  0.0.0.0
+21:56:11.391 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:12.435 > OLED Screen3 WiFi:  0.0.0.0
+21:56:12.437 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:13.479 > OLED Screen3 WiFi:  0.0.0.0
+21:56:13.479 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:14.522 > OLED Screen3 WiFi:  0.0.0.0
+21:56:14.523 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:15.566 > OLED Screen3 WiFi:  0.0.0.0
+21:56:15.567 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:16.610 > OLED Screen3 WiFi:  0.0.0.0
+21:56:16.611 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:17.654 > OLED Screen3 WiFi:  0.0.0.0
+21:56:17.655 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:18.700 > OLED Screen3 WiFi:  0.0.0.0
+21:56:18.700 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:19.743 > OLED Screen3 WiFi:  0.0.0.0
+21:56:19.743 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:20.787 > OLED Screen3 WiFi:  0.0.0.0
+21:56:20.787 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:21.832 > OLED Screen3 WiFi:  0.0.0.0
+21:56:21.833 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:22.876 > OLED Screen3 WiFi:  0.0.0.0
+21:56:22.910 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:22.912 > Pool workers:0  poolHash:
+21:56:22.915 > WiFi:  0.0.0.0
+21:56:22.915 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:23.958 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:23.959 > Pool workers:0  poolHash:
+21:56:23.962 > WiFi:  0.0.0.0
+21:56:23.962 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:25.003 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:25.006 > Pool workers:0  poolHash:
+21:56:25.009 > WiFi:  0.0.0.0
+21:56:25.009 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:26.051 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:26.053 > Pool workers:0  poolHash:
+21:56:26.058 > WiFi:  0.0.0.0
+21:56:26.058 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:27.099 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:27.100 > Pool workers:0  poolHash:
+21:56:27.103 > WiFi:  0.0.0.0
+21:56:27.103 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:28.145 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:28.150 > Pool workers:0  poolHash:
+21:56:28.151 > WiFi:  0.0.0.0
+21:56:28.151 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:29.192 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:29.194 > Pool workers:0  poolHash:
+21:56:29.197 > WiFi:  0.0.0.0
+21:56:29.197 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:30.239 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:30.241 > Pool workers:0  poolHash:
+21:56:30.244 > WiFi:  0.0.0.0
+21:56:30.244 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:31.286 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:31.288 > Pool workers:0  poolHash:
+21:56:31.292 > WiFi:  0.0.0.0
+21:56:31.292 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:32.332 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:32.336 > Pool workers:0  poolHash:
+21:56:32.338 > WiFi:  0.0.0.0
+21:56:32.338 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:33.383 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:33.384 > Pool workers:0  poolHash:
+21:56:33.387 > WiFi:  0.0.0.0
+21:56:33.387 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:34.427 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:34.429 > Pool workers:0  poolHash:
+21:56:34.434 > WiFi:  0.0.0.0
+21:56:34.434 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:35.474 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:35.476 > Pool workers:0  poolHash:
+21:56:35.479 > WiFi:  0.0.0.0
+21:56:35.479 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:36.521 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:36.525 > Pool workers:0  poolHash:
+21:56:36.526 > WiFi:  0.0.0.0
+21:56:36.526 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:37.568 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:37.570 > Pool workers:0  poolHash:
+21:56:37.577 > WiFi:  0.0.0.0
+21:56:37.577 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:38.617 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:38.617 > Pool workers:0  poolHash:
+21:56:38.620 > WiFi:  0.0.0.0
+21:56:38.620 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:39.662 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:39.666 > Pool workers:0  poolHash:
+21:56:39.667 > WiFi:  0.0.0.0
+21:56:39.667 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:40.709 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:40.712 > Pool workers:0  poolHash:
+21:56:40.715 > WiFi:  0.0.0.0
+21:56:40.715 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:41.756 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:41.758 > Pool workers:0  poolHash:
+21:56:41.762 > WiFi:  0.0.0.0
+21:56:41.762 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:42.803 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:42.805 > Pool workers:0  poolHash:
+21:56:42.808 > WiFi:  0.0.0.0
+21:56:42.808 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:43.850 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:43.853 > Pool workers:0  poolHash:
+21:56:43.855 > WiFi:  0.0.0.0
+21:56:43.855 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:44.898 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:44.900 > Pool workers:0  poolHash:
+21:56:44.904 > WiFi:  0.0.0.0
+21:56:44.904 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:45.945 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:45.946 > Pool workers:0  poolHash:
+21:56:45.950 > WiFi:  0.0.0.0
+21:56:45.950 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:46.991 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:46.995 > Pool workers:0  poolHash:
+21:56:46.996 > WiFi:  0.0.0.0
+21:56:46.996 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:48.038 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:48.041 > Pool workers:0  poolHash:
+21:56:48.045 > WiFi:  0.0.0.0
+21:56:48.045 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:49.087 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:49.088 > Pool workers:0  poolHash:
+21:56:49.090 > WiFi:  0.0.0.0
+21:56:49.090 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:50.133 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:50.135 > Pool workers:0  poolHash:
+21:56:50.137 > WiFi:  0.0.0.0
+21:56:50.137 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:51.179 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:51.181 > Pool workers:0  poolHash:
+21:56:51.184 > WiFi:  0.0.0.0
+21:56:51.184 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:52.226 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:52.229 > Pool workers:0  poolHash:
+21:56:52.231 > WiFi:  0.0.0.0
+21:56:52.231 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:53.278 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:53.279 > Pool workers:0  poolHash:
+21:56:53.280 > WiFi:  0.0.0.0
+21:56:53.309 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:53.312 > Pool workers:0  poolHash:
+21:56:53.315 > WiFi:  0.0.0.0
+21:56:53.315 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:54.357 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:54.359 > Pool workers:0  poolHash:
+21:56:54.362 > WiFi:  0.0.0.0
+21:56:54.362 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:55.404 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:55.406 > Pool workers:0  poolHash:
+21:56:55.409 > WiFi:  0.0.0.0
+21:56:55.409 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:56.450 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:56.453 > Pool workers:0  poolHash:
+21:56:56.455 > WiFi:  0.0.0.0
+21:56:56.455 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:57.498 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:57.500 > Pool workers:0  poolHash:
+21:56:57.503 > WiFi:  0.0.0.0
+21:56:57.503 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:58.546 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:58.547 > Pool workers:0  poolHash:
+21:56:58.550 > WiFi:  0.0.0.0
+21:56:58.550 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:56:59.592 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:56:59.594 > Pool workers:0  poolHash:
+21:56:59.597 > WiFi:  0.0.0.0
+21:56:59.597 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:00.639 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:00.642 > Pool workers:0  poolHash:
+21:57:00.644 > WiFi:  0.0.0.0
+21:57:00.644 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:01.686 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:01.688 > Pool workers:0  poolHash:
+21:57:01.691 > WiFi:  0.0.0.0
+21:57:01.691 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:02.732 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:02.735 > Pool workers:0  poolHash:
+21:57:02.738 > WiFi:  0.0.0.0
+21:57:02.738 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:03.779 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:03.782 > Pool workers:0  poolHash:
+21:57:03.784 > WiFi:  0.0.0.0
+21:57:03.784 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:04.827 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:04.829 > Pool workers:0  poolHash:
+21:57:04.832 > WiFi:  0.0.0.0
+21:57:04.832 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:05.874 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:05.876 > Pool workers:0  poolHash:
+21:57:05.879 > WiFi:  0.0.0.0
+21:57:05.879 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:06.921 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:06.925 > Pool workers:0  poolHash:
+21:57:06.926 > WiFi:  0.0.0.0
+21:57:06.926 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:07.968 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:07.971 > Pool workers:0  poolHash:
+21:57:07.975 > WiFi:  0.0.0.0
+21:57:07.975 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:09.014 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:09.017 > Pool workers:0  poolHash:
+21:57:09.023 > WiFi:  0.0.0.0
+21:57:09.023 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:10.062 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:10.066 > Pool workers:0  poolHash:
+21:57:10.067 > WiFi:  0.0.0.0
+21:57:10.067 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:11.109 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:11.111 > Pool workers:0  poolHash:
+21:57:11.114 > WiFi:  0.0.0.0
+21:57:11.114 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:12.157 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:12.158 > Pool workers:0  poolHash:
+21:57:12.161 > WiFi:  0.0.0.0
+21:57:12.161 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:13.203 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:13.205 > Pool workers:0  poolHash:
+21:57:13.208 > WiFi:  0.0.0.0
+21:57:13.208 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:14.255 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:14.258 > Pool workers:0  poolHash:
+21:57:14.258 > WiFi:  0.0.0.0
+21:57:14.258 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:15.297 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:15.300 > Pool workers:0  poolHash:
+21:57:15.303 > WiFi:  0.0.0.0
+21:57:15.303 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:16.344 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:16.346 > Pool workers:0  poolHash:
+21:57:16.350 > WiFi:  0.0.0.0
+21:57:16.350 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:17.391 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:17.393 > Pool workers:0  poolHash:
+21:57:17.396 > WiFi:  0.0.0.0
+21:57:17.396 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:18.437 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:18.443 > Pool workers:0  poolHash:
+21:57:18.443 > WiFi:  0.0.0.0
+21:57:18.443 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:19.485 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:19.487 > Pool workers:0  poolHash:
+21:57:19.491 > WiFi:  0.0.0.0
+21:57:19.491 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:20.532 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:20.534 > Pool workers:0  poolHash:
+21:57:20.537 > WiFi:  0.0.0.0
+21:57:20.537 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:21.578 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:21.582 > Pool workers:0  poolHash:
+21:57:21.584 > WiFi:  0.0.0.0
+21:57:21.584 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:22.625 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:22.628 > Pool workers:0  poolHash:
+21:57:22.633 > WiFi:  0.0.0.0
+21:57:22.633 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:23.674 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:23.675 > Pool workers:0  poolHash:
+21:57:23.679 > WiFi:  0.0.0.0
+21:57:23.706 > OLED Screen3 WiFi:  0.0.0.0
+21:57:23.706 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:24.750 > OLED Screen3 WiFi:  0.0.0.0
+21:57:24.751 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:25.794 > OLED Screen3 WiFi:  0.0.0.0
+21:57:25.795 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:26.838 > OLED Screen3 WiFi:  0.0.0.0
+21:57:26.839 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:27.881 > OLED Screen3 WiFi:  0.0.0.0
+21:57:27.881 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:28.925 > OLED Screen3 WiFi:  0.0.0.0
+21:57:28.925 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:29.969 > OLED Screen3 WiFi:  0.0.0.0
+21:57:29.970 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:31.014 > OLED Screen3 WiFi:  0.0.0.0
+21:57:31.014 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:32.058 > OLED Screen3 WiFi:  0.0.0.0
+21:57:32.059 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:33.104 > OLED Screen3 WiFi:  0.0.0.0
+21:57:33.107 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:34.146 > OLED Screen3 WiFi:  0.0.0.0
+21:57:34.147 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:35.190 > OLED Screen3 WiFi:  0.0.0.0
+21:57:35.190 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:36.238 > OLED Screen3 WiFi:  0.0.0.0
+21:57:36.238 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:37.279 > OLED Screen3 WiFi:  0.0.0.0
+21:57:37.279 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:38.322 > OLED Screen3 WiFi:  0.0.0.0
+21:57:38.323 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:39.366 > OLED Screen3 WiFi:  0.0.0.0
+21:57:39.366 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:40.410 > OLED Screen3 WiFi:  0.0.0.0
+21:57:40.412 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:41.454 > OLED Screen3 WiFi:  0.0.0.0
+21:57:41.455 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:42.498 > OLED Screen3 WiFi:  0.0.0.0
+21:57:42.499 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:43.542 > OLED Screen3 WiFi:  0.0.0.0
+21:57:43.542 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:44.586 > OLED Screen3 WiFi:  0.0.0.0
+21:57:44.587 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:45.630 > OLED Screen3 WiFi:  0.0.0.0
+21:57:45.631 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:46.674 > OLED Screen3 WiFi:  0.0.0.0
+21:57:46.674 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:47.718 > OLED Screen3 WiFi:  0.0.0.0
+21:57:47.721 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:48.762 > OLED Screen3 WiFi:  0.0.0.0
+21:57:48.763 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:49.806 > OLED Screen3 WiFi:  0.0.0.0
+21:57:49.807 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:50.850 > OLED Screen3 WiFi:  0.0.0.0
+21:57:50.850 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:51.896 > OLED Screen3 WiFi:  0.0.0.0
+21:57:51.897 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:52.937 > OLED Screen3 WiFi:  0.0.0.0
+21:57:52.938 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:53.983 > OLED Screen3 WiFi:  0.0.0.0
+21:57:54.017 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:54.020 > Pool workers:0  poolHash:
+21:57:54.022 > WiFi:  0.0.0.0
+21:57:54.022 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:55.065 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:55.067 > Pool workers:0  poolHash:
+21:57:55.070 > WiFi:  0.0.0.0
+21:57:55.070 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:56.111 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:56.113 > Pool workers:0  poolHash:
+21:57:56.116 > WiFi:  0.0.0.0
+21:57:56.116 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:57.158 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:57.161 > Pool workers:0  poolHash:
+21:57:57.163 > WiFi:  0.0.0.0
+21:57:57.163 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:58.205 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:58.208 > Pool workers:0  poolHash:
+21:57:58.214 > WiFi:  0.0.0.0
+21:57:58.214 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:57:59.253 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:57:59.255 > Pool workers:0  poolHash:
+21:57:59.257 > WiFi:  0.0.0.0
+21:57:59.257 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:00.300 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:00.303 > Pool workers:0  poolHash:
+21:58:00.305 > WiFi:  0.0.0.0
+21:58:00.305 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:01.346 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:01.349 > Pool workers:0  poolHash:
+21:58:01.353 > WiFi:  0.0.0.0
+21:58:01.353 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:02.393 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:02.396 > Pool workers:0  poolHash:
+21:58:02.398 > WiFi:  0.0.0.0
+21:58:02.398 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:03.440 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:03.443 > Pool workers:0  poolHash:
+21:58:03.446 > WiFi:  0.0.0.0
+21:58:03.446 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:04.488 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:04.490 > Pool workers:0  poolHash:
+21:58:04.492 > WiFi:  0.0.0.0
+21:58:04.492 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:05.535 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:05.537 > Pool workers:0  poolHash:
+21:58:05.540 > WiFi:  0.0.0.0
+21:58:05.540 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:06.581 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:06.584 > Pool workers:0  poolHash:
+21:58:06.587 > WiFi:  0.0.0.0
+21:58:06.587 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:07.628 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:07.631 > Pool workers:0  poolHash:
+21:58:07.634 > WiFi:  0.0.0.0
+21:58:07.634 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:08.675 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:08.678 > Pool workers:0  poolHash:
+21:58:08.680 > WiFi:  0.0.0.0
+21:58:08.680 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:09.722 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:09.725 > Pool workers:0  poolHash:
+21:58:09.729 > WiFi:  0.0.0.0
+21:58:09.729 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:10.770 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:10.772 > Pool workers:0  poolHash:
+21:58:10.775 > WiFi:  0.0.0.0
+21:58:10.775 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:11.817 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:11.820 > Pool workers:0  poolHash:
+21:58:11.822 > WiFi:  0.0.0.0
+21:58:11.822 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:12.863 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:12.866 > Pool workers:0  poolHash:
+21:58:12.868 > WiFi:  0.0.0.0
+21:58:12.868 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:13.912 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:13.913 > Pool workers:0  poolHash:
+21:58:13.915 > WiFi:  0.0.0.0
+21:58:13.915 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:14.957 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:14.961 > Pool workers:0  poolHash:
+21:58:14.963 > WiFi:  0.0.0.0
+21:58:14.963 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:16.005 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:16.007 > Pool workers:0  poolHash:
+21:58:16.010 > WiFi:  0.0.0.0
+21:58:16.010 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:17.052 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:17.054 > Pool workers:0  poolHash:
+21:58:17.056 > WiFi:  0.0.0.0
+21:58:17.056 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:18.099 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:18.101 > Pool workers:0  poolHash:
+21:58:18.104 > WiFi:  0.0.0.0
+21:58:18.104 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:19.146 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:19.151 > Pool workers:0  poolHash:
+21:58:19.151 > WiFi:  0.0.0.0
+21:58:19.151 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:20.192 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:20.195 > Pool workers:0  poolHash:
+21:58:20.200 > WiFi:  0.0.0.0
+21:58:20.200 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:21.240 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:21.242 > Pool workers:0  poolHash:
+21:58:21.244 > WiFi:  0.0.0.0
+21:58:21.244 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:22.287 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:22.290 > Pool workers:0  poolHash:
+21:58:22.292 > WiFi:  0.0.0.0
+21:58:22.292 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:23.334 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:23.336 > Pool workers:0  poolHash:
+21:58:23.339 > WiFi:  0.0.0.0
+21:58:23.339 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:24.385 > >>> shares:0  valids:0  Khashes:0  avg:0.00 KH/s
+21:58:24.385 > Pool workers:0  poolHash:
+21:58:24.387 > WiFi:  0.0.0.0
+21:58:24.417 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:24.420 > Pool workers:0  poolHash:
+21:58:24.422 > WiFi:  0.0.0.0
+21:58:24.422 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:25.464 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:25.466 > Pool workers:0  poolHash:
+21:58:25.470 > WiFi:  0.0.0.0
+21:58:25.470 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:26.511 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:26.514 > Pool workers:0  poolHash:
+21:58:26.516 > WiFi:  0.0.0.0
+21:58:26.516 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:27.558 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:27.560 > Pool workers:0  poolHash:
+21:58:27.563 > WiFi:  0.0.0.0
+21:58:27.563 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:28.605 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:28.608 > Pool workers:0  poolHash:
+21:58:28.610 > WiFi:  0.0.0.0
+21:58:28.610 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:29.657 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:29.661 > Pool workers:0  poolHash:
+21:58:29.661 > WiFi:  0.0.0.0
+21:58:29.661 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:30.699 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:30.701 > Pool workers:0  poolHash:
+21:58:30.704 > WiFi:  0.0.0.0
+21:58:30.704 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:31.750 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:31.751 > Pool workers:0  poolHash:
+21:58:31.751 > WiFi:  0.0.0.0
+21:58:31.751 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:32.793 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:32.795 > Pool workers:0  poolHash:
+21:58:32.798 > WiFi:  0.0.0.0
+21:58:32.798 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:33.839 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:33.842 > Pool workers:0  poolHash:
+21:58:33.845 > WiFi:  0.0.0.0
+21:58:33.845 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:34.887 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:34.894 > Pool workers:0  poolHash:
+21:58:34.894 > WiFi:  0.0.0.0
+21:58:34.894 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:35.934 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:35.936 > Pool workers:0  poolHash:
+21:58:35.939 > WiFi:  0.0.0.0
+21:58:35.939 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:36.984 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:36.984 > Pool workers:0  poolHash:
+21:58:36.986 > WiFi:  0.0.0.0
+21:58:36.986 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:38.028 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:38.030 > Pool workers:0  poolHash:
+21:58:38.035 > WiFi:  0.0.0.0
+21:58:38.035 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:39.075 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:39.077 > Pool workers:0  poolHash:
+21:58:39.080 > WiFi:  0.0.0.0
+21:58:39.080 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:40.123 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:40.125 > Pool workers:0  poolHash:
+21:58:40.127 > WiFi:  0.0.0.0
+21:58:40.127 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:41.169 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:41.172 > Pool workers:0  poolHash:
+21:58:41.175 > WiFi:  0.0.0.0
+21:58:41.175 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:42.218 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:42.219 > Pool workers:0  poolHash:
+21:58:42.221 > WiFi:  0.0.0.0
+21:58:42.221 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:43.263 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:43.267 > Pool workers:0  poolHash:
+21:58:43.268 > WiFi:  0.0.0.0
+21:58:43.268 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:44.310 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:44.312 > Pool workers:0  poolHash:
+21:58:44.319 > WiFi:  0.0.0.0
+21:58:44.319 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:45.357 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:45.359 > Pool workers:0  poolHash:
+21:58:45.362 > WiFi:  0.0.0.0
+21:58:45.362 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:46.404 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:46.409 > Pool workers:0  poolHash:
+21:58:46.409 > WiFi:  0.0.0.0
+21:58:46.409 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:47.451 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:47.453 > Pool workers:0  poolHash:
+21:58:47.456 > WiFi:  0.0.0.0
+21:58:47.456 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:48.499 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:48.500 > Pool workers:0  poolHash:
+21:58:48.503 > WiFi:  0.0.0.0
+21:58:48.503 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:49.545 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:49.547 > Pool workers:0  poolHash:
+21:58:49.550 > WiFi:  0.0.0.0
+21:58:49.550 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:50.592 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:50.595 > Pool workers:0  poolHash:
+21:58:50.597 > WiFi:  0.0.0.0
+21:58:50.597 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:51.639 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:51.642 > Pool workers:0  poolHash:
+21:58:51.646 > WiFi:  0.0.0.0
+21:58:51.646 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:52.687 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:52.689 > Pool workers:0  poolHash:
+21:58:52.692 > WiFi:  0.0.0.0
+21:58:52.692 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:53.733 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:53.737 > Pool workers:0  poolHash:
+21:58:53.738 > WiFi:  0.0.0.0
+21:58:53.738 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:54.780 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:58:54.783 > Pool workers:0  poolHash:
+21:58:54.788 > WiFi:  0.0.0.0
+21:58:54.813 > OLED Screen3 WiFi:  0.0.0.0
+21:58:54.814 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:55.858 > OLED Screen3 WiFi:  0.0.0.0
+21:58:55.859 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:56.902 > OLED Screen3 WiFi:  0.0.0.0
+21:58:56.903 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:57.945 > OLED Screen3 WiFi:  0.0.0.0
+21:58:57.945 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:58:58.990 > OLED Screen3 WiFi:  0.0.0.0
+21:58:58.990 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:00.033 > OLED Screen3 WiFi:  0.0.0.0
+21:59:00.034 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:01.077 > OLED Screen3 WiFi:  0.0.0.0
+21:59:01.078 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:02.121 > OLED Screen3 WiFi:  0.0.0.0
+21:59:02.122 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:03.166 > OLED Screen3 WiFi:  0.0.0.0
+21:59:03.166 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:04.210 > OLED Screen3 WiFi:  0.0.0.0
+21:59:04.210 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:05.253 > OLED Screen3 WiFi:  0.0.0.0
+21:59:05.253 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:06.300 > OLED Screen3 WiFi:  0.0.0.0
+21:59:06.300 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:07.341 > OLED Screen3 WiFi:  0.0.0.0
+21:59:07.342 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:08.386 > OLED Screen3 WiFi:  0.0.0.0
+21:59:08.387 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:09.429 > OLED Screen3 WiFi:  0.0.0.0
+21:59:09.430 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:10.473 > OLED Screen3 WiFi:  0.0.0.0
+21:59:10.473 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:11.517 > OLED Screen3 WiFi:  0.0.0.0
+21:59:11.517 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:12.561 > OLED Screen3 WiFi:  0.0.0.0
+21:59:12.562 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:13.609 > OLED Screen3 WiFi:  0.0.0.0
+21:59:13.610 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:14.649 > OLED Screen3 WiFi:  0.0.0.0
+21:59:14.650 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:15.693 > OLED Screen3 WiFi:  0.0.0.0
+21:59:15.695 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:16.737 > OLED Screen3 WiFi:  0.0.0.0
+21:59:16.738 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:17.781 > OLED Screen3 WiFi:  0.0.0.0
+21:59:17.782 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:18.825 > OLED Screen3 WiFi:  0.0.0.0
+21:59:18.826 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:19.870 > OLED Screen3 WiFi:  0.0.0.0
+21:59:19.871 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:20.913 > OLED Screen3 WiFi:  0.0.0.0
+21:59:20.914 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:21.957 > OLED Screen3 WiFi:  0.0.0.0
+21:59:21.958 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:23.001 > OLED Screen3 WiFi:  0.0.0.0
+21:59:23.001 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:24.045 > OLED Screen3 WiFi:  0.0.0.0
+21:59:24.046 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:25.091 > OLED Screen3 WiFi:  0.0.0.0
+21:59:25.125 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:25.127 > Pool workers:0  poolHash:
+21:59:25.130 > WiFi:  0.0.0.0
+21:59:25.130 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:26.172 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:26.174 > Pool workers:0  poolHash:
+21:59:26.179 > WiFi:  0.0.0.0
+21:59:26.179 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:27.220 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:27.221 > Pool workers:0  poolHash:
+21:59:27.224 > WiFi:  0.0.0.0
+21:59:27.224 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:28.266 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:28.271 > Pool workers:0  poolHash:
+21:59:28.271 > WiFi:  0.0.0.0
+21:59:28.271 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:29.313 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:29.315 > Pool workers:0  poolHash:
+21:59:29.318 > WiFi:  0.0.0.0
+21:59:29.318 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:30.360 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:30.362 > Pool workers:0  poolHash:
+21:59:30.366 > WiFi:  0.0.0.0
+21:59:30.366 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:31.407 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:31.409 > Pool workers:0  poolHash:
+21:59:31.412 > WiFi:  0.0.0.0
+21:59:31.412 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:32.453 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:32.458 > Pool workers:0  poolHash:
+21:59:32.459 > WiFi:  0.0.0.0
+21:59:32.459 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:33.501 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:33.504 > Pool workers:0  poolHash:
+21:59:33.508 > WiFi:  0.0.0.0
+21:59:33.508 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:34.549 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:34.550 > Pool workers:0  poolHash:
+21:59:34.553 > WiFi:  0.0.0.0
+21:59:34.553 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:35.595 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:35.598 > Pool workers:0  poolHash:
+21:59:35.600 > WiFi:  0.0.0.0
+21:59:35.600 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:36.642 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:36.644 > Pool workers:0  poolHash:
+21:59:36.647 > WiFi:  0.0.0.0
+21:59:36.647 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:37.689 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:37.691 > Pool workers:0  poolHash:
+21:59:37.694 > WiFi:  0.0.0.0
+21:59:37.694 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:38.736 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:38.738 > Pool workers:0  poolHash:
+21:59:38.742 > WiFi:  0.0.0.0
+21:59:38.742 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:39.783 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:39.787 > Pool workers:0  poolHash:
+21:59:39.788 > WiFi:  0.0.0.0
+21:59:39.788 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:40.830 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:40.833 > Pool workers:0  poolHash:
+21:59:40.835 > WiFi:  0.0.0.0
+21:59:40.835 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:41.877 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:41.879 > Pool workers:0  poolHash:
+21:59:41.884 > WiFi:  0.0.0.0
+21:59:41.884 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:42.923 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:42.926 > Pool workers:0  poolHash:
+21:59:42.929 > WiFi:  0.0.0.0
+21:59:42.929 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:43.971 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:43.974 > Pool workers:0  poolHash:
+21:59:43.976 > WiFi:  0.0.0.0
+21:59:43.976 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:45.018 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:45.020 > Pool workers:0  poolHash:
+21:59:45.027 > WiFi:  0.0.0.0
+21:59:45.027 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:46.066 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:46.067 > Pool workers:0  poolHash:
+21:59:46.070 > WiFi:  0.0.0.0
+21:59:46.070 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:47.112 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:47.116 > Pool workers:0  poolHash:
+21:59:47.117 > WiFi:  0.0.0.0
+21:59:47.117 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:48.159 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:48.161 > Pool workers:0  poolHash:
+21:59:48.165 > WiFi:  0.0.0.0
+21:59:48.165 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:49.208 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:49.209 > Pool workers:0  poolHash:
+21:59:49.211 > WiFi:  0.0.0.0
+21:59:49.211 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:50.253 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:50.255 > Pool workers:0  poolHash:
+21:59:50.258 > WiFi:  0.0.0.0
+21:59:50.258 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:51.300 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:51.302 > Pool workers:0  poolHash:
+21:59:51.305 > WiFi:  0.0.0.0
+21:59:51.305 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:52.348 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:52.350 > Pool workers:0  poolHash:
+21:59:52.353 > WiFi:  0.0.0.0
+21:59:52.353 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:53.396 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:53.399 > Pool workers:0  poolHash:
+21:59:53.402 > WiFi:  0.0.0.0
+21:59:53.402 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:54.445 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:54.447 > Pool workers:0  poolHash:
+21:59:54.450 > WiFi:  0.0.0.0
+21:59:54.450 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:55.492 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:55.496 > Pool workers:0  poolHash:
+21:59:55.501 > WiFi:  0.0.0.0
+21:59:55.528 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:55.531 > Pool workers:0  poolHash:
+21:59:55.534 > WiFi:  0.0.0.0
+21:59:55.534 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:56.577 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:56.580 > Pool workers:0  poolHash:
+21:59:56.585 > WiFi:  0.0.0.0
+21:59:56.585 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:57.625 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:57.627 > Pool workers:0  poolHash:
+21:59:57.631 > WiFi:  0.0.0.0
+21:59:57.631 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:58.672 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:58.675 > Pool workers:0  poolHash:
+21:59:58.678 > WiFi:  0.0.0.0
+21:59:58.678 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+21:59:59.721 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+21:59:59.724 > Pool workers:0  poolHash:
+21:59:59.726 > WiFi:  0.0.0.0
+21:59:59.726 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:00.768 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:00.771 > Pool workers:0  poolHash:
+22:00:00.775 > WiFi:  0.0.0.0
+22:00:00.775 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:01.817 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:01.818 > Pool workers:0  poolHash:
+22:00:01.821 > WiFi:  0.0.0.0
+22:00:01.821 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:02.864 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:02.866 > Pool workers:0  poolHash:
+22:00:02.869 > WiFi:  0.0.0.0
+22:00:02.869 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:03.911 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:03.914 > Pool workers:0  poolHash:
+22:00:03.916 > WiFi:  0.0.0.0
+22:00:03.916 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:04.959 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:04.961 > Pool workers:0  poolHash:
+22:00:04.964 > WiFi:  0.0.0.0
+22:00:04.964 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:06.006 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:06.010 > Pool workers:0  poolHash:
+22:00:06.012 > WiFi:  0.0.0.0
+22:00:06.012 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:07.054 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:07.056 > Pool workers:0  poolHash:
+22:00:07.059 > WiFi:  0.0.0.0
+22:00:07.059 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:08.101 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:08.104 > Pool workers:0  poolHash:
+22:00:08.107 > WiFi:  0.0.0.0
+22:00:08.107 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:09.151 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:09.152 > Pool workers:0  poolHash:
+22:00:09.154 > WiFi:  0.0.0.0
+22:00:09.154 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:10.196 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:10.200 > Pool workers:0  poolHash:
+22:00:10.202 > WiFi:  0.0.0.0
+22:00:10.202 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:11.244 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:11.247 > Pool workers:0  poolHash:
+22:00:11.249 > WiFi:  0.0.0.0
+22:00:11.249 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:12.292 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:12.294 > Pool workers:0  poolHash:
+22:00:12.298 > WiFi:  0.0.0.0
+22:00:12.298 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:13.339 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:13.341 > Pool workers:0  poolHash:
+22:00:13.344 > WiFi:  0.0.0.0
+22:00:13.344 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:14.386 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:14.390 > Pool workers:0  poolHash:
+22:00:14.391 > WiFi:  0.0.0.0
+22:00:14.391 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:15.434 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:15.436 > Pool workers:0  poolHash:
+22:00:15.438 > WiFi:  0.0.0.0
+22:00:15.438 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:16.482 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:16.483 > Pool workers:0  poolHash:
+22:00:16.486 > WiFi:  0.0.0.0
+22:00:16.486 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:17.528 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:17.534 > Pool workers:0  poolHash:
+22:00:17.534 > WiFi:  0.0.0.0
+22:00:17.534 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:18.575 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:18.577 > Pool workers:0  poolHash:
+22:00:18.580 > WiFi:  0.0.0.0
+22:00:18.580 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:19.622 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:19.625 > Pool workers:0  poolHash:
+22:00:19.627 > WiFi:  0.0.0.0
+22:00:19.627 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:20.669 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:20.672 > Pool workers:0  poolHash:
+22:00:20.675 > WiFi:  0.0.0.0
+22:00:20.675 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:21.721 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:21.721 > Pool workers:0  poolHash:
+22:00:21.722 > WiFi:  0.0.0.0
+22:00:21.722 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:22.764 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:22.766 > Pool workers:0  poolHash:
+22:00:22.769 > WiFi:  0.0.0.0
+22:00:22.769 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:23.811 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:23.814 > Pool workers:0  poolHash:
+22:00:23.821 > WiFi:  0.0.0.0
+22:00:23.821 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:24.859 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:24.860 > Pool workers:0  poolHash:
+22:00:24.863 > WiFi:  0.0.0.0
+22:00:24.863 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:25.905 > >>> shares:0  valids:0  Khashes:0  avg:nan KH/s
+22:00:25.909 > Pool workers:0  poolHash:
+22:00:25.918 > WiFi:  0.0.0.0
+22:00:25.939 > OLED Screen3 WiFi:  0.0.0.0
+22:00:25.939 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:26.984 > OLED Screen3 WiFi:  0.0.0.0
+22:00:26.984 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:28.026 > OLED Screen3 WiFi:  0.0.0.0
+22:00:28.027 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:29.071 > OLED Screen3 WiFi:  0.0.0.0
+22:00:29.072 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:30.115 > OLED Screen3 WiFi:  0.0.0.0
+22:00:30.116 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:31.159 > OLED Screen3 WiFi:  0.0.0.0
+22:00:31.160 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:32.203 > OLED Screen3 WiFi:  0.0.0.0
+22:00:32.203 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:33.248 > OLED Screen3 WiFi:  0.0.0.0
+22:00:33.249 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:34.292 > OLED Screen3 WiFi:  0.0.0.0
+22:00:34.292 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:35.336 > OLED Screen3 WiFi:  0.0.0.0
+22:00:35.337 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:36.381 > OLED Screen3 WiFi:  0.0.0.0
+22:00:36.382 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:37.424 > OLED Screen3 WiFi:  0.0.0.0
+22:00:37.424 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:38.468 > OLED Screen3 WiFi:  0.0.0.0
+22:00:38.468 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:39.511 > OLED Screen3 WiFi:  0.0.0.0
+22:00:39.512 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:40.555 > OLED Screen3 WiFi:  0.0.0.0
+22:00:40.556 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:41.600 > OLED Screen3 WiFi:  0.0.0.0
+22:00:41.600 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:42.644 > OLED Screen3 WiFi:  0.0.0.0
+22:00:42.645 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:43.690 > OLED Screen3 WiFi:  0.0.0.0
+22:00:43.691 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:44.732 > OLED Screen3 WiFi:  0.0.0.0
+22:00:44.733 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>false / subscribed>false / wificonnected>false
+22:00:45.898 > ets Jul 29 2019 12:21:46
+22:00:45.898 > 
+22:00:45.898 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+22:00:45.903 > configsip: 0, SPIWP:0xee
+22:00:45.906 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+22:00:45.913 > mode:DIO, clock div:2
+22:00:45.915 > load:0x3fff0030,len:1184
+22:00:45.917 > load:0x40078000,len:13232
+22:00:45.920 > load:0x40080400,len:3028
+22:00:45.920 > entry 0x400805e4
+22:00:46.516 > NerdMiner v2 starting......
+22:00:46.516 > OLED 0.96 128x64 display driver initialized
+22:00:46.521 > I2C init: SDA=21, SCL=22
+22:00:46.524 > Scanning I2C bus...
+22:00:46.524 >   Found device at 0x3C
+22:00:46.934 > Initializing SSD1306 128x64...

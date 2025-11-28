@@ -1,0 +1,219 @@
+18:56:08.923 > ets Jul 29 2019 12:21:46
+18:56:08.923 > 
+18:56:08.923 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:08.969 > invalid header: 0xffffffff
+18:56:09.014 > invalid header: 0xffffffff
+18:56:09.058 > invalid header: 0xffffffff
+18:56:09.102 > invalid header: 0xffffffff
+18:56:09.147 > invalid header: 0xffffffff
+18:56:09.191 > invalid header: 0xffffffff
+18:56:09.236 > invalid header: 0xffffffff
+18:56:09.279 > invalid header: 0xffffffff
+18:56:09.279 > ets Jul 29 2019 12:21:46
+18:56:09.282 > 
+18:56:09.282 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:09.328 > invalid header: 0xffffffff
+18:56:09.372 > invalid header: 0xffffffff
+18:56:09.417 > invalid header: 0xffffffff
+18:56:09.461 > invalid header: 0xffffffff
+18:56:09.505 > invalid header: 0xffffffff
+18:56:09.550 > invalid header: 0xffffffff
+18:56:09.594 > invalid header: 0xffffffff
+18:56:09.638 > invalid header: 0xffffffff�ets Jul 29 2019 12:21:46
+18:56:09.641 > 
+18:56:09.641 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:09.687 > invalid header: 0xffffffff
+18:56:09.731 > invalid header: 0xffffffff
+18:56:09.775 > invalid header: 0xffffffff
+18:56:09.820 > invalid header: 0xffffffff
+18:56:09.864 > invalid header: 0xffffffff
+18:56:09.908 > invalid header: 0xffffffff
+18:56:09.953 > invalid header: 0xffffffff
+18:56:09.996 > invalid header: 0xffffffffets Jul 29 2019 12:21:46
+18:56:09.999 > 
+18:56:09.999 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:10.045 > invalid header: 0xffffffff
+18:56:10.089 > invalid header: 0xffffffff
+18:56:10.134 > invalid header: 0xffffffff
+18:56:10.178 > invalid header: 0xffffffff
+18:56:10.222 > invalid header: 0xffffffff
+18:56:10.267 > invalid header: 0xffffffff
+18:56:10.311 > invalid header: 0xffffffff
+18:56:10.355 > invalid header: 0xffffffff�ets Jul 29 2019 12:21:46
+18:56:10.358 > 
+18:56:10.358 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:10.404 > invalid header: 0xffffffff
+18:56:10.448 > invalid header: 0xffffffff
+18:56:10.492 > invalid header: 0xffffffff
+18:56:10.537 > invalid header: 0xffffffff
+18:56:10.581 > invalid header: 0xffffffff
+18:56:10.626 > invalid header: 0xffffffff
+18:56:10.670 > invalid header: 0xffffffff
+18:56:10.714 > invalid header: 0xffffffff�ets Jul 29 2019 12:21:46
+18:56:10.716 > 
+18:56:10.716 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:10.762 > invalid header: 0xffffffff
+18:56:10.807 > invalid header: 0xffffffff
+18:56:10.851 > invalid header: 0xffffffff
+18:56:10.895 > invalid header: 0xffffffff
+18:56:10.940 > invalid header: 0xffffffff
+18:56:10.984 > invalid header: 0xffffffff
+18:56:11.028 > invalid header: 0xffffffff
+18:56:11.072 > invalid header: 0xffffffff�ets Jul 29 2019 12:21:46
+18:56:11.075 > 
+18:56:11.075 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:11.121 > invalid header: 0xffffffff
+18:56:11.165 > invalid header: 0xffffffff
+18:56:11.210 > invalid header: 0xffffffff
+18:56:11.254 > invalid header: 0xffffffff
+18:56:11.298 > invalid header: 0xffffffff
+18:56:11.343 > invalid header: 0xffffffff
+18:56:11.387 > invalid header: 0xffffffff
+18:56:11.431 > invalid header: 0xffffffff
+18:56:11.431 > ets Jul 29 2019 12:21:46
+18:56:11.434 > 
+18:56:11.434 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:11.479 > invalid header: 0xffffffff
+18:56:11.524 > invalid header: 0xffffffff
+18:56:11.568 > invalid header: 0xffffffff
+18:56:11.613 > invalid header: 0xffffffff
+18:56:11.657 > invalid header: 0xffffffff
+18:56:11.701 > invalid header: 0xffffffff
+18:56:11.746 > invalid header: 0xffffffff
+18:56:11.789 > invalid header: 0xffffffff
+18:56:11.789 > ets Jul 29 2019 12:21:46
+18:56:11.793 > 
+18:56:11.793 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:11.838 > invalid header: 0xffffffff
+18:56:11.882 > invalid header: 0xffffffff
+18:56:11.927 > invalid header: 0xffffffff
+18:56:11.971 > invalid header: 0xffffffff
+18:56:12.015 > invalid header: 0xffffffff
+18:56:12.060 > invalid header: 0xffffffff
+18:56:12.104 > invalid header: 0xffffffff
+18:56:12.148 > invalid header: 0xffffffff
+18:56:12.148 > ets Jul 29 2019 12:21:46
+18:56:12.151 > 
+18:56:12.151 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:12.197 > invalid header: 0xffffffff
+18:56:12.241 > invalid header: 0xffffffff
+18:56:12.286 > invalid header: 0xffffffff
+18:56:12.330 > invalid header: 0xffffffff
+18:56:12.374 > invalid header: 0xffffffff
+18:56:12.418 > invalid header: 0xffffffff
+18:56:12.463 > invalid header: 0xffffffff
+18:56:12.507 > invalid header: 0xffffffff
+18:56:12.507 > ets Jul 29 2019 12:21:46
+18:56:12.509 > 
+18:56:12.509 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:12.555 > invalid header: 0xffffffff
+18:56:12.600 > invalid header: 0xffffffff
+18:56:12.644 > invalid header: 0xffffffff
+18:56:12.688 > invalid header: 0xffffffff
+18:56:12.733 > invalid header: 0xffffffff
+18:56:12.777 > invalid header: 0xffffffff
+18:56:12.822 > invalid header: 0xffffffff
+18:56:12.865 > invalid header: 0xffffffff
+18:56:12.865 > ets Jul 29 2019 12:21:46
+18:56:12.868 > 
+18:56:12.868 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:12.914 > invalid header: 0xffffffff
+18:56:12.958 > invalid header: 0xffffffff
+18:56:13.003 > invalid header: 0xffffffff
+18:56:13.047 > invalid header: 0xffffffff
+18:56:13.091 > invalid header: 0xffffffff
+18:56:13.136 > invalid header: 0xffffffff
+18:56:13.180 > invalid header: 0xffffffff
+18:56:13.224 > invalid header: 0xffffffff
+18:56:13.224 > ets Jul 29 2019 12:21:46
+18:56:13.227 > 
+18:56:13.227 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:13.273 > invalid header: 0xffffffff
+18:56:13.317 > invalid header: 0xffffffff
+18:56:13.361 > invalid header: 0xffffffff
+18:56:13.406 > invalid header: 0xffffffff
+18:56:13.450 > invalid header: 0xffffffff
+18:56:13.494 > invalid header: 0xffffffff
+18:56:13.539 > invalid header: 0xffffffff
+18:56:13.583 > invalid header: 0xffffffff
+18:56:13.583 > ets Jul 29 2019 12:21:46
+18:56:13.585 > 
+18:56:13.585 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:13.631 > invalid header: 0xffffffff
+18:56:13.676 > invalid header: 0xffffffff
+18:56:13.720 > invalid header: 0xffffffff
+18:56:13.764 > invalid header: 0xffffffff
+18:56:13.809 > invalid header: 0xffffffff
+18:56:13.853 > invalid header: 0xffffffff
+18:56:13.897 > invalid header: 0xffffffff
+18:56:13.942 > invalid header: 0xffffffff
+18:56:13.942 > ets Jul 29 2019 12:21:46
+18:56:13.944 > 
+18:56:13.944 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:13.990 > invalid header: 0xffffffff
+18:56:14.035 > invalid header: 0xffffffff
+18:56:14.079 > invalid header: 0xffffffff
+18:56:14.123 > invalid header: 0xffffffff
+18:56:14.168 > invalid header: 0xffffffff
+18:56:14.212 > invalid header: 0xffffffff
+18:56:14.256 > invalid header: 0xffffffff
+18:56:14.300 > invalid header: 0xffffffff
+18:56:14.300 > ets Jul 29 2019 12:21:46
+18:56:14.303 > 
+18:56:14.303 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:14.349 > invalid header: 0xffffffff
+18:56:14.393 > invalid header: 0xffffffff
+18:56:14.438 > invalid header: 0xffffffff
+18:56:14.482 > invalid header: 0xffffffff
+18:56:14.527 > invalid header: 0xffffffff
+18:56:14.571 > invalid header: 0xffffffff
+18:56:14.615 > invalid header: 0xffffffff
+18:56:14.659 > invalid header: 0xffffffff
+18:56:14.659 > ets Jul 29 2019 12:21:46
+18:56:14.662 > 
+18:56:14.662 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:14.708 > invalid header: 0xffffffff
+18:56:14.752 > invalid header: 0xffffffff
+18:56:14.796 > invalid header: 0xffffffff
+18:56:14.841 > invalid header: 0xffffffff
+18:56:14.885 > invalid header: 0xffffffff
+18:56:14.929 > invalid header: 0xffffffff
+18:56:14.974 > invalid header: 0xffffffff
+18:56:15.018 > invalid header: 0xffffffff
+18:56:15.018 > ets Jul 29 2019 12:21:46
+18:56:15.020 > 
+18:56:15.020 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:15.066 > invalid header: 0xffffffff
+18:56:15.111 > invalid header: 0xffffffff
+18:56:15.155 > invalid header: 0xffffffff
+18:56:15.199 > invalid header: 0xffffffff
+18:56:15.244 > invalid header: 0xffffffff
+18:56:15.288 > invalid header: 0xffffffff
+18:56:15.332 > invalid header: 0xffffffff
+18:56:15.377 > invalid header: 0xffffffff
+18:56:15.377 > ets Jul 29 2019 12:21:46
+18:56:15.379 > 
+18:56:15.379 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:15.425 > invalid header: 0xffffffff
+18:56:15.470 > invalid header: 0xffffffff
+18:56:15.514 > invalid header: 0xffffffff
+18:56:15.558 > invalid header: 0xffffffff
+18:56:15.603 > invalid header: 0xffffffff
+18:56:15.647 > invalid header: 0xffffffff
+18:56:15.691 > invalid header: 0xffffffff
+18:56:15.735 > invalid header: 0xffffffff
+18:56:15.735 > ets Jul 29 2019 12:21:46
+18:56:15.738 > 
+18:56:15.738 > rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+18:56:15.784 > invalid header: 0xffffffff
+18:56:15.828 > invalid header: 0xffffffff
+18:56:15.872 > invalid header: 0xffffffff
+18:56:15.917 > invalid header: 0xffffffff
+18:56:15.961 > invalid header: 0xffffffff
+18:56:16.006 > invalid header: 0xffffffff
+18:56:16.050 > invalid header: 0xffffffff
+18:56:16.162 > ets Jul 29 2019 12:21:46
+18:56:16.162 > 
+18:56:16.162 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+18:56:16.170 > waiting for download
+18:56:16.376 > �  UU    ��  UU    �� U    ��  UU    ��  UU    ��  UU    �      ��      ��  

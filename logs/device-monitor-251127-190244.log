@@ -1,0 +1,30 @@
+ets Jul 29 2019 12:21:46
+19:02:48.359 > 
+19:02:48.359 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+19:02:48.367 > waiting for download
+19:02:52.562 > ets Jul 29 2019 12:21:46
+19:02:52.563 > 
+19:02:52.563 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:02:52.566 > configsip: 0, SPIWP:0xee
+19:02:52.570 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:02:52.575 > mode:DIO, clock div:2
+19:02:52.577 > load:0x3fff0030,len:1184
+19:02:52.580 > load:0x40078000,len:13232
+19:02:52.583 > load:0x40080400,len:3028
+19:02:52.583 > entry 0x400805e4
+19:02:53.048 > 
+19:02:53.049 > *** NerdMiner Multi-threaded Micro-benchmark Mode ***
+19:02:53.056 > Spawning 4 worker(s). Reporting every 5000 ms
+19:02:54.526 > ets Jul 29 2019 12:21:46
+19:02:54.528 > 
+19:02:54.528 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:02:54.531 > configsip: 0, SPIWP:0xee
+19:02:54.534 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:02:54.542 > mode:DIO, clock div:2
+19:02:54.542 > load:0x3fff0030,len:1184
+19:02:54.545 > load:0x40078000,len:13232
+19:02:54.547 > load:0x40080400,len:3028
+19:02:54.547 > entry 0x400805e4
+19:02:55.013 > 
+19:02:55.014 > *** NerdMiner Multi-threaded Micro-benchmark Mode ***
+19:02:55.018 > Spawning 4 worker(s). Reporting every 5000 ms

@@ -1,0 +1,22 @@
+21:32:44.661 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+21:32:44.661 > DEBUG: Successfully read from flash
+21:32:44.661 > DEBUG: Raw flash data: '���������������������������������������������������������������������������������������������������������������������������������Ok�A?�'
+21:32:44.661 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+21:32:44.664 > DEBUG: Using default AP name
+21:32:44.749 > SPIFS: Mounting File System...
+21:32:44.752 > E (2678) SPIFFS: mount failed, -10025
+21:32:44.755 > [  2686][E][SPIFFS.cpp:89] begin(): Mounting SPIFFS failed! Error: -1
+21:32:44.761 > E (2680) SPIFFS: mount failed, -10025
+21:32:44.763 > [  2688][E][esp32-hal-misc.c:128] disableCore0WDT(): Failed to remove Core 0 IDLE task from WDT
+21:32:48.315 > SPIFS: Mounted
+21:32:48.374 > SPIFS: No config file available!
+21:32:48.377 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+21:32:48.384 > AllDone: 
+21:32:48.384 > Setup 128x64...
+21:32:48.417 > *wm:StartAP with SSID:  NerdMinerAP
+21:32:49.486 > *wm:AP IP address: 192.168.4.1
+21:32:49.488 > Entered Configuration Mode
+21:32:49.489 > Setup 128x64...
+21:32:49.519 > Config SSID: NerdMinerAP
+21:32:49.519 > Config IP Address: 192.168.4.1
+21:32:49.521 > *wm:Starting Web Portal 

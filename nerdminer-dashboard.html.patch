@@ -1,0 +1,27 @@
+--- a/nerdminer-dashboard.html
++++ b/nerdminer-dashboard.html
+@@ -52,6 +52,7 @@
+                 <input type='text' id='minerIP' placeholder='Miner IP Address' value=''>
+                 <button onclick='connectMiner()'>CONNECT</button>
+                 <button onclick='disconnectMiner()'>DISCONNECT</button>
++                <button onclick='toggleDebug()'>DEBUG</button>
+                 <label class='autoconnect'>
+                     <input type='checkbox' id='autoConnect'> Auto-connect
+                 </label>
+@@ -228,6 +229,16 @@
+             setStatus('Disconnected. Enter IP or use Saved Miners');
+         }
+ 
++        function toggleDebug(){
++            try {
++                const current = localStorage.getItem('nerdminer.debug') === '1';
++                localStorage.setItem('nerdminer.debug', current ? '0' : '1');
++                const dbg = document.getElementById('debug');
++                dbg.style.display = current ? 'none' : 'block';
++                setStatus(current ? 'Debug disabled' : 'Debug enabled');
++            } catch(e) {}
++        }
++
+         // Removed retry scheduler to keep stable 2s polling
+ 
+         // Try common mDNS names first, then scan subnets

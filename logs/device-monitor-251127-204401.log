@@ -1,0 +1,224 @@
+20:44:03.815 >   Receiving: {"id":21,"error":null,"result":true}
+20:44:03.815 > >>> shares:0  valids:0  Khashes:12007  avg:0 KH/s
+20:44:03.815 > Pool workers:1  poolHash:424.0K
+20:44:03.815 > WiFi: IoT 192.168.0.185
+20:44:03.815 >   Sending  : {"id":22,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w1","934756","00000001","6928fe57","da8dd9b3"]}
+20:44:03.815 >    - Current diff share: 0.000708381660
+20:44:03.815 >    - Current pool diff : 0.000150000000
+20:44:03.815 >    - TX SHARE: f15d60d1fc72b10be07dac330fef2fdbb99dec83538a130d6c2998a583050000
+20:44:03.815 > >>> shares:0  valids:0  Khashes:12400  avg:0 KH/s
+20:44:03.815 > Pool workers:1  poolHash:424.0K
+20:44:03.815 > WiFi: IoT 192.168.0.185
+20:44:03.815 >   Receiving: {"id":22,"error":null,"result":true}
+20:44:04.663 > >>> shares:0  valids:0  Khashes:12728  avg:0 KH/s
+20:44:04.666 > Pool workers:1  poolHash:424.0K
+20:44:04.669 > WiFi: IoT 192.168.0.185
+20:44:05.700 > >>> shares:0  valids:0  Khashes:13055  avg:0 KH/s
+20:44:05.702 > Pool workers:1  poolHash:424.0K
+20:44:05.704 > WiFi: IoT 192.168.0.185
+20:44:06.646 >   Sending  : {"id":23,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","934756","00000001","6928fe57","da9d72d9"]}
+20:44:06.656 >    - Current diff share: 0.000226172048
+20:44:06.662 >    - Current pool diff : 0.000150000000
+20:44:06.665 >    - TX SHARE: fd681acb6ffa2e56c2da99849f94c905f431408372562449b33f6b5845110000
+20:44:06.734 > >>> shares:0  valids:0  Khashes:13448  avg:0 KH/s
+20:44:06.737 > Pool workers:1  poolHash:424.0K
+20:44:06.739 > WiFi: IoT 192.168.0.185
+20:44:06.770 >   Receiving: {"id":23,"error":null,"result":true}
+20:44:06.871 >   Sending  : {"id":24,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w1","934756","00000001","6928fe57","da9b3bfa"]}
+20:44:06.882 >    - Current diff share: 0.000644829329
+20:44:06.888 >    - Current pool diff : 0.000150000000
+20:44:06.891 >    - TX SHARE: 23e3fac97d018e26664e9cb2b2b9792a4014f32292cd58e75c8037c60e060000
+20:44:06.996 >   Receiving: {"id":24,"error":null,"result":true}
+20:44:07.770 > >>> shares:0  valids:0  Khashes:13776  avg:0 KH/s
+20:44:07.773 > Pool workers:1  poolHash:424.0K
+20:44:07.776 > WiFi: IoT 192.168.0.185
+20:44:08.597 >   Sending  : {"id":25,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w3","934756","00000001","6928fe57","daa7568f"]}
+20:44:08.608 >    - Current diff share: 0.000534704872
+20:44:08.614 >    - Current pool diff : 0.000150000000
+20:44:08.617 >    - TX SHARE: e6189c8ac21977b0b635df91f867ca399368c359ddeb5e9072f079294e070000
+20:44:08.723 >   Receiving: {"id":25,"error":null,"result":true}
+20:44:08.807 > >>> shares:0  valids:0  Khashes:14104  avg:0 KH/s
+20:44:08.811 > Pool workers:1  poolHash:424.0K
+20:44:08.812 > WiFi: IoT 192.168.0.185
+20:44:09.842 > >>> shares:0  valids:0  Khashes:14497  avg:0 KH/s
+20:44:09.845 > Pool workers:1  poolHash:424.0K
+20:44:09.847 > WiFi: IoT 192.168.0.185
+20:44:10.880 > >>> shares:0  valids:0  Khashes:14825  avg:0 KH/s
+20:44:10.882 > Pool workers:1  poolHash:424.0K
+20:44:10.882 > WiFi: IoT 192.168.0.185
+20:44:11.674 >   Sending  : {"id":26,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w3","934756","00000001","6928fe57","dab9f834"]}
+20:44:11.685 >    - Current diff share: 0.000189883267
+20:44:11.691 >    - Current pool diff : 0.000150000000
+20:44:11.693 >    - TX SHARE: 332932488040eb532852024faee5f77d06b3f721be4d6498d907295092140000
+20:44:11.800 >   Receiving: {"id":26,"error":null,"result":true}
+20:44:11.915 > >>> shares:0  valids:0  Khashes:15218  avg:0 KH/s
+20:44:11.916 > Pool workers:1  poolHash:424.0K
+20:44:11.918 > WiFi: IoT 192.168.0.185
+20:44:12.948 > >>> shares:0  valids:0  Khashes:15546  avg:0 KH/s
+20:44:12.950 > Pool workers:1  poolHash:424.0K
+20:44:12.953 > WiFi: IoT 192.168.0.185
+20:44:13.983 > >>> shares:0  valids:0  Khashes:15873  avg:0 KH/s
+20:44:13.989 > Pool workers:1  poolHash:424.0K
+20:44:13.989 > WiFi: IoT 192.168.0.185
+20:44:14.753 >   Sending  : {"id":27,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w3","934756","00000001","6928fe57","dac7dde8"]}
+20:44:14.762 >    - Current diff share: 0.000388978505
+20:44:14.768 >    - Current pool diff : 0.000150000000
+20:44:14.770 >    - TX SHARE: 2eb2de2dacd81b14e027364fc6ff8846bcfae5f2180e05fda3c002cc0a0a0000
+20:44:14.875 >   Receiving: {"id":27,"error":null,"result":true}
+20:44:14.976 >   Sending  : {"id":28,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","934756","00000001","6928fe57","dac8745e"]}
+20:44:14.987 >    - Current diff share: 0.000515612266
+20:44:14.993 >    - Current pool diff : 0.000150000000
+20:44:14.995 >    - TX SHARE: b25bd41d8748e8c75a84835eb834e1b74a46d8039b8fccfd42a2886993070000
+20:44:15.018 > >>> shares:0  valids:0  Khashes:16267  avg:0 KH/s
+20:44:15.021 > Pool workers:1  poolHash:424.0K
+20:44:15.024 > WiFi: IoT 192.168.0.185
+20:44:15.104 >   Receiving: {"id":28,"error":null,"result":true}
+20:44:16.054 > >>> shares:0  valids:0  Khashes:16594  avg:0 KH/s
+20:44:16.057 > Pool workers:1  poolHash:424.0K
+20:44:16.060 > WiFi: IoT 192.168.0.185
+20:44:16.504 >   Sending  : {"id":29,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","934756","00000001","6928fe57","dacff73d"]}
+20:44:16.514 >    - Current diff share: 0.000269105076
+20:44:16.520 >    - Current pool diff : 0.000150000000
+20:44:16.523 >    - TX SHARE: 54a4e45eca624a68951aaf22e45dc0e5eaebc167b78c1e8212d2c0f6830e0000
+20:44:16.628 >   Receiving: {"id":29,"error":null,"result":true}
+20:44:17.091 > >>> shares:0  valids:0  Khashes:16922  avg:0 KH/s
+20:44:17.094 > Pool workers:1  poolHash:424.0K
+20:44:17.096 > WiFi: IoT 192.168.0.185
+20:44:18.126 > >>> shares:0  valids:0  Khashes:17315  avg:0 KH/s
+20:44:18.128 > Pool workers:1  poolHash:424.0K
+20:44:18.131 > WiFi: IoT 192.168.0.185
+20:44:19.161 > >>> shares:0  valids:0  Khashes:17643  avg:0 KH/s
+20:44:19.163 > Pool workers:1  poolHash:424.0K
+20:44:19.166 > WiFi: IoT 192.168.0.185
+20:44:19.779 >   Sending  : {"id":30,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","934756","00000001","6928fe57","dae12c25"]}
+20:44:19.790 >    - Current diff share: 0.001433077884
+20:44:19.796 >    - Current pool diff : 0.000150000000
+20:44:19.798 >    - TX SHARE: 3c0dbcbc1b9d1783b7727f4c51ea46d32619cc0f5570e87ee016c3c9b9020000
+20:44:19.904 >   Receiving: {"id":30,"error":null,"result":true}
+20:44:20.157 >   Sending  : {"id":31,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","934756","00000001","6928fe57","dae0c8f1"]}
+20:44:20.166 >    - Current diff share: 0.000195049245
+20:44:20.172 >    - Current pool diff : 0.000150000000
+20:44:20.175 >    - TX SHARE: e1249a23fba8f9f95fb5d6d3bc250d160dca0f9396912b2480e708d506140000
+20:44:20.197 > >>> shares:0  valids:0  Khashes:18036  avg:0 KH/s
+20:44:20.199 > Pool workers:1  poolHash:424.0K
+20:44:20.202 > WiFi: IoT 192.168.0.185
+20:44:20.282 >   Receiving: {"id":31,"error":null,"result":true}
+20:44:20.782 >   Sending  : {"id":32,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w1","934756","00000001","6928fe57","dae6084c"]}
+20:44:20.793 >    - Current diff share: 0.000391195097
+20:44:20.799 >    - Current pool diff : 0.000150000000
+20:44:20.802 >    - TX SHARE: ed71bbfae94becc2745a8acc9acb03cce133408b5caa417babbef13afc090000
+20:44:20.908 >   Receiving: {"id":32,"error":null,"result":true}
+20:44:21.233 > >>> shares:0  valids:0  Khashes:18364  avg:0 KH/s
+20:44:21.235 > Pool workers:1  poolHash:424.0K
+20:44:21.238 > WiFi: IoT 192.168.0.185
+20:44:22.268 > >>> shares:0  valids:0  Khashes:18691  avg:0 KH/s
+20:44:22.270 > Pool workers:1  poolHash:424.0K
+20:44:22.274 > WiFi: IoT 192.168.0.185
+20:44:23.303 > >>> shares:0  valids:0  Khashes:19085  avg:0 KH/s
+20:44:23.306 > Pool workers:1  poolHash:424.0K
+20:44:23.308 > WiFi: IoT 192.168.0.185
+20:44:24.342 > >>> shares:0  valids:0  Khashes:19412  avg:0 KH/s
+20:44:24.343 > Pool workers:1  poolHash:424.0K
+20:44:24.343 > WiFi: IoT 192.168.0.185
+20:44:24.759 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[0.0016]}
+20:44:24.764 >     Parsing Method [SET DIFFICULTY]
+20:44:24.767 >     difficulty: 0.001600000000
+20:44:24.975 >   Receiving: {"id":null,"method":"mining.notify","params":["934783","8d28ecc21f2bbedb79f0422857efdf1db77682ee0000460a0000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17033a1f0e5075626c69632d506f6f6c","ffffffff022ee4a7120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9eda6c99d282855e1561fc498a757117b9bbcc7056748e91919bf28e3ae74bbceea00000000",["b378ec327e00ba5fa05718722ee7d7b009c8e40a0fd84affcfc8a45ae7783032","a299055a0e49fec875ecdf191f9bd92bac7cfa56ca1f666d693ca4df87339073","94f446fce523a25ed0a26dc1bdee8c4031cf80424eb15c5200432315538fd996","0954f38838afc2781b2285b166bddcc6fe9422d1665f5cedce8c58066a6ba3c1","436fee78a39a24379a1ee38bf3a774291a2aafa31aa579969d7e255e102f3617","fd22f928655ea550845c8b10d3046db8064abad0cc2fafc1ec65bc0711716fe7","55255083086e24717eba7511bf1cea4c07d3417a3919972f5e6d040736004845","552237c1dc3af699b4653e038ecabc032007e530b9794fcd460fcf4377f9ba27","36997d8d0a21e09640cfa77a62e7e4daa7476693e26d7064605d1ddd93099a81","c9908923907934df454c6e9b25857393aecebc7d2a7159290f18491bcb2f8ec3","3f2a8dd78b56f1ff7e7eadc67f5d70218907cdf5f10e39d51d5c902198a3d835"],"20000000","1701e2a0","6928fe57",true]}
+20:44:25.077 >     Parsing Method [MINING NOTIFY]
+20:44:25.080 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+20:44:25.088 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17033a1f0e5075626c69632d506f6f6c837bfa4300000001ffffffff022ee4a7120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9eda6c99d282855e1561fc498a757117b9bbcc7056748e91919bf28e3ae74bbceea00000000
+20:44:25.116 >     merkle sha         : 3ee6df2aca67f40ed09a52d47bc726a437d7eadac3727fea8e9c170710b895b6
+20:44:25.373 > >>> shares:0  valids:0  Khashes:19776  avg:0 KH/s
+20:44:25.376 > Pool workers:1  poolHash:424.0K
+20:44:25.378 > WiFi: IoT 192.168.0.185
+20:44:25.409 > >>> shares:0  valids:0  Khashes:19776  avg:0 KH/s
+20:44:25.411 > Pool workers:1  poolHash:424.0K
+20:44:25.414 > WiFi: IoT 192.168.0.185
+20:44:26.444 > >>> shares:0  valids:0  Khashes:20103  avg:0 KH/s
+20:44:28.098 > 
+20:44:28.099 > ####### Pool Data OK!
+20:44:28.099 > Pool workers:1  poolHash:0.0000
+20:44:28.099 > WiFi: IoT 192.168.0.185
+20:44:28.231 > >>> shares:0  valids:0  Khashes:20627  avg:0 KH/s
+20:44:28.234 > Pool workers:1  poolHash:0.0000
+20:44:28.238 > WiFi: IoT 192.168.0.185
+20:44:29.267 > >>> shares:0  valids:0  Khashes:20955  avg:0 KH/s
+20:44:29.270 > Pool workers:1  poolHash:0.0000
+20:44:29.272 > WiFi: IoT 192.168.0.185
+20:44:30.301 > >>> shares:0  valids:0  Khashes:21348  avg:0 KH/s
+20:44:30.303 > Pool workers:1  poolHash:0.0000
+20:44:30.306 > WiFi: IoT 192.168.0.185
+20:44:31.336 > >>> shares:0  valids:0  Khashes:21676  avg:0 KH/s
+20:44:31.338 > Pool workers:1  poolHash:0.0000
+20:44:31.342 > WiFi: IoT 192.168.0.185
+20:44:32.371 > >>> shares:0  valids:0  Khashes:22069  avg:0 KH/s
+20:44:32.373 > Pool workers:1  poolHash:0.0000
+20:44:32.376 > WiFi: IoT 192.168.0.185
+20:44:33.406 > >>> shares:0  valids:0  Khashes:22397  avg:0 KH/s
+20:44:33.409 > Pool workers:1  poolHash:0.0000
+20:44:33.411 > WiFi: IoT 192.168.0.185
+20:44:34.441 > >>> shares:0  valids:0  Khashes:22725  avg:0 KH/s
+20:44:34.444 > Pool workers:1  poolHash:0.0000
+20:44:34.446 > WiFi: IoT 192.168.0.185
+20:44:35.476 > >>> shares:0  valids:0  Khashes:23118  avg:0 KH/s
+20:44:35.479 > Pool workers:1  poolHash:0.0000
+20:44:35.481 > WiFi: IoT 192.168.0.185
+20:44:36.511 > >>> shares:0  valids:0  Khashes:23446  avg:0 KH/s
+20:44:36.513 > Pool workers:1  poolHash:0.0000
+20:44:36.516 > WiFi: IoT 192.168.0.185
+20:44:37.546 > >>> shares:0  valids:0  Khashes:23773  avg:0 KH/s
+20:44:37.549 > Pool workers:1  poolHash:0.0000
+20:44:37.553 > WiFi: IoT 192.168.0.185
+20:44:38.581 > >>> shares:0  valids:0  Khashes:24166  avg:0 KH/s
+20:44:38.583 > Pool workers:1  poolHash:0.0000
+20:44:38.586 > WiFi: IoT 192.168.0.185
+20:44:39.616 > >>> shares:0  valids:0  Khashes:24494  avg:0 KH/s
+20:44:39.619 > Pool workers:1  poolHash:0.0000
+20:44:39.621 > WiFi: IoT 192.168.0.185
+20:44:40.654 > >>> shares:0  valids:0  Khashes:24822  avg:0 KH/s
+20:44:40.659 > Pool workers:1  poolHash:0.0000
+20:44:40.659 > WiFi: IoT 192.168.0.185
+20:44:41.686 > >>> shares:0  valids:0  Khashes:25215  avg:0 KH/s
+20:44:41.688 > Pool workers:1  poolHash:0.0000
+20:44:41.692 > WiFi: IoT 192.168.0.185
+20:44:42.721 > >>> shares:0  valids:0  Khashes:25543  avg:0 KH/s
+20:44:42.724 > Pool workers:1  poolHash:0.0000
+20:44:42.726 > WiFi: IoT 192.168.0.185
+20:44:43.757 > >>> shares:0  valids:0  Khashes:25936  avg:0 KH/s
+20:44:43.762 > Pool workers:1  poolHash:0.0000
+20:44:43.762 > WiFi: IoT 192.168.0.185
+20:44:44.791 > >>> shares:0  valids:0  Khashes:26264  avg:0 KH/s
+20:44:44.794 > Pool workers:1  poolHash:0.0000
+20:44:44.796 > WiFi: IoT 192.168.0.185
+20:44:45.828 > >>> shares:0  valids:0  Khashes:26657  avg:0 KH/s
+20:44:45.829 > Pool workers:1  poolHash:0.0000
+20:44:45.831 > WiFi: IoT 192.168.0.185
+20:44:46.861 > >>> shares:0  valids:0  Khashes:26984  avg:0 KH/s
+20:44:46.866 > Pool workers:1  poolHash:0.0000
+20:44:46.866 > WiFi: IoT 192.168.0.185
+20:44:47.896 > >>> shares:0  valids:0  Khashes:27312  avg:0 KH/s
+20:44:47.899 > Pool workers:1  poolHash:0.0000
+20:44:47.901 > WiFi: IoT 192.168.0.185
+20:44:48.931 > >>> shares:0  valids:0  Khashes:27705  avg:0 KH/s
+20:44:48.933 > Pool workers:1  poolHash:0.0000
+20:44:48.936 > WiFi: IoT 192.168.0.185
+20:44:49.966 > >>> shares:0  valids:0  Khashes:28033  avg:0 KH/s
+20:44:49.969 > Pool workers:1  poolHash:0.0000
+20:44:49.971 > WiFi: IoT 192.168.0.185
+20:44:51.001 > >>> shares:0  valids:0  Khashes:28426  avg:0 KH/s
+20:44:51.003 > Pool workers:1  poolHash:0.0000
+20:44:51.006 > WiFi: IoT 192.168.0.185
+20:44:52.036 > >>> shares:0  valids:0  Khashes:28754  avg:0 KH/s
+20:44:52.038 > Pool workers:1  poolHash:0.0000
+20:44:52.041 > WiFi: IoT 192.168.0.185
+20:44:52.143 >   Receiving: {"id":null,"method":"mining.notify","params":["9354c2","8d28ecc21f2bbedb79f0422857efdf1db77682ee0000460a0000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17033a1f0e5075626c69632d506f6f6c","ffffffff027321a9120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9edf9248c8630a3df1348f660f6c4ff8f03f78d6ca8f62a8ce06fa2b01b8b4e544900000000",["35a7cce2035b49a1d8667fafa937a60281970dc225b7ba3c4bc724a562199aac","a4fec281b6f0a542fce681b5c3d80f58317c12343bb63422da835f207196bb76","4a36cae0a6ed540491f44528057c735bc08eb65ce74509de649f54f3bb5b27b5","bcb09a8949076bdcfab80b08cae63b77e54c5000d80056bf8026eaf2731847f1","f731a37a7ac41995cd7a9039fe14dc638cc7251cae8a69b9af37685d9756ed43","cd280f0e424b3c0cf81e3db8d03e1e73fe4799f7f3e421c3cbb9f352095b33df","e4fa35c2cfd43cd338ee29275bfb282bee2ebc76601f3577712fb0ca4e6b09d2","9bebc76732d68193bddbe0542c14f061527204876688af35cbbc05ea19077b2b","5af7f9cf33411fa87b9a6f2f39ffca36ef39d798b5bc9f2d2cfe846e4b5ffebc","a04a58424dde54cddf3fff03f49ecf64e8f9cd5d99ff90266505f2036b077d42","b374833e2de218d97288ed7b3242ef69c75ed60e78621e030b9c70e95528b5a1"],"20000000","1701e2a0","6928fe92",false]}
+20:44:52.245 >     Parsing Method [MINING NOTIFY]
+20:44:52.248 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+20:44:52.257 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17033a1f0e5075626c69632d506f6f6c837bfa4300000001ffffffff027321a9120000000016001419945b377ea66da28a0a2eca10bce27dad81610a0000000000000000266a24aa21a9edf9248c8630a3df1348f660f6c4ff8f03f78d6ca8f62a8ce06fa2b01b8b4e544900000000
+20:44:52.284 >     merkle sha         : 445075c1c6c6bcc4cd1f1c518e71dc8003169dd2016d502a04404df92f8de84e
+20:44:53.071 > >>> shares:0  valids:0  Khashes:29072  avg:0 KH/s
+20:44:53.079 > Pool workers:1  poolHash:0.0000
+20:44:53.079 > WiFi: IoT 192.168.0.185
+20:44:54.107 > >>> shares:0  valids:0  Khashes:29465  avg:0 KH/s
+20:44:54.110 > Pool workers:1  poolHash:0.0000
+20:44:54.112 > WiFi: IoT 192.168.0.185

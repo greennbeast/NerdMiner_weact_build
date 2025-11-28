@@ -1,0 +1,1866 @@
+19:38:47.049 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+19:38:47.049 > DEBUG: Successfully read from flash
+19:38:47.049 > DEBUG: Raw flash data: '��������������������������������������������������������������������������������������������������������������������������������<TH��\A?�'
+19:38:47.049 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+19:38:47.049 > DEBUG: Using default AP name
+19:38:47.049 > SPIFS: Mounting File System...
+19:38:47.049 > E (2227) SPIFFS: mount failed, -10025
+19:38:47.049 > [  2235][E][SPIFFS.cpp:89] begin(): Mounting SPIFFS failed! Error: -1
+19:38:47.049 > E (2229) SPIFFS: mount failed, -10025
+19:38:47.049 > [  2237][E][esp32-hal-misc.c:128] disableCore0WDT(): Failed to remove Core 0 IDLE task from WDT
+19:38:49.807 > SPIFS: Mounted
+19:38:49.866 > SPIFS: No config file available!
+19:38:49.869 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+19:38:49.876 > AllDone: 
+19:38:49.876 > Setup...
+19:38:49.876 > *wm:StartAP with SSID:  NerdMinerAP
+19:38:50.944 > *wm:AP IP address: 192.168.4.1
+19:38:50.946 > Entered Configuration Mode
+19:38:50.946 > Setup...
+19:38:50.949 > Config SSID: NerdMinerAP
+19:38:50.952 > Config IP Address: 192.168.4.1
+19:38:50.956 > *wm:Starting Web Portal 
+19:39:19.763 > [ 35363][E][WebServer.cpp:648] _handleRequest(): request handler not found
+19:39:43.567 > *wm:5 networks found
+19:40:37.168 > Should save config
+19:40:39.180 > *wm:Connecting to NEW AP: IoT
+19:40:39.907 > *wm:Connect to new AP [SUCCESS] 
+19:40:39.909 > *wm:Got IP Address: 
+19:40:39.909 > *wm:192.168.0.185 
+19:40:39.913 > Should save config
+19:40:40.935 > *wm:config portal exiting 
+19:40:40.936 > failed to connect and hit timeout
+19:40:40.940 > SPIFS: Already Mounted
+19:40:40.941 > SPIFS: Saving configuration.
+19:40:41.061 > {
+19:40:41.061 >   "poolString": "public-pool.io",
+19:40:41.064 >   "portNumber": 21496,
+19:40:41.064 >   "poolPassword": "x",
+19:40:41.066 >   "btcString": "bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3",
+19:40:41.072 >   "gmtZone": 2,
+19:40:41.074 >   "saveStatsToNVS": false,
+19:40:41.078 >   "invertColors": false,
+19:40:41.081 >   "Brightness": 250
+19:40:41.082 > }
+19:40:44.135 > ets Jul 29 2019 12:21:46
+19:40:44.136 > 
+19:40:44.136 > rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:40:44.141 > configsip: 0, SPIWP:0xee
+19:40:44.144 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:40:44.149 > mode:DIO, clock div:2
+19:40:44.152 > load:0x3fff0030,len:1184
+19:40:44.155 > load:0x40078000,len:13232
+19:40:44.158 > load:0x40080400,len:3028
+19:40:44.158 > entry 0x400805e4
+19:40:44.693 > NerdMiner v2 starting......
+19:40:44.694 > No display driver initialized
+19:40:44.697 > Initializing...
+19:40:46.698 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+19:40:46.700 > DEBUG: Successfully read from flash
+19:40:46.703 > DEBUG: Raw flash data: '���������������������������������������������������������������������������������������������������������������������������������*��\A?�'
+19:40:46.717 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+19:40:46.722 > DEBUG: Using default AP name
+19:40:46.816 > SPIFS: Mounting File System...
+19:40:46.898 > SPIFS: Mounted
+19:40:46.901 > SPIFS: Loading config file
+19:40:46.901 > {
+19:40:46.901 >   "poolString": "public-pool.io",
+19:40:46.901 >   "portNumber": 21496,
+19:40:46.902 >   "poolPassword": "x",
+19:40:46.907 >   "btcString": "bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3",
+19:40:46.910 >   "gmtZone": 2,
+19:40:46.910 >   "saveStatsToNVS": false,
+19:40:46.913 >   "invertColors": false,
+19:40:46.916 >   "Brightness": 250
+19:40:46.919 > }
+19:40:46.919 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+19:40:46.924 > AllDone: 
+19:40:46.924 > *wm:AutoConnect 
+19:40:46.927 > *wm:Connecting to SAVED AP: IoT
+19:40:47.536 > *wm:AutoConnect: SUCCESS 
+19:40:47.536 > *wm:STA IP Address: 192.168.0.185
+19:40:47.539 > 
+19:40:47.541 > WiFi connected
+19:40:47.546 > IP address: 192.168.0.185
+19:40:47.546 > PoolString: public-pool.io
+19:40:47.547 > portNumber: 21496
+19:40:47.547 > poolPassword: x
+19:40:47.549 > btcString: bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3
+19:40:47.555 > TimeZone fromUTC: 2
+19:40:47.555 > PoolString: public-pool.io
+19:40:47.558 > portNumber: 21496
+19:40:47.560 > poolPassword: x
+19:40:47.560 > btcString: bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3
+19:40:47.566 > TimeZone fromUTC: 2
+19:40:47.569 > 
+19:40:47.569 > Initiating tasks...
+19:40:47.572 > [MONITOR] started
+19:40:47.572 > 
+19:40:47.572 > 
+19:40:47.572 > [WORKER] Started. Running (Stratum) on core 1
+19:40:47.577 > Client not connected, trying to connect...
+19:40:47.580 > [MINER] 0 Started minerWorkerHwEsp32D Task!
+19:40:47.585 > [MINER] 1 Started minerWorkerSw Task!
+19:40:47.588 > TimeClient setup done
+19:40:47.588 > CONNECTED - Current ip: 192.168.0.185
+19:40:47.641 > Resolved DNS and save ip (first time) got: 38.51.144.240
+19:40:48.019 > [WORKER] ==> Mining subscribe
+19:40:48.019 >   Sending  : {"id": 1, "method": "mining.subscribe", "params": ["NerdMinerV2/V1.8.3"]}
+19:40:48.028 > 
+19:40:48.028 > TimeClient NTPupdateTime >>> Completed 0 share(s), 0 Khashes, avg. hashrate 0.00 KH/s
+19:40:48.035 > >>> Valid blocks: 0
+19:40:48.037 > >>> Block templates: 0
+19:40:48.037 > >>> Best difficulty: 0.0000
+19:40:48.040 > >>> 32Bit shares: 0
+19:40:48.043 > >>> Temperature: 61
+19:40:48.043 > >>> Total MHashes: 0
+19:40:48.046 > >>> Time mining: 0  00:00:03
+19:40:48.049 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>true / subscribed>false / wificonnected>true
+19:40:48.344 >   Receiving: {"id":1,"error":null,"result":[[["mining.notify","fb4f086f"]],"fb4f086f",4]}
+19:40:48.349 >     sub_details: fb4f086f
+19:40:48.352 >     extranonce1: fb4f086f
+19:40:48.355 >     extranonce2_size: 4
+19:40:48.357 > [WORKER] ==> Autorize work
+19:40:48.360 >   Sending  : {"params": ["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3", "x"], "id": 2, "method": "mining.authorize"}
+19:40:48.369 > 
+19:40:48.572 >   Sending  : {"id":3,"method":"mining.suggest_difficulty","params":[0.00015]}
+19:40:48.628 >   Receiving: {"id":2,"error":null,"result":true}
+19:40:48.657 > >>> Completed 0 share(s), 0 Khashes, avg. hashrate 0.00 KH/s
+19:40:48.659 > >>> Valid blocks: 0
+19:40:48.662 > >>> Block templates: 0
+19:40:48.668 > >>> Best difficulty: 0.0000
+19:40:48.668 > >>> 32Bit shares: 0
+19:40:48.668 > >>> Temperature: 53
+19:40:48.670 > >>> Total MHashes: 0
+19:40:48.673 > >>> Time mining: 0  00:00:04
+19:40:48.673 > >>> [i] Miner: newJob>true / inRun>true) - Client: connected>true / subscribed>true / wificonnected>true
+19:40:48.932 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[100000]}
+19:40:48.936 >     Parsing Method [SET DIFFICULTY]
+19:40:48.939 >     difficulty: 100000.000000000000
+19:40:48.945 >   Receiving: {"id":null,"method":"mining.notify","params":["4160c1","73864d647fc710c7639e767dbdcdd179eb3507d000014d350000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6c","ffffffff0297e9bb1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9ed94000f57628ac9f2fe1f03d41e8e60f053bf477b2a6d6d2ce4cb28ac2d1fa4cd00000000",["4dcb1e7b60d9dc2125cf27b659f210cee8f61354b97a48c5ec9d1361596b4b82","78c8ab16cc7a2028cdc78f69993d65ca1003d08bafe246585d23af17ad2f715b","6dbff74608160c57aaba1712c99e5b9b842362f1ca163a28c71b35f65652064f","4fe323ca5e8157684cae827c628394111ca4899b9db592025b09f9460d2038e3","abfc3b6251835cd7ed7b4d2cb4cd23a5703ae8730487f67786fd657e7705c9ac","185f12ea523c61a6e8998ae06bf9a432deed0af0a40a329384011c05a8f8fbc9","3a0eceb51757f2808cb982e7e8c4dbbc7f3e9f015d01faca86ff6d600c240a0e","556ee2410323186b2fce11365b4793e8de87379d15295cebaff8e930e0c402a8","ce0c850551a349405e9e70ad0c7c3cbbaace5deaf7606b90dd18208ecc7e077d","c3c2c370e5c2a7d8ce42ee1405937627e6de4ad8c8125a52042c90bb755c548f","071d0ef368a16bc9af4fb730c01efb5f6af14de9081163e3ecc67ff7ec8570bc","05f797237d1fb03ca3939af3163b8d04d34f7fd5eb306481228a20e913c94f5c"],"20000000","1701d936","6924faf8",true]}
+19:40:49.054 >     Parsing Method [MINING NOTIFY]
+19:40:49.059 >     target: 00000000000000000001d9360000000000000000000000000000000000000000
+19:40:49.065 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6cfb4f086f00000001ffffffff0297e9bb1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9ed94000f57628ac9f2fe1f03d41e8e60f053bf477b2a6d6d2ce4cb28ac2d1fa4cd00000000
+19:40:49.093 >     merkle sha         : 7498253d7d4afeb566b2f05ed59cb340ba10a8da57b7f765b8a667435ab78379
+19:40:49.197 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[0.00015]}
+19:40:49.203 >     Parsing Method [SET DIFFICULTY]
+19:40:49.205 >     difficulty: 0.000150000000
+19:40:49.680 > >>> Completed 0 share(s), 184 Khashes, avg. hashrate 59.95 KH/s
+19:40:49.686 > >>> Valid blocks: 0
+19:40:49.686 > >>> Block templates: 1
+19:40:49.688 > >>> Best difficulty: 0.0000
+19:40:49.691 > >>> 32Bit shares: 0
+19:40:49.691 > >>> Temperature: 53
+19:40:49.693 > >>> Total MHashes: 0
+19:40:49.696 > >>> Time mining: 0  00:00:05
+19:40:50.662 >   Sending  : {"id":4,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","da5bd55d"]}
+19:40:50.677 >    - Current diff share: 0.000166580683
+19:40:50.680 >    - Current pool diff : 0.000150000000
+19:40:50.683 >    - TX SHARE: 8eec0fd637b94e36b5316d92a2a6083b5ef9c5f5736073c2d06d630173170000
+19:40:50.691 > >>> Completed 0 share(s), 536 Khashes, avg. hashrate 131.9 KH/s
+19:40:50.696 > >>> Valid blocks: 0
+19:40:50.696 > >>> Block templates: 1
+19:40:50.699 > >>> Best difficulty: 0.0000
+19:40:50.702 > >>> 32Bit shares: 0
+19:40:50.702 > >>> Temperature: 61
+19:40:50.705 > >>> Total MHashes: 0
+19:40:50.708 > >>> Time mining: 0  00:00:06
+19:40:50.740 >   Sending  : {"id":5,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","da5da593"]}
+19:40:50.751 >    - Current diff share: 0.000206486166
+19:40:50.754 >    - Current pool diff : 0.000150000000
+19:40:50.759 >    - TX SHARE: 5f65ba885cc8399ce635973c8566b7039be1c19ded692601c48e94ddea120000
+19:40:50.815 >   Sending  : {"id":6,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","da5de968"]}
+19:40:50.826 >    - Current diff share: 0.000663227294
+19:40:50.828 >    - Current pool diff : 0.000150000000
+19:40:50.834 >    - TX SHARE: 7bb7c2344892895a3b97c374c3cde4dd6119c1b3093c8b68e86376c1e3050000
+19:40:51.090 >   Receiving: {"id":4,"error":null,"result":true}
+19:40:51.343 >   Receiving: {"id":5,"error":null,"result":true}
+19:40:51.695 >   Receiving: {"id":6,"error":null,"result":true}
+19:40:51.704 > >>> Completed 0 share(s), 901 Khashes, avg. hashrate 177.7 KH/s
+19:40:51.709 > >>> Valid blocks: 0
+19:40:51.709 > >>> Block templates: 1
+19:40:51.712 > >>> Best difficulty: 0.0000
+19:40:51.715 > >>> 32Bit shares: 0
+19:40:51.715 > >>> Temperature: 62
+19:40:51.718 > >>> Total MHashes: 0
+19:40:51.720 > >>> Time mining: 0  00:00:07
+19:40:52.715 > >>> Completed 0 share(s), 1253 Khashes, avg. hashrate 206.0 KH/s
+19:40:52.721 > >>> Valid blocks: 0
+19:40:52.721 > >>> Block templates: 1
+19:40:52.724 > >>> Best difficulty: 0.0000
+19:40:52.727 > >>> 32Bit shares: 0
+19:40:52.727 > >>> Temperature: 53
+19:40:52.729 > >>> Total MHashes: 0
+19:40:52.732 > >>> Time mining: 0  00:00:08
+19:40:53.728 > >>> Completed 0 share(s), 1622 Khashes, avg. hashrate 228.7 KH/s
+19:40:53.733 > >>> Valid blocks: 0
+19:40:53.733 > >>> Block templates: 1
+19:40:53.736 > >>> Best difficulty: 0.0000
+19:40:53.739 > >>> 32Bit shares: 0
+19:40:53.739 > >>> Temperature: 53
+19:40:53.741 > >>> Total MHashes: 0
+19:40:53.744 > >>> Time mining: 0  00:00:09
+19:40:54.499 >   Sending  : {"id":7,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","da705c04"]}
+19:40:54.514 >    - Current diff share: 0.000221737257
+19:40:54.517 >    - Current pool diff : 0.000150000000
+19:40:54.519 >    - TX SHARE: e32715443b8b77bbf87937c6256ee4d77e2e50a3ea29093b29a9f0c59d110000
+19:40:54.728 >   Receiving: {"id":7,"error":null,"result":true}
+19:40:54.740 > >>> Completed 0 share(s), 1974 Khashes, avg. hashrate 243.6 KH/s
+19:40:54.747 > >>> Valid blocks: 0
+19:40:54.747 > >>> Block templates: 1
+19:40:54.748 > >>> Best difficulty: 0.0000
+19:40:54.751 > >>> 32Bit shares: 0
+19:40:54.751 > >>> Temperature: 62
+19:40:54.753 > >>> Total MHashes: 0
+19:40:54.756 > >>> Time mining: 0  00:00:10
+19:40:55.186 >   Sending  : {"id":8,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","da75b562"]}
+19:40:55.194 >    - Current diff share: 0.000216710572
+19:40:55.196 >    - Current pool diff : 0.000150000000
+19:40:55.201 >    - TX SHARE: 864b92b0c2e2948db34cb981210859b135cca92ddfcb087846720e6106120000
+19:40:55.360 >   Receiving: {"id":8,"error":null,"result":true}
+19:40:55.752 > >>> Completed 0 share(s), 2322 Khashes, avg. hashrate 254.7 KH/s
+19:40:55.759 > >>> Valid blocks: 0
+19:40:55.759 > >>> Block templates: 1
+19:40:55.761 > >>> Best difficulty: 0.0000
+19:40:55.763 > >>> 32Bit shares: 0
+19:40:55.763 > >>> Temperature: 53
+19:40:55.766 > >>> Total MHashes: 0
+19:40:55.769 > >>> Time mining: 0  00:00:11
+19:40:56.764 > >>> Completed 0 share(s), 2674 Khashes, avg. hashrate 264.0 KH/s
+19:40:56.770 > >>> Valid blocks: 0
+19:40:56.770 > >>> Block templates: 1
+19:40:56.773 > >>> Best difficulty: 0.0000
+19:40:56.775 > >>> 32Bit shares: 0
+19:40:56.775 > >>> Temperature: 53
+19:40:56.777 > >>> Total MHashes: 0
+19:40:56.780 > >>> Time mining: 0  00:00:12
+19:40:57.776 > >>> Completed 0 share(s), 3059 Khashes, avg. hashrate 302.1 KH/s
+19:40:57.781 > >>> Valid blocks: 0
+19:40:57.781 > >>> Block templates: 1
+19:40:57.785 > >>> Best difficulty: 0.0000
+19:40:57.787 > >>> 32Bit shares: 0
+19:40:57.787 > >>> Temperature: 53
+19:40:57.789 > >>> Total MHashes: 0
+19:40:57.792 > >>> Time mining: 0  00:00:13
+19:40:58.791 > >>> Completed 0 share(s), 3411 Khashes, avg. hashrate 336.9 KH/s
+19:40:58.793 > >>> Valid blocks: 0
+19:40:58.793 > >>> Block templates: 1
+19:40:58.798 > >>> Best difficulty: 0.0000
+19:40:58.800 > >>> 32Bit shares: 0
+19:40:58.800 > >>> Temperature: 53
+19:40:58.801 > >>> Total MHashes: 0
+19:40:58.804 > >>> Time mining: 0  00:00:14
+19:40:59.801 > >>> Completed 0 share(s), 3764 Khashes, avg. hashrate 353.8 KH/s
+19:40:59.805 > >>> Valid blocks: 0
+19:40:59.805 > >>> Block templates: 1
+19:40:59.810 > >>> Best difficulty: 0.0000
+19:40:59.811 > >>> 32Bit shares: 0
+19:40:59.811 > >>> Temperature: 53
+19:40:59.814 > >>> Total MHashes: 0
+19:40:59.816 > >>> Time mining: 0  00:00:15
+19:41:00.812 > >>> Completed 0 share(s), 4112 Khashes, avg. hashrate 353.4 KH/s
+19:41:00.819 > >>> Valid blocks: 0
+19:41:00.819 > >>> Block templates: 1
+19:41:00.821 > >>> Best difficulty: 0.0000
+19:41:00.823 > >>> 32Bit shares: 0
+19:41:00.823 > >>> Temperature: 53
+19:41:00.827 > >>> Total MHashes: 0
+19:41:00.828 > >>> Time mining: 0  00:00:16
+19:41:01.824 > >>> Completed 0 share(s), 4485 Khashes, avg. hashrate 354.2 KH/s
+19:41:01.829 > >>> Valid blocks: 0
+19:41:01.829 > >>> Block templates: 1
+19:41:01.832 > >>> Best difficulty: 0.0000
+19:41:01.835 > >>> 32Bit shares: 0
+19:41:01.835 > >>> Temperature: 53
+19:41:01.837 > >>> Total MHashes: 0
+19:41:01.840 > >>> Time mining: 0  00:00:17
+19:41:02.835 > >>> Completed 0 share(s), 4853 Khashes, avg. hashrate 355.7 KH/s
+19:41:02.842 > >>> Valid blocks: 0
+19:41:02.842 > >>> Block templates: 1
+19:41:02.844 > >>> Best difficulty: 0.0000
+19:41:02.847 > >>> 32Bit shares: 0
+19:41:02.847 > >>> Temperature: 53
+19:41:02.851 > >>> Total MHashes: 0
+19:41:02.852 > >>> Time mining: 0  00:00:18
+19:41:03.848 > >>> Completed 0 share(s), 5201 Khashes, avg. hashrate 353.7 KH/s
+19:41:03.853 > >>> Valid blocks: 0
+19:41:03.853 > >>> Block templates: 1
+19:41:03.856 > >>> Best difficulty: 0.0000
+19:41:03.858 > >>> 32Bit shares: 0
+19:41:03.858 > >>> Temperature: 53
+19:41:03.861 > >>> Total MHashes: 0
+19:41:03.864 > >>> Time mining: 0  00:00:19
+19:41:04.021 >   Sending  : {"id":9,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","daa5906e"]}
+19:41:04.036 >    - Current diff share: 0.000211985982
+19:41:04.039 >    - Current pool diff : 0.000150000000
+19:41:04.042 >    - TX SHARE: 1dfc1003f5169b2e8544f90cc116a6f879a24f22f15dd3900abb98386d120000
+19:41:04.301 >   Receiving: {"id":9,"error":null,"result":true}
+19:41:04.860 > >>> Completed 0 share(s), 5570 Khashes, avg. hashrate 355.3 KH/s
+19:41:04.866 > >>> Valid blocks: 0
+19:41:04.866 > >>> Block templates: 1
+19:41:04.869 > >>> Best difficulty: 0.0000
+19:41:04.871 > >>> 32Bit shares: 0
+19:41:04.871 > >>> Temperature: 61
+19:41:04.874 > >>> Total MHashes: 0
+19:41:04.877 > >>> Time mining: 0  00:00:20
+19:41:05.872 > >>> Completed 0 share(s), 5922 Khashes, avg. hashrate 355.7 KH/s
+19:41:05.878 > >>> Valid blocks: 0
+19:41:05.878 > >>> Block templates: 1
+19:41:05.881 > >>> Best difficulty: 0.0000
+19:41:05.883 > >>> 32Bit shares: 0
+19:41:05.883 > >>> Temperature: 53
+19:41:05.885 > >>> Total MHashes: 0
+19:41:05.888 > >>> Time mining: 0  00:00:21
+19:41:06.885 > >>> Completed 0 share(s), 6275 Khashes, avg. hashrate 355.8 KH/s
+19:41:06.889 > >>> Valid blocks: 0
+19:41:06.889 > >>> Block templates: 1
+19:41:06.894 > >>> Best difficulty: 0.0000
+19:41:06.895 > >>> 32Bit shares: 0
+19:41:06.895 > >>> Temperature: 53
+19:41:06.898 > >>> Total MHashes: 0
+19:41:06.901 > >>> Time mining: 0  00:00:22
+19:41:07.706 >   Sending  : {"id":10,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dab94b3a"]}
+19:41:07.721 >    - Current diff share: 0.000834137484
+19:41:07.724 >    - Current pool diff : 0.000150000000
+19:41:07.727 >    - TX SHARE: 9e7b73ce849a36f99c71bc8e88436e0918f2442dd5d3f0fca12d29d3ae040000
+19:41:07.896 > >>> Completed 0 share(s), 6643 Khashes, avg. hashrate 354.2 KH/s
+19:41:07.901 > >>> Valid blocks: 0
+19:41:07.901 > >>> Block templates: 1
+19:41:07.904 > >>> Best difficulty: 0.0000
+19:41:07.907 > >>> 32Bit shares: 0
+19:41:07.907 > >>> Temperature: 53
+19:41:07.909 > >>> Total MHashes: 0
+19:41:07.912 > >>> Time mining: 0  00:00:23
+19:41:07.936 >   Receiving: {"id":10,"error":null,"result":true}
+19:41:08.909 > >>> Completed 0 share(s), 6991 Khashes, avg. hashrate 353.8 KH/s
+19:41:08.914 > >>> Valid blocks: 0
+19:41:08.914 > >>> Block templates: 1
+19:41:08.918 > >>> Best difficulty: 0.0000
+19:41:08.919 > >>> 32Bit shares: 0
+19:41:08.919 > >>> Temperature: 53
+19:41:08.922 > >>> Total MHashes: 0
+19:41:08.925 > >>> Time mining: 0  00:00:24
+19:41:09.920 > >>> Completed 0 share(s), 7344 Khashes, avg. hashrate 353.8 KH/s
+19:41:09.927 > >>> Valid blocks: 0
+19:41:09.927 > >>> Block templates: 1
+19:41:09.931 > >>> Best difficulty: 0.0000
+19:41:09.931 > >>> 32Bit shares: 0
+19:41:09.931 > >>> Temperature: 53
+19:41:09.934 > >>> Total MHashes: 0
+19:41:09.936 > >>> Time mining: 0  00:00:25
+19:41:10.441 >   Sending  : {"id":11,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dac68a69"]}
+19:41:10.454 >    - Current diff share: 0.000199558114
+19:41:10.459 >    - Current pool diff : 0.000150000000
+19:41:10.462 >    - TX SHARE: bf64998e41255a728b5e5b0ce68eb0aa3feba9cfc38c0c1ad4eac1fe92130000
+19:41:10.670 >   Sending  : {"id":12,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dac92c1d"]}
+19:41:10.680 >    - Current diff share: 0.000163564091
+19:41:10.685 >    - Current pool diff : 0.000150000000
+19:41:10.688 >    - TX SHARE: 5466111065c62386f4e3ad2680589be326b58fddaf30ed385efad3b7e1170000
+19:41:10.744 >   Receiving: {"id":11,"error":null,"result":true}
+19:41:10.932 > >>> Completed 0 share(s), 7696 Khashes, avg. hashrate 354.2 KH/s
+19:41:10.938 > >>> Valid blocks: 0
+19:41:10.938 > >>> Block templates: 1
+19:41:10.940 > >>> Best difficulty: 0.0000
+19:41:10.943 > >>> 32Bit shares: 0
+19:41:10.943 > >>> Temperature: 53
+19:41:10.946 > >>> Total MHashes: 0
+19:41:10.949 > >>> Time mining: 0  00:00:26
+19:41:11.049 >   Receiving: {"id":12,"error":null,"result":true}
+19:41:11.944 > >>> Completed 0 share(s), 8065 Khashes, avg. hashrate 353.8 KH/s
+19:41:11.950 > >>> Valid blocks: 0
+19:41:11.950 > >>> Block templates: 1
+19:41:11.952 > >>> Best difficulty: 0.0000
+19:41:11.955 > >>> 32Bit shares: 0
+19:41:11.955 > >>> Temperature: 61
+19:41:11.958 > >>> Total MHashes: 0
+19:41:11.961 > >>> Time mining: 0  00:00:27
+19:41:12.956 > >>> Completed 0 share(s), 8433 Khashes, avg. hashrate 353.8 KH/s
+19:41:12.962 > >>> Valid blocks: 0
+19:41:12.962 > >>> Block templates: 1
+19:41:12.966 > >>> Best difficulty: 0.0000
+19:41:12.967 > >>> 32Bit shares: 0
+19:41:12.967 > >>> Temperature: 61
+19:41:12.970 > >>> Total MHashes: 0
+19:41:12.973 > >>> Time mining: 0  00:00:28
+19:41:13.969 > >>> Completed 0 share(s), 8785 Khashes, avg. hashrate 354.2 KH/s
+19:41:13.974 > >>> Valid blocks: 0
+19:41:13.974 > >>> Block templates: 1
+19:41:13.977 > >>> Best difficulty: 0.0000
+19:41:13.979 > >>> 32Bit shares: 0
+19:41:13.979 > >>> Temperature: 53
+19:41:13.982 > >>> Total MHashes: 0
+19:41:13.984 > >>> Time mining: 0  00:00:29
+19:41:14.907 >   Sending  : {"id":13,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dadffbf6"]}
+19:41:14.919 >    - Current diff share: 0.000439816762
+19:41:14.925 >    - Current pool diff : 0.000150000000
+19:41:14.928 >    - TX SHARE: e3b9ef39a6e00281e56d33206e58cec6e3747fe179763a801732b3a3e1080000
+19:41:14.980 > >>> Completed 0 share(s), 9117 Khashes, avg. hashrate 350.5 KH/s
+19:41:14.986 > >>> Valid blocks: 0
+19:41:14.986 > >>> Block templates: 1
+19:41:14.989 > >>> Best difficulty: 0.0000
+19:41:14.991 > >>> 32Bit shares: 0
+19:41:14.991 > >>> Temperature: 53
+19:41:14.994 > >>> Total MHashes: 0
+19:41:14.997 > >>> Time mining: 0  00:00:30
+19:41:15.000 >   Sending  : {"id":14,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dae04bfb"]}
+19:41:15.011 >    - Current diff share: 0.000203895852
+19:41:15.016 >    - Current pool diff : 0.000150000000
+19:41:15.019 >    - TX SHARE: 2de09e85725bcf0985d3c89d10b36107dc174f51c85d4d4e575ecb6328130000
+19:41:15.126 >   Receiving: {"id":13,"error":null,"result":true}
+19:41:15.428 >   Receiving: {"id":14,"error":null,"result":true}
+19:41:15.530 >   Sending  : {"id":15,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","dae19922"]}
+19:41:15.543 >    - Current diff share: 0.000178502013
+19:41:15.548 >    - Current pool diff : 0.000150000000
+19:41:15.550 >    - TX SHARE: 79e4619e8ea0d712645f63d27b8b54605bd867b85198f39bb39a9d17e2150000
+19:41:15.760 >   Receiving: {"id":15,"error":null,"result":true}
+19:41:15.994 > >>> Completed 0 share(s), 9486 Khashes, avg. hashrate 352.2 KH/s
+19:41:15.998 > >>> Valid blocks: 0
+19:41:15.998 > >>> Block templates: 1
+19:41:16.006 > >>> Best difficulty: 0.0000
+19:41:16.006 > >>> 32Bit shares: 0
+19:41:16.006 > >>> Temperature: 53
+19:41:16.006 > >>> Total MHashes: 0
+19:41:16.009 > >>> Time mining: 0  00:00:31
+19:41:17.004 > >>> Completed 0 share(s), 9838 Khashes, avg. hashrate 352.1 KH/s
+19:41:17.011 > >>> Valid blocks: 0
+19:41:17.011 > >>> Block templates: 1
+19:41:17.013 > >>> Best difficulty: 0.0000
+19:41:17.015 > >>> 32Bit shares: 0
+19:41:17.015 > >>> Temperature: 53
+19:41:17.019 > >>> Total MHashes: 0
+19:41:17.021 > >>> Time mining: 0  00:00:32
+19:41:18.018 > >>> Completed 0 share(s), 10223 Khashes, avg. hashrate 353.8 KH/s
+19:41:18.021 > >>> Valid blocks: 0
+19:41:18.021 > >>> Block templates: 1
+19:41:18.025 > >>> Best difficulty: 0.0000
+19:41:18.029 > >>> 32Bit shares: 0
+19:41:18.029 > >>> Temperature: 53
+19:41:18.030 > >>> Total MHashes: 0
+19:41:18.033 > >>> Time mining: 0  00:00:33
+19:41:18.915 >   Sending  : {"id":16,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","daf5abba"]}
+19:41:18.930 >    - Current diff share: 0.001375953687
+19:41:18.932 >    - Current pool diff : 0.000150000000
+19:41:18.935 >    - TX SHARE: 924920087660dd384a19b4a83cfdfa7fb08b063a00ae0dc9fd4cefc1d6020000
+19:41:19.028 > >>> Completed 0 share(s), 10555 Khashes, avg. hashrate 352.2 KH/s
+19:41:19.033 > >>> Valid blocks: 0
+19:41:19.033 > >>> Block templates: 1
+19:41:19.036 > >>> Best difficulty: 0.0000
+19:41:19.039 > >>> 32Bit shares: 0
+19:41:19.039 > >>> Temperature: 53
+19:41:19.042 > >>> Total MHashes: 0
+19:41:19.045 > >>> Time mining: 0  00:00:34
+19:41:19.245 >   Receiving: {"id":16,"error":null,"result":true}
+19:41:19.696 >   Sending  : {"id":17,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","daf9f0a9"]}
+19:41:19.709 >    - Current diff share: 0.001583380934
+19:41:19.714 >    - Current pool diff : 0.000150000000
+19:41:19.717 >    - TX SHARE: fab01276af68328083f733e093bbfe6d8c399a82746b8572a203e28c77020000
+19:41:20.041 > >>> Completed 0 share(s), 10924 Khashes, avg. hashrate 353.8 KH/s
+19:41:20.046 > >>> Valid blocks: 0
+19:41:20.046 > >>> Block templates: 1
+19:41:20.049 > >>> Best difficulty: 0.0014
+19:41:20.052 > >>> 32Bit shares: 0
+19:41:20.052 > >>> Temperature: 53
+19:41:20.054 > >>> Total MHashes: 0
+19:41:20.058 > >>> Time mining: 0  00:00:35
+19:41:20.126 >   Receiving: {"id":17,"error":null,"result":true}
+19:41:21.053 > >>> Completed 0 share(s), 11276 Khashes, avg. hashrate 353.8 KH/s
+19:41:21.061 > >>> Valid blocks: 0
+19:41:21.061 > >>> Block templates: 1
+19:41:21.062 > >>> Best difficulty: 0.0016
+19:41:21.064 > >>> 32Bit shares: 0
+19:41:21.064 > >>> Temperature: 53
+19:41:21.068 > >>> Total MHashes: 0
+19:41:21.069 > >>> Time mining: 0  00:00:36
+19:41:21.331 >   Sending  : {"id":18,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","db02a0a1"]}
+19:41:21.343 >    - Current diff share: 0.000697072973
+19:41:21.348 >    - Current pool diff : 0.000150000000
+19:41:21.351 >    - TX SHARE: 7280fe72e0c7e374cdbd9c36f6f4aaa468d10065a2bb919f1551538c9a050000
+19:41:21.560 >   Sending  : {"id":19,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","db03c867"]}
+19:41:21.570 >    - Current diff share: 0.000690977224
+19:41:21.575 >    - Current pool diff : 0.000150000000
+19:41:21.578 >    - TX SHARE: b7a8e10228f8313c146b8c029505eda8453c0cee41cfb965ff842034a7050000
+19:41:21.685 >   Receiving: {"id":18,"error":null,"result":true}
+19:41:21.987 >   Receiving: {"id":19,"error":null,"result":true}
+19:41:22.065 > >>> Completed 0 share(s), 11628 Khashes, avg. hashrate 352.1 KH/s
+19:41:22.070 > >>> Valid blocks: 0
+19:41:22.070 > >>> Block templates: 1
+19:41:22.074 > >>> Best difficulty: 0.0016
+19:41:22.077 > >>> 32Bit shares: 0
+19:41:22.077 > >>> Temperature: 53
+19:41:22.079 > >>> Total MHashes: 0
+19:41:22.081 > >>> Time mining: 0  00:00:37
+19:41:22.689 >   Sending  : {"id":20,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","4160c1","00000001","6924faf8","db0835f6"]}
+19:41:22.702 >    - Current diff share: 0.000310657240
+19:41:22.707 >    - Current pool diff : 0.000150000000
+19:41:22.710 >    - TX SHARE: a8eae873e891152fafad4e520c91fa2fd18b5f8253de80856e11c4ee920c0000
+19:41:22.918 >   Receiving: {"id":20,"error":null,"result":true}
+19:41:23.077 > >>> Completed 0 share(s), 11993 Khashes, avg. hashrate 351.8 KH/s
+19:41:23.082 > >>> Valid blocks: 0
+19:41:23.082 > >>> Block templates: 1
+19:41:23.087 > >>> Best difficulty: 0.0016
+19:41:23.088 > >>> 32Bit shares: 0
+19:41:23.088 > >>> Temperature: 53
+19:41:23.091 > >>> Total MHashes: 0
+19:41:23.093 > >>> Time mining: 0  00:00:38
+19:41:23.938 > ets Jul 29 2019 12:21:46
+19:41:23.939 > 
+19:41:23.939 > rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+19:41:23.944 > configsip: 0, SPIWP:0xee
+19:41:23.946 > clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+19:41:23.952 > mode:DIO, clock div:2
+19:41:23.955 > load:0x3fff0030,len:1184
+19:41:23.957 > load:0x40078000,len:13232
+19:41:23.960 > load:0x40080400,len:3028
+19:41:23.960 > entry 0x400805e4
+19:41:24.497 > NerdMiner v2 starting......
+19:41:24.497 > No display driver initialized
+19:41:24.499 > Initializing...
+19:41:26.498 > DEBUG: Attempting to read custom AP name from flash at 0x3F0000...
+19:41:26.504 > DEBUG: Successfully read from flash
+19:41:26.508 > DEBUG: Raw flash data: '��������������������������������������������������������������������������������������������������������������������������������G9f�\A?�'
+19:41:26.520 > DEBUG: WEBFLASHER_CONFIG marker not found - no custom config
+19:41:26.525 > DEBUG: Using default AP name
+19:41:26.619 > SPIFS: Mounting File System...
+19:41:26.697 > SPIFS: Mounted
+19:41:26.698 > SPIFS: Loading config file
+19:41:26.699 > {
+19:41:26.699 >   "poolString": "public-pool.io",
+19:41:26.702 >   "portNumber": 21496,
+19:41:26.704 >   "poolPassword": "x",
+19:41:26.707 >   "btcString": "bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3",
+19:41:26.713 >   "gmtZone": 2,
+19:41:26.713 >   "saveStatsToNVS": false,
+19:41:26.715 >   "invertColors": false,
+19:41:26.718 >   "Brightness": 250
+19:41:26.721 > }
+19:41:26.721 > *wm:[ERROR] parameter IDs can only contain alpha numeric chars 
+19:41:26.727 > AllDone: 
+19:41:26.727 > *wm:AutoConnect 
+19:41:26.729 > *wm:Connecting to SAVED AP: IoT
+19:41:27.440 > *wm:AutoConnect: SUCCESS 
+19:41:27.440 > *wm:STA IP Address: 192.168.0.185
+19:41:27.442 > 
+19:41:27.445 > WiFi connected
+19:41:27.445 > IP address: 192.168.0.185
+19:41:27.448 > PoolString: public-pool.io
+19:41:27.450 > portNumber: 21496
+19:41:27.450 > poolPassword: x
+19:41:27.453 > btcString: bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3
+19:41:27.459 > TimeZone fromUTC: 2
+19:41:27.459 > PoolString: public-pool.io
+19:41:27.462 > portNumber: 21496
+19:41:27.464 > poolPassword: x
+19:41:27.464 > btcString: bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3
+19:41:27.470 > TimeZone fromUTC: 2
+19:41:27.473 > 
+19:41:27.473 > Initiating tasks...
+19:41:27.475 > [MONITOR] started
+19:41:27.475 > 
+19:41:27.475 > 
+19:41:27.475 > [WORKER] Started. Running (Stratum) on core 1
+19:41:27.481 > Client not connected, trying to connect...
+19:41:27.484 > [MINER] 0 Started minerWorkerHwEsp32D Task!
+19:41:27.489 > [MINER] 1 Started minerWorkerSw Task!
+19:41:27.492 > TimeClient setup done
+19:41:27.492 > CONNECTED - Current ip: 192.168.0.185
+19:41:27.512 > Resolved DNS and save ip (first time) got: 38.51.144.240
+19:41:27.803 > [WORKER] ==> Mining subscribe
+19:41:27.804 >   Sending  : {"id": 1, "method": "mining.subscribe", "params": ["NerdMinerV2/V1.8.3"]}
+19:41:27.812 > 
+19:41:27.812 > TimeClient NTPupdateTime >>> Completed 0 share(s), 0 Khashes, avg. hashrate 0.00 KH/s
+19:41:27.820 > >>> Valid blocks: 0
+19:41:27.822 > >>> Block templates: 0
+19:41:27.822 > >>> Best difficulty: 0.0000
+19:41:27.825 > >>> 32Bit shares: 0
+19:41:27.828 > >>> Temperature: 53
+19:41:27.828 > >>> Total MHashes: 0
+19:41:27.831 > >>> Time mining: 0  00:00:03
+19:41:27.833 > >>> [i] Miner: newJob>true / inRun>false) - Client: connected>true / subscribed>false / wificonnected>true
+19:41:28.106 >   Receiving: {"id":1,"error":null,"result":[[["mining.notify","b2254c35"]],"b2254c35",4]}
+19:41:28.111 >     sub_details: b2254c35
+19:41:28.114 >     extranonce1: b2254c35
+19:41:28.116 >     extranonce2_size: 4
+19:41:28.120 > [WORKER] ==> Autorize work
+19:41:28.122 >   Sending  : {"params": ["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3", "x"], "id": 2, "method": "mining.authorize"}
+19:41:28.130 > 
+19:41:28.331 >   Sending  : {"id":3,"method":"mining.suggest_difficulty","params":[0.00015]}
+19:41:28.433 >   Receiving: {"id":2,"error":null,"result":true}
+19:41:28.539 > >>> Completed 0 share(s), 0 Khashes, avg. hashrate 0.00 KH/s
+19:41:28.541 > >>> Valid blocks: 0
+19:41:28.545 > >>> Block templates: 0
+19:41:28.549 > >>> Best difficulty: 0.0000
+19:41:28.550 > >>> 32Bit shares: 0
+19:41:28.550 > >>> Temperature: 53
+19:41:28.552 > >>> Total MHashes: 0
+19:41:28.555 > >>> Time mining: 0  00:00:04
+19:41:28.555 > >>> [i] Miner: newJob>true / inRun>true) - Client: connected>true / subscribed>true / wificonnected>true
+19:41:28.739 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[100000]}
+19:41:28.743 >     Parsing Method [SET DIFFICULTY]
+19:41:28.746 >     difficulty: 100000.000000000000
+19:41:28.752 >   Receiving: {"id":null,"method":"mining.notify","params":["12f2140","73864d647fc710c7639e767dbdcdd179eb3507d000014d350000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6c","ffffffff020b66bd1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9ed4ad6719d4e9af08ed9fa198aab47f2aeb1fa1d243a08f1694bf27f3c15555ff100000000",["4dcb1e7b60d9dc2125cf27b659f210cee8f61354b97a48c5ec9d1361596b4b82","78c8ab16cc7a2028cdc78f69993d65ca1003d08bafe246585d23af17ad2f715b","6dbff74608160c57aaba1712c99e5b9b842362f1ca163a28c71b35f65652064f","e1a5ff6aff2ae620b065e7e11339f37f37fd9b6295d0dd9ae3ef616f62e964b6","fd20306bf3f989171f6c55149799f17aeced162f85f5483eb4cc515671b4661f","2b26a481a54342192f19f7adc1913f69d3430727cf9393541ea35b6e51c88313","328b8e0aded86ac455a1d85c41baa3f029d751945fae454b13f5e17bf106dd23","e25b29eb3e81ad09db2f6589c237e49b9803bfeccf7c569303ace33fc46bbe55","45c9823f883ff84d1c3b7dfef6c8df6a796d50b611487ddeaccdec13c227f57b","db582a6983c4a092b614beb3a65509703c61df7cb59b55b62e124019da363765","271e16d2414a5a590942e650985093587f494c945f4e93af8acc26feed8f8b01","dbd721b9178f793ce8b5d64bfa90cd6a8c32cb425886da1beddbaae3f7e8af60"],"20000000","1701d936","6924fb34",true]}
+19:41:28.861 >     Parsing Method [MINING NOTIFY]
+19:41:28.866 >     target: 00000000000000000001d9360000000000000000000000000000000000000000
+19:41:28.872 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6cb2254c3500000001ffffffff020b66bd1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9ed4ad6719d4e9af08ed9fa198aab47f2aeb1fa1d243a08f1694bf27f3c15555ff100000000
+19:41:28.900 >     merkle sha         : 125c9538bd35d715ca42529c75af7f1b22c8b9c0c97369cd07f05a489e0972c3
+19:41:29.055 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[0.00015]}
+19:41:29.060 >     Parsing Method [SET DIFFICULTY]
+19:41:29.063 >     difficulty: 0.000150000000
+19:41:29.561 > >>> Completed 0 share(s), 200 Khashes, avg. hashrate 65.23 KH/s
+19:41:29.566 > >>> Valid blocks: 0
+19:41:29.566 > >>> Block templates: 1
+19:41:29.570 > >>> Best difficulty: 0.0000
+19:41:29.572 > >>> 32Bit shares: 0
+19:41:29.572 > >>> Temperature: 53
+19:41:29.574 > >>> Total MHashes: 0
+19:41:29.577 > >>> Time mining: 0  00:00:05
+19:41:30.572 > >>> Completed 0 share(s), 573 Khashes, avg. hashrate 141.1 KH/s
+19:41:30.578 > >>> Valid blocks: 0
+19:41:30.578 > >>> Block templates: 1
+19:41:30.580 > >>> Best difficulty: 0.0000
+19:41:30.583 > >>> 32Bit shares: 0
+19:41:30.583 > >>> Temperature: 60
+19:41:30.586 > >>> Total MHashes: 0
+19:41:30.589 > >>> Time mining: 0  00:00:06
+19:41:31.585 > >>> Completed 0 share(s), 937 Khashes, avg. hashrate 184.8 KH/s
+19:41:31.590 > >>> Valid blocks: 0
+19:41:31.590 > >>> Block templates: 1
+19:41:31.594 > >>> Best difficulty: 0.0000
+19:41:31.596 > >>> 32Bit shares: 0
+19:41:31.596 > >>> Temperature: 53
+19:41:31.598 > >>> Total MHashes: 0
+19:41:31.601 > >>> Time mining: 0  00:00:07
+19:41:32.597 > >>> Completed 0 share(s), 1290 Khashes, avg. hashrate 212.1 KH/s
+19:41:32.603 > >>> Valid blocks: 0
+19:41:32.603 > >>> Block templates: 1
+19:41:32.606 > >>> Best difficulty: 0.0000
+19:41:32.607 > >>> 32Bit shares: 0
+19:41:32.607 > >>> Temperature: 53
+19:41:32.610 > >>> Total MHashes: 0
+19:41:32.613 > >>> Time mining: 0  00:00:08
+19:41:33.610 > >>> Completed 0 share(s), 1642 Khashes, avg. hashrate 231.5 KH/s
+19:41:33.614 > >>> Valid blocks: 0
+19:41:33.614 > >>> Block templates: 1
+19:41:33.617 > >>> Best difficulty: 0.0000
+19:41:33.621 > >>> 32Bit shares: 0
+19:41:33.621 > >>> Temperature: 53
+19:41:33.622 > >>> Total MHashes: 0
+19:41:33.625 > >>> Time mining: 0  00:00:09
+19:41:34.173 >   Sending  : {"id":4,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da714eb2"]}
+19:41:34.186 >    - Current diff share: 0.000322966514
+19:41:34.191 >    - Current pool diff : 0.000150000000
+19:41:34.194 >    - TX SHARE: 806bce1202030d57031ee5b184fdad678cd22b1f3ff8cea9ea99bd3f180c0000
+19:41:34.603 >   Receiving: {"id":4,"error":null,"result":true}
+19:41:34.622 > >>> Completed 0 share(s), 2011 Khashes, avg. hashrate 248.2 KH/s
+19:41:34.626 > >>> Valid blocks: 0
+19:41:34.626 > >>> Block templates: 1
+19:41:34.629 > >>> Best difficulty: 0.0000
+19:41:34.632 > >>> 32Bit shares: 0
+19:41:34.632 > >>> Temperature: 53
+19:41:34.635 > >>> Total MHashes: 0
+19:41:34.637 > >>> Time mining: 0  00:00:10
+19:41:34.705 >   Sending  : {"id":5,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da72a159"]}
+19:41:34.718 >    - Current diff share: 0.000393924245
+19:41:34.723 >    - Current pool diff : 0.000150000000
+19:41:34.726 >    - TX SHARE: 3aedbd3210c423424f5bf5f5f0f8c68ad1a502ddef3fb682549a3a85ea090000
+19:41:34.885 >   Receiving: {"id":5,"error":null,"result":true}
+19:41:35.633 > >>> Completed 0 share(s), 2359 Khashes, avg. hashrate 258.8 KH/s
+19:41:35.638 > >>> Valid blocks: 0
+19:41:35.638 > >>> Block templates: 1
+19:41:35.641 > >>> Best difficulty: 0.0000
+19:41:35.644 > >>> 32Bit shares: 0
+19:41:35.644 > >>> Temperature: 53
+19:41:35.647 > >>> Total MHashes: 0
+19:41:35.649 > >>> Time mining: 0  00:00:11
+19:41:36.439 >   Sending  : {"id":6,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da7bf218"]}
+19:41:36.451 >    - Current diff share: 0.000170630607
+19:41:36.456 >    - Current pool diff : 0.000150000000
+19:41:36.459 >    - TX SHARE: d2f90dbe9d9fa19e0a79bd637b964dab8464b789733e291962d41a86e4160000
+19:41:36.645 > >>> Completed 0 share(s), 2711 Khashes, avg. hashrate 267.7 KH/s
+19:41:36.650 > >>> Valid blocks: 0
+19:41:36.650 > >>> Block templates: 1
+19:41:36.654 > >>> Best difficulty: 0.0000
+19:41:36.656 > >>> 32Bit shares: 0
+19:41:36.656 > >>> Temperature: 53
+19:41:36.658 > >>> Total MHashes: 0
+19:41:36.661 > >>> Time mining: 0  00:00:12
+19:41:36.719 >   Receiving: {"id":6,"error":null,"result":true}
+19:41:37.657 > >>> Completed 0 share(s), 3063 Khashes, avg. hashrate 302.5 KH/s
+19:41:37.662 > >>> Valid blocks: 0
+19:41:37.662 > >>> Block templates: 1
+19:41:37.667 > >>> Best difficulty: 0.0000
+19:41:37.668 > >>> 32Bit shares: 0
+19:41:37.668 > >>> Temperature: 53
+19:41:37.671 > >>> Total MHashes: 0
+19:41:37.674 > >>> Time mining: 0  00:00:13
+19:41:38.670 > >>> Completed 0 share(s), 3432 Khashes, avg. hashrate 338.9 KH/s
+19:41:38.675 > >>> Valid blocks: 0
+19:41:38.675 > >>> Block templates: 1
+19:41:38.686 > >>> Best difficulty: 0.0000
+19:41:38.686 > >>> 32Bit shares: 0
+19:41:38.686 > >>> Temperature: 53
+19:41:38.686 > >>> Total MHashes: 0
+19:41:38.686 > >>> Time mining: 0  00:00:14
+19:41:39.681 > >>> Completed 0 share(s), 3801 Khashes, avg. hashrate 355.8 KH/s
+19:41:39.687 > >>> Valid blocks: 0
+19:41:39.687 > >>> Block templates: 1
+19:41:39.691 > >>> Best difficulty: 0.0000
+19:41:39.692 > >>> 32Bit shares: 0
+19:41:39.692 > >>> Temperature: 53
+19:41:39.694 > >>> Total MHashes: 0
+19:41:39.697 > >>> Time mining: 0  00:00:15
+19:41:39.976 >   Sending  : {"id":7,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da8ecaa7"]}
+19:41:39.989 >    - Current diff share: 0.000157222093
+19:41:39.994 >    - Current pool diff : 0.000150000000
+19:41:39.996 >    - TX SHARE: 50c8cf8aa20f93b3972671f6e3b8643509565bdd6de866af48650c55d8180000
+19:41:40.405 >   Receiving: {"id":7,"error":null,"result":true}
+19:41:40.608 >   Sending  : {"id":8,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da93f08f"]}
+19:41:40.620 >    - Current diff share: 0.000182107479
+19:41:40.625 >    - Current pool diff : 0.000150000000
+19:41:40.628 >    - TX SHARE: 4aa973779c7b7409633b537ed7e7656110f435e9a7ba96eaab0dca2d73150000
+19:41:40.693 > >>> Completed 0 share(s), 4153 Khashes, avg. hashrate 353.8 KH/s
+19:41:40.699 > >>> Valid blocks: 0
+19:41:40.699 > >>> Block templates: 1
+19:41:40.702 > >>> Best difficulty: 0.0000
+19:41:40.704 > >>> 32Bit shares: 0
+19:41:40.704 > >>> Temperature: 61
+19:41:40.707 > >>> Total MHashes: 0
+19:41:40.710 > >>> Time mining: 0  00:00:16
+19:41:40.786 >   Sending  : {"id":9,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da94e979"]}
+19:41:40.797 >    - Current diff share: 0.000190130186
+19:41:40.803 >    - Current pool diff : 0.000150000000
+19:41:40.805 >    - TX SHARE: c8825f9cb0e18b860415763d74be9a81464a8697210e1806920c4f798b140000
+19:41:41.012 >   Receiving: {"id":8,"error":null,"result":true}
+19:41:41.314 >   Sending  : {"id":10,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da979d28"]}
+19:41:41.325 >    - Current diff share: 0.000518648730
+19:41:41.330 >    - Current pool diff : 0.000150000000
+19:41:41.333 >    - TX SHARE: b48aee31337f2addca5da9196a5345b9e00d32559eb90e85565ccd0e88070000
+19:41:41.338 >   Receiving: {"id":9,"error":null,"result":true}
+19:41:41.642 >   Receiving: {"id":10,"error":null,"result":true}
+19:41:41.706 > >>> Completed 0 share(s), 4501 Khashes, avg. hashrate 352.2 KH/s
+19:41:41.712 > >>> Valid blocks: 0
+19:41:41.712 > >>> Block templates: 1
+19:41:41.713 > >>> Best difficulty: 0.0000
+19:41:41.716 > >>> 32Bit shares: 0
+19:41:41.716 > >>> Temperature: 53
+19:41:41.720 > >>> Total MHashes: 0
+19:41:41.722 > >>> Time mining: 0  00:00:17
+19:41:41.744 >   Sending  : {"id":11,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da99df46"]}
+19:41:41.756 >    - Current diff share: 0.001142939209
+19:41:41.762 >    - Current pool diff : 0.000150000000
+19:41:41.764 >    - TX SHARE: 9bc54247282b6b711d57c7309725739507b73c09f7bf8d73879b7fec6a030000
+19:41:42.023 >   Sending  : {"id":12,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","da9b66c2"]}
+19:41:42.033 >    - Current diff share: 0.000216473342
+19:41:42.039 >    - Current pool diff : 0.000150000000
+19:41:42.042 >    - TX SHARE: ca23425fdf3e4c7ec04e6d696da2b635f7fa17317c2a42b32fe19b6f0b120000
+19:41:42.047 >   Receiving: {"id":11,"error":null,"result":true}
+19:41:42.251 >   Receiving: {"id":12,"error":null,"result":true}
+19:41:42.719 > >>> Completed 0 share(s), 4853 Khashes, avg. hashrate 352.1 KH/s
+19:41:42.723 > >>> Valid blocks: 0
+19:41:42.723 > >>> Block templates: 1
+19:41:42.728 > >>> Best difficulty: 0.0011
+19:41:42.729 > >>> 32Bit shares: 0
+19:41:42.729 > >>> Temperature: 53
+19:41:42.731 > >>> Total MHashes: 0
+19:41:42.734 > >>> Time mining: 0  00:00:18
+19:41:43.729 > >>> Completed 0 share(s), 5222 Khashes, avg. hashrate 353.8 KH/s
+19:41:43.737 > >>> Valid blocks: 0
+19:41:43.737 > >>> Block templates: 1
+19:41:43.737 > >>> Best difficulty: 0.0011
+19:41:43.740 > >>> 32Bit shares: 0
+19:41:43.740 > >>> Temperature: 53
+19:41:43.744 > >>> Total MHashes: 0
+19:41:43.746 > >>> Time mining: 0  00:00:19
+19:41:44.741 > >>> Completed 0 share(s), 5570 Khashes, avg. hashrate 351.7 KH/s
+19:41:44.746 > >>> Valid blocks: 0
+19:41:44.746 > >>> Block templates: 1
+19:41:44.749 > >>> Best difficulty: 0.0011
+19:41:44.752 > >>> 32Bit shares: 0
+19:41:44.752 > >>> Temperature: 53
+19:41:44.755 > >>> Total MHashes: 0
+19:41:44.757 > >>> Time mining: 0  00:00:20
+19:41:45.753 > >>> Completed 0 share(s), 5922 Khashes, avg. hashrate 352.1 KH/s
+19:41:45.758 > >>> Valid blocks: 0
+19:41:45.758 > >>> Block templates: 1
+19:41:45.761 > >>> Best difficulty: 0.0011
+19:41:45.764 > >>> 32Bit shares: 0
+19:41:45.764 > >>> Temperature: 53
+19:41:45.767 > >>> Total MHashes: 0
+19:41:45.769 > >>> Time mining: 0  00:00:21
+19:41:46.765 > >>> Completed 0 share(s), 6291 Khashes, avg. hashrate 353.8 KH/s
+19:41:46.771 > >>> Valid blocks: 0
+19:41:46.771 > >>> Block templates: 1
+19:41:46.773 > >>> Best difficulty: 0.0011
+19:41:46.776 > >>> 32Bit shares: 0
+19:41:46.776 > >>> Temperature: 53
+19:41:46.779 > >>> Total MHashes: 0
+19:41:46.781 > >>> Time mining: 0  00:00:22
+19:41:47.777 > >>> Completed 0 share(s), 6643 Khashes, avg. hashrate 353.8 KH/s
+19:41:47.783 > >>> Valid blocks: 0
+19:41:47.783 > >>> Block templates: 1
+19:41:47.785 > >>> Best difficulty: 0.0011
+19:41:47.788 > >>> 32Bit shares: 0
+19:41:47.788 > >>> Temperature: 61
+19:41:47.791 > >>> Total MHashes: 0
+19:41:47.793 > >>> Time mining: 0  00:00:23
+19:41:48.659 >   Sending  : {"id":13,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","dabf5604"]}
+19:41:48.673 >    - Current diff share: 0.000285415624
+19:41:48.676 >    - Current pool diff : 0.000150000000
+19:41:48.679 >    - TX SHARE: 9cfca9aeea6c491f03110c8d72072c09c0044cbdc0ffdf54a2abe59baf0d0000
+19:41:48.789 > >>> Completed 0 share(s), 7012 Khashes, avg. hashrate 353.8 KH/s
+19:41:48.795 > >>> Valid blocks: 0
+19:41:48.795 > >>> Block templates: 1
+19:41:48.797 > >>> Best difficulty: 0.0011
+19:41:48.800 > >>> 32Bit shares: 0
+19:41:48.800 > >>> Temperature: 53
+19:41:48.803 > >>> Total MHashes: 0
+19:41:48.806 > >>> Time mining: 0  00:00:24
+19:41:48.989 >   Sending  : {"id":14,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","dac125fe"]}
+19:41:49.000 >    - Current diff share: 0.000312559642
+19:41:49.005 >    - Current pool diff : 0.000150000000
+19:41:49.008 >    - TX SHARE: b3b3b671ef1a2cec0a2d5c1e5ce1ae1f657add242c3530ce59692f577f0c0000
+19:41:49.064 >   Receiving: {"id":13,"error":null,"result":true}
+19:41:49.367 >   Receiving: {"id":14,"error":null,"result":true}
+19:41:49.519 >   Sending  : {"id":15,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","dac3f444"]}
+19:41:49.531 >    - Current diff share: 0.000675611190
+19:41:49.536 >    - Current pool diff : 0.000150000000
+19:41:49.539 >    - TX SHARE: 0cc9c90dab8484c416792d8ff30fda7c11a86434a615b8fe72ab611ec8050000
+19:41:49.802 > >>> Completed 0 share(s), 7364 Khashes, avg. hashrate 352.1 KH/s
+19:41:49.807 > >>> Valid blocks: 0
+19:41:49.807 > >>> Block templates: 1
+19:41:49.810 > >>> Best difficulty: 0.0011
+19:41:49.812 > >>> 32Bit shares: 0
+19:41:49.812 > >>> Temperature: 53
+19:41:49.815 > >>> Total MHashes: 0
+19:41:49.818 > >>> Time mining: 0  00:00:25
+19:41:49.949 >   Receiving: {"id":15,"error":null,"result":true}
+19:41:50.652 >   Sending  : {"id":16,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","dac9ffb3"]}
+19:41:50.665 >    - Current diff share: 0.000258777391
+19:41:50.670 >    - Current pool diff : 0.000150000000
+19:41:50.673 >    - TX SHARE: f742c00ed06b5bb9c288842161b62f4eabca3a73da43e9485e882944180f0000
+19:41:50.814 > >>> Completed 0 share(s), 7712 Khashes, avg. hashrate 351.7 KH/s
+19:41:50.819 > >>> Valid blocks: 0
+19:41:50.819 > >>> Block templates: 1
+19:41:50.822 > >>> Best difficulty: 0.0011
+19:41:50.825 > >>> 32Bit shares: 0
+19:41:50.825 > >>> Temperature: 53
+19:41:50.827 > >>> Total MHashes: 0
+19:41:50.830 > >>> Time mining: 0  00:00:26
+19:41:50.882 >   Receiving: {"id":16,"error":null,"result":true}
+19:41:51.825 > >>> Completed 0 share(s), 8065 Khashes, avg. hashrate 352.2 KH/s
+19:41:51.831 > >>> Valid blocks: 0
+19:41:51.831 > >>> Block templates: 1
+19:41:51.834 > >>> Best difficulty: 0.0011
+19:41:51.836 > >>> 32Bit shares: 0
+19:41:51.836 > >>> Temperature: 53
+19:41:51.839 > >>> Total MHashes: 0
+19:41:51.842 > >>> Time mining: 0  00:00:27
+19:41:52.838 > >>> Completed 0 share(s), 8450 Khashes, avg. hashrate 355.4 KH/s
+19:41:52.843 > >>> Valid blocks: 0
+19:41:52.843 > >>> Block templates: 1
+19:41:52.846 > >>> Best difficulty: 0.0011
+19:41:52.848 > >>> 32Bit shares: 0
+19:41:52.848 > >>> Temperature: 53
+19:41:52.851 > >>> Total MHashes: 0
+19:41:52.854 > >>> Time mining: 0  00:00:28
+19:41:53.187 >   Sending  : {"id":17,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","dad7b65f"]}
+19:41:53.202 >    - Current diff share: 0.000204774565
+19:41:53.204 >    - Current pool diff : 0.000150000000
+19:41:53.207 >    - TX SHARE: 047323366e5a670a64f7c8066da126aabfc458cb9b971cfb9207305813130000
+19:41:53.616 >   Receiving: {"id":17,"error":null,"result":true}
+19:41:53.849 > >>> Completed 0 share(s), 8781 Khashes, avg. hashrate 351.7 KH/s
+19:41:53.855 > >>> Valid blocks: 0
+19:41:53.855 > >>> Block templates: 1
+19:41:53.858 > >>> Best difficulty: 0.0011
+19:41:53.860 > >>> 32Bit shares: 0
+19:41:53.860 > >>> Temperature: 61
+19:41:53.863 > >>> Total MHashes: 0
+19:41:53.866 > >>> Time mining: 0  00:00:29
+19:41:54.861 > >>> Completed 0 share(s), 9134 Khashes, avg. hashrate 352.2 KH/s
+19:41:54.867 > >>> Valid blocks: 0
+19:41:54.867 > >>> Block templates: 1
+19:41:54.869 > >>> Best difficulty: 0.0011
+19:41:54.872 > >>> 32Bit shares: 0
+19:41:54.872 > >>> Temperature: 53
+19:41:54.875 > >>> Total MHashes: 0
+19:41:54.878 > >>> Time mining: 0  00:00:30
+19:41:55.873 > >>> Completed 0 share(s), 9523 Khashes, avg. hashrate 355.8 KH/s
+19:41:55.879 > >>> Valid blocks: 0
+19:41:55.879 > >>> Block templates: 1
+19:41:55.881 > >>> Best difficulty: 0.0011
+19:41:55.884 > >>> 32Bit shares: 0
+19:41:55.884 > >>> Temperature: 53
+19:41:55.887 > >>> Total MHashes: 0
+19:41:55.890 > >>> Time mining: 0  00:00:31
+19:41:56.885 > >>> Completed 0 share(s), 9871 Khashes, avg. hashrate 353.8 KH/s
+19:41:56.891 > >>> Valid blocks: 0
+19:41:56.891 > >>> Block templates: 1
+19:41:56.893 > >>> Best difficulty: 0.0011
+19:41:56.896 > >>> 32Bit shares: 0
+19:41:56.896 > >>> Temperature: 53
+19:41:56.899 > >>> Total MHashes: 0
+19:41:56.902 > >>> Time mining: 0  00:00:32
+19:41:57.898 > >>> Completed 0 share(s), 10223 Khashes, avg. hashrate 353.8 KH/s
+19:41:57.904 > >>> Valid blocks: 0
+19:41:57.904 > >>> Block templates: 1
+19:41:57.906 > >>> Best difficulty: 0.0011
+19:41:57.908 > >>> 32Bit shares: 0
+19:41:57.908 > >>> Temperature: 53
+19:41:57.912 > >>> Total MHashes: 0
+19:41:57.915 > >>> Time mining: 0  00:00:33
+19:41:58.473 >   Sending  : {"id":18,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","daf436af"]}
+19:41:58.486 >    - Current diff share: 0.001177820512
+19:41:58.491 >    - Current pool diff : 0.000150000000
+19:41:58.494 >    - TX SHARE: 82682d4d067b036625e376a18eb5b6c31ce7266d4212023457a7490351030000
+19:41:58.852 >   Receiving: {"id":18,"error":null,"result":true}
+19:41:58.910 > >>> Completed 0 share(s), 10592 Khashes, avg. hashrate 353.8 KH/s
+19:41:58.915 > >>> Valid blocks: 0
+19:41:58.915 > >>> Block templates: 1
+19:41:58.918 > >>> Best difficulty: 0.0012
+19:41:58.921 > >>> 32Bit shares: 0
+19:41:58.921 > >>> Temperature: 53
+19:41:58.923 > >>> Total MHashes: 0
+19:41:58.926 > >>> Time mining: 0  00:00:34
+19:41:59.921 > >>> Completed 0 share(s), 10944 Khashes, avg. hashrate 353.8 KH/s
+19:41:59.927 > >>> Valid blocks: 0
+19:41:59.927 > >>> Block templates: 1
+19:41:59.929 > >>> Best difficulty: 0.0012
+19:41:59.932 > >>> 32Bit shares: 0
+19:41:59.932 > >>> Temperature: 53
+19:41:59.935 > >>> Total MHashes: 0
+19:41:59.938 > >>> Time mining: 0  00:00:35
+19:42:00.933 > >>> Completed 0 share(s), 11296 Khashes, avg. hashrate 354.2 KH/s
+19:42:00.939 > >>> Valid blocks: 0
+19:42:00.939 > >>> Block templates: 1
+19:42:00.942 > >>> Best difficulty: 0.0012
+19:42:00.944 > >>> 32Bit shares: 0
+19:42:00.944 > >>> Temperature: 53
+19:42:00.947 > >>> Total MHashes: 0
+19:42:00.950 > >>> Time mining: 0  00:00:36
+19:42:01.945 > >>> Completed 0 share(s), 11644 Khashes, avg. hashrate 353.7 KH/s
+19:42:01.951 > >>> Valid blocks: 0
+19:42:01.951 > >>> Block templates: 1
+19:42:01.954 > >>> Best difficulty: 0.0012
+19:42:01.956 > >>> 32Bit shares: 0
+19:42:01.956 > >>> Temperature: 53
+19:42:01.959 > >>> Total MHashes: 0
+19:42:01.962 > >>> Time mining: 0  00:00:37
+19:42:02.759 >   Sending  : {"id":19,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","db0b5655"]}
+19:42:02.772 >    - Current diff share: 0.000173526966
+19:42:02.777 >    - Current pool diff : 0.000150000000
+19:42:02.780 >    - TX SHARE: cdc097562f096fb534900b01850fe9d8f97af9c4db8aaa34269485b482160000
+19:42:02.887 >   Receiving: {"id":19,"error":null,"result":true}
+19:42:02.958 > >>> Completed 0 share(s), 12013 Khashes, avg. hashrate 352.1 KH/s
+19:42:02.963 > >>> Valid blocks: 0
+19:42:02.963 > >>> Block templates: 1
+19:42:02.966 > >>> Best difficulty: 0.0012
+19:42:02.969 > >>> 32Bit shares: 0
+19:42:02.969 > >>> Temperature: 53
+19:42:02.972 > >>> Total MHashes: 0
+19:42:02.974 > >>> Time mining: 0  00:00:38
+19:42:03.190 >   Sending  : {"id":20,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","db0d991b"]}
+19:42:03.203 >    - Current diff share: 0.000209345421
+19:42:03.210 >    - Current pool diff : 0.000150000000
+19:42:03.211 >    - TX SHARE: a01c88004822c036c27ee6b8d5efb18ce9f31f091361bb5bb3d1aab8a8120000
+19:42:03.469 >   Receiving: {"id":20,"error":null,"result":true}
+19:42:03.970 > >>> Completed 0 share(s), 12365 Khashes, avg. hashrate 354.2 KH/s
+19:42:03.976 > >>> Valid blocks: 0
+19:42:03.976 > >>> Block templates: 1
+19:42:03.979 > >>> Best difficulty: 0.0012
+19:42:03.981 > >>> 32Bit shares: 0
+19:42:03.981 > >>> Temperature: 53
+19:42:03.984 > >>> Total MHashes: 0
+19:42:03.987 > >>> Time mining: 0  00:00:39
+19:42:04.982 > >>> Completed 0 share(s), 12734 Khashes, avg. hashrate 355.7 KH/s
+19:42:04.987 > >>> Valid blocks: 0
+19:42:04.987 > >>> Block templates: 1
+19:42:04.990 > >>> Best difficulty: 0.0012
+19:42:04.992 > >>> 32Bit shares: 0
+19:42:04.992 > >>> Temperature: 61
+19:42:04.995 > >>> Total MHashes: 0
+19:42:04.998 > >>> Time mining: 0  00:00:40
+19:42:05.995 > >>> Completed 0 share(s), 13086 Khashes, avg. hashrate 352.1 KH/s
+19:42:05.999 > >>> Valid blocks: 0
+19:42:05.999 > >>> Block templates: 1
+19:42:06.005 > >>> Best difficulty: 0.0012
+19:42:06.005 > >>> 32Bit shares: 0
+19:42:06.005 > >>> Temperature: 53
+19:42:06.007 > >>> Total MHashes: 0
+19:42:06.013 > >>> Time mining: 0  00:00:41
+19:42:07.006 > >>> Completed 0 share(s), 13434 Khashes, avg. hashrate 352.1 KH/s
+19:42:07.012 > >>> Valid blocks: 0
+19:42:07.012 > >>> Block templates: 1
+19:42:07.014 > >>> Best difficulty: 0.0012
+19:42:07.017 > >>> 32Bit shares: 0
+19:42:07.017 > >>> Temperature: 53
+19:42:07.025 > >>> Total MHashes: 0
+19:42:07.025 > >>> Time mining: 0  00:00:42
+19:42:08.018 > >>> Completed 0 share(s), 13803 Khashes, avg. hashrate 353.8 KH/s
+19:42:08.023 > >>> Valid blocks: 0
+19:42:08.023 > >>> Block templates: 1
+19:42:08.026 > >>> Best difficulty: 0.0012
+19:42:08.030 > >>> 32Bit shares: 0
+19:42:08.030 > >>> Temperature: 53
+19:42:08.032 > >>> Total MHashes: 0
+19:42:08.034 > >>> Time mining: 0  00:00:43
+19:42:09.030 > >>> Completed 0 share(s), 14172 Khashes, avg. hashrate 353.8 KH/s
+19:42:09.036 > >>> Valid blocks: 0
+19:42:09.036 > >>> Block templates: 1
+19:42:09.038 > >>> Best difficulty: 0.0012
+19:42:09.041 > >>> 32Bit shares: 0
+19:42:09.041 > >>> Temperature: 53
+19:42:09.046 > >>> Total MHashes: 0
+19:42:09.047 > >>> Time mining: 0  00:00:44
+19:42:10.042 > >>> Completed 0 share(s), 14524 Khashes, avg. hashrate 353.8 KH/s
+19:42:10.049 > >>> Valid blocks: 0
+19:42:10.049 > >>> Block templates: 1
+19:42:10.050 > >>> Best difficulty: 0.0012
+19:42:10.053 > >>> 32Bit shares: 0
+19:42:10.053 > >>> Temperature: 53
+19:42:10.056 > >>> Total MHashes: 0
+19:42:10.058 > >>> Time mining: 0  00:00:45
+19:42:11.054 > >>> Completed 0 share(s), 14876 Khashes, avg. hashrate 353.8 KH/s
+19:42:11.059 > >>> Valid blocks: 0
+19:42:11.059 > >>> Block templates: 1
+19:42:11.063 > >>> Best difficulty: 0.0012
+19:42:11.065 > >>> 32Bit shares: 0
+19:42:11.065 > >>> Temperature: 53
+19:42:11.067 > >>> Total MHashes: 0
+19:42:11.070 > >>> Time mining: 0  00:00:46
+19:42:12.066 > >>> Completed 0 share(s), 15228 Khashes, avg. hashrate 354.2 KH/s
+19:42:12.072 > >>> Valid blocks: 0
+19:42:12.072 > >>> Block templates: 1
+19:42:12.075 > >>> Best difficulty: 0.0012
+19:42:12.077 > >>> 32Bit shares: 0
+19:42:12.077 > >>> Temperature: 53
+19:42:12.079 > >>> Total MHashes: 0
+19:42:12.082 > >>> Time mining: 0  00:00:47
+19:42:13.078 > >>> Completed 0 share(s), 15597 Khashes, avg. hashrate 354.2 KH/s
+19:42:13.083 > >>> Valid blocks: 0
+19:42:13.083 > >>> Block templates: 1
+19:42:13.087 > >>> Best difficulty: 0.0012
+19:42:13.089 > >>> 32Bit shares: 0
+19:42:13.089 > >>> Temperature: 53
+19:42:13.092 > >>> Total MHashes: 0
+19:42:13.094 > >>> Time mining: 0  00:00:48
+19:42:14.090 > >>> Completed 0 share(s), 15966 Khashes, avg. hashrate 355.8 KH/s
+19:42:14.096 > >>> Valid blocks: 0
+19:42:14.096 > >>> Block templates: 1
+19:42:14.099 > >>> Best difficulty: 0.0012
+19:42:14.101 > >>> 32Bit shares: 0
+19:42:14.101 > >>> Temperature: 53
+19:42:14.105 > >>> Total MHashes: 0
+19:42:14.107 > >>> Time mining: 0  00:00:49
+19:42:15.103 > >>> Completed 0 share(s), 16318 Khashes, avg. hashrate 354.2 KH/s
+19:42:15.107 > >>> Valid blocks: 0
+19:42:15.107 > >>> Block templates: 1
+19:42:15.112 > >>> Best difficulty: 0.0012
+19:42:15.113 > >>> 32Bit shares: 0
+19:42:15.113 > >>> Temperature: 61
+19:42:15.116 > >>> Total MHashes: 0
+19:42:15.119 > >>> Time mining: 0  00:00:50
+19:42:16.114 > >>> Completed 0 share(s), 16666 Khashes, avg. hashrate 353.8 KH/s
+19:42:16.121 > >>> Valid blocks: 0
+19:42:16.121 > >>> Block templates: 1
+19:42:16.123 > >>> Best difficulty: 0.0012
+19:42:16.125 > >>> 32Bit shares: 0
+19:42:16.125 > >>> Temperature: 53
+19:42:16.129 > >>> Total MHashes: 0
+19:42:16.133 > >>> Time mining: 0  00:00:51
+19:42:16.688 >   Sending  : {"id":21,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","db56b77a"]}
+19:42:16.701 >    - Current diff share: 0.000196496133
+19:42:16.706 >    - Current pool diff : 0.000150000000
+19:42:16.709 >    - TX SHARE: 8c4cdd85fb5696baaa87cf24c6a26f72be0dd704c567ae381accbd14e1130000
+19:42:16.967 >   Receiving: {"id":21,"error":null,"result":true}
+19:42:17.127 > >>> Completed 0 share(s), 17035 Khashes, avg. hashrate 355.8 KH/s
+19:42:17.132 > >>> Valid blocks: 0
+19:42:17.132 > >>> Block templates: 1
+19:42:17.138 > >>> Best difficulty: 0.0012
+19:42:17.138 > >>> 32Bit shares: 0
+19:42:17.138 > >>> Temperature: 53
+19:42:17.140 > >>> Total MHashes: 0
+19:42:17.143 > >>> Time mining: 0  00:00:52
+19:42:17.220 >   Sending  : {"id":22,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","db5961d3"]}
+19:42:17.232 >    - Current diff share: 0.000298721822
+19:42:17.237 >    - Current pool diff : 0.000150000000
+19:42:17.240 >    - TX SHARE: fe644466794b476d602de117f6e44bfbe13e2b220d3b6f87e1bc848b130d0000
+19:42:17.599 >   Receiving: {"id":22,"error":null,"result":true}
+19:42:18.139 > >>> Completed 0 share(s), 17387 Khashes, avg. hashrate 354.2 KH/s
+19:42:18.145 > >>> Valid blocks: 0
+19:42:18.145 > >>> Block templates: 1
+19:42:18.147 > >>> Best difficulty: 0.0012
+19:42:18.149 > >>> 32Bit shares: 0
+19:42:18.149 > >>> Temperature: 53
+19:42:18.154 > >>> Total MHashes: 0
+19:42:18.155 > >>> Time mining: 0  00:00:53
+19:42:19.150 > >>> Completed 0 share(s), 17739 Khashes, avg. hashrate 352.5 KH/s
+19:42:19.156 > >>> Valid blocks: 0
+19:42:19.156 > >>> Block templates: 1
+19:42:19.160 > >>> Best difficulty: 0.0012
+19:42:19.161 > >>> 32Bit shares: 0
+19:42:19.161 > >>> Temperature: 53
+19:42:19.164 > >>> Total MHashes: 0
+19:42:19.166 > >>> Time mining: 0  00:00:54
+19:42:20.162 > >>> Completed 0 share(s), 18108 Khashes, avg. hashrate 354.2 KH/s
+19:42:20.167 > >>> Valid blocks: 0
+19:42:20.167 > >>> Block templates: 1
+19:42:20.170 > >>> Best difficulty: 0.0012
+19:42:20.173 > >>> 32Bit shares: 0
+19:42:20.173 > >>> Temperature: 53
+19:42:20.176 > >>> Total MHashes: 0
+19:42:20.178 > >>> Time mining: 0  00:00:55
+19:42:20.757 >   Sending  : {"id":23,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f2140","00000001","6924fb34","db6cb392"]}
+19:42:20.770 >    - Current diff share: 0.000190281897
+19:42:20.775 >    - Current pool diff : 0.000150000000
+19:42:20.778 >    - TX SHARE: 819558092d84615efe02d9bf7c2fb868e027d15e1a62565ede55ce4787140000
+19:42:20.986 >   Receiving: {"id":23,"error":null,"result":true}
+19:42:21.175 > >>> Completed 0 share(s), 18456 Khashes, avg. hashrate 353.8 KH/s
+19:42:21.180 > >>> Valid blocks: 0
+19:42:21.180 > >>> Block templates: 1
+19:42:21.183 > >>> Best difficulty: 0.0012
+19:42:21.185 > >>> 32Bit shares: 0
+19:42:21.185 > >>> Temperature: 53
+19:42:21.188 > >>> Total MHashes: 0
+19:42:21.191 > >>> Time mining: 0  00:00:56
+19:42:22.186 > >>> Completed 0 share(s), 18808 Khashes, avg. hashrate 353.8 KH/s
+19:42:22.191 > >>> Valid blocks: 0
+19:42:22.191 > >>> Block templates: 1
+19:42:22.194 > >>> Best difficulty: 0.0012
+19:42:22.197 > >>> 32Bit shares: 0
+19:42:22.197 > >>> Temperature: 61
+19:42:22.200 > >>> Total MHashes: 0
+19:42:22.203 > >>> Time mining: 0  00:00:57
+19:42:23.198 > >>> Completed 0 share(s), 19177 Khashes, avg. hashrate 353.8 KH/s
+19:42:23.204 > >>> Valid blocks: 0
+19:42:23.204 > >>> Block templates: 1
+19:42:23.207 > >>> Best difficulty: 0.0012
+19:42:23.209 > >>> 32Bit shares: 0
+19:42:23.209 > >>> Temperature: 53
+19:42:23.213 > >>> Total MHashes: 0
+19:42:23.215 > >>> Time mining: 0  00:00:58
+19:42:24.210 > >>> Completed 0 share(s), 19529 Khashes, avg. hashrate 352.1 KH/s
+19:42:24.215 > >>> Valid blocks: 0
+19:42:24.215 > >>> Block templates: 1
+19:42:24.222 > >>> Best difficulty: 0.0012
+19:42:24.222 > >>> 32Bit shares: 0
+19:42:24.222 > >>> Temperature: 53
+19:42:24.224 > >>> Total MHashes: 0
+19:42:24.229 > >>> Time mining: 0  00:00:59
+19:42:25.222 > >>> Completed 0 share(s), 19898 Khashes, avg. hashrate 353.8 KH/s
+19:42:25.227 > >>> Valid blocks: 0
+19:42:25.227 > >>> Block templates: 1
+19:42:25.230 > >>> Best difficulty: 0.0012
+19:42:25.233 > >>> 32Bit shares: 0
+19:42:25.233 > >>> Temperature: 53
+19:42:25.236 > >>> Total MHashes: 0
+19:42:25.239 > >>> Time mining: 0  00:01:00
+19:42:26.234 > >>> Completed 0 share(s), 20246 Khashes, avg. hashrate 353.8 KH/s
+19:42:26.239 > >>> Valid blocks: 0
+19:42:26.239 > >>> Block templates: 1
+19:42:26.242 > >>> Best difficulty: 0.0012
+19:42:26.245 > >>> 32Bit shares: 0
+19:42:26.245 > >>> Temperature: 53
+19:42:26.248 > >>> Total MHashes: 0
+19:42:26.251 > >>> Time mining: 0  00:01:01
+19:42:26.500 >   Receiving: {"id":null,"method":"mining.notify","params":["12f344e","73864d647fc710c7639e767dbdcdd179eb3507d000014d350000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6c","ffffffff02fc37bf1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edb83c60367ee60bfce0c0bbd526bbbea243f59240cfd3bf0b7bca3a592a3accc200000000",["4dcb1e7b60d9dc2125cf27b659f210cee8f61354b97a48c5ec9d1361596b4b82","78c8ab16cc7a2028cdc78f69993d65ca1003d08bafe246585d23af17ad2f715b","6dbff74608160c57aaba1712c99e5b9b842362f1ca163a28c71b35f65652064f","e1a5ff6aff2ae620b065e7e11339f37f37fd9b6295d0dd9ae3ef616f62e964b6","7ba02e0f521aa3ce7373b11fad2bcbf4cd7816353570a6576d44990995658f27","105d0023c7be83982f2223e96cf347cb5bf1a18707626b42cf4a4dc8d42dc926","ec460ec12ae891255f6adbc43f46ab6dc70dc38c46de555eb74dbe6aa2927a6a","5123583ee3d149cc9147438462419240974c504ef2dec1e712a6e6c9092efd8c","93102ab66ea71b59485f0bd1422048eab596ccf6d157362f623529cedcca9311","54ee2e3ee93a9be0acd13d7ad9e690b309676ce7118a98f261f1f5c819107a6c","5d2c3fac97f897d3abbc76cefaa7d5129145d98642b00a830a2e52678966d068","4abab12b15fb2b70e51c3fa4669924feed7fa12fa4541614a10de69664ad93eb"],"20000000","1701d936","6924fb70",false]}
+19:42:26.608 >     Parsing Method [MINING NOTIFY]
+19:42:26.613 >     target: 00000000000000000001d9360000000000000000000000000000000000000000
+19:42:26.619 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6cb2254c3500000001ffffffff02fc37bf1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edb83c60367ee60bfce0c0bbd526bbbea243f59240cfd3bf0b7bca3a592a3accc200000000
+19:42:26.647 >     merkle sha         : aa2b33befa438d6a959e4bafbdc9fa787ab419abe92cdc627f0d949a49f59ee1
+19:42:27.246 > >>> Completed 0 share(s), 20585 Khashes, avg. hashrate 350.8 KH/s
+19:42:27.252 > >>> Valid blocks: 0
+19:42:27.252 > >>> Block templates: 2
+19:42:27.255 > >>> Best difficulty: 0.0012
+19:42:27.257 > >>> 32Bit shares: 0
+19:42:27.257 > >>> Temperature: 53
+19:42:27.260 > >>> Total MHashes: 20
+19:42:27.263 > >>> Time mining: 0  00:01:02
+19:42:28.258 > >>> Completed 0 share(s), 20953 Khashes, avg. hashrate 352.4 KH/s
+19:42:28.264 > >>> Valid blocks: 0
+19:42:28.264 > >>> Block templates: 2
+19:42:28.266 > >>> Best difficulty: 0.0012
+19:42:28.269 > >>> 32Bit shares: 0
+19:42:28.269 > >>> Temperature: 53
+19:42:28.272 > >>> Total MHashes: 20
+19:42:28.275 > >>> Time mining: 0  00:01:03
+19:42:28.455 >   Receiving: {"id":null,"method":"mining.set_difficulty","params":[0.0016]}
+19:42:28.461 >     Parsing Method [SET DIFFICULTY]
+19:42:28.463 >     difficulty: 0.001600000000
+19:42:28.774 >   Receiving: {"id":null,"method":"mining.notify","params":["12f346e","73864d647fc710c7639e767dbdcdd179eb3507d000014d350000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6c","ffffffff02fc37bf1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edb83c60367ee60bfce0c0bbd526bbbea243f59240cfd3bf0b7bca3a592a3accc200000000",["4dcb1e7b60d9dc2125cf27b659f210cee8f61354b97a48c5ec9d1361596b4b82","78c8ab16cc7a2028cdc78f69993d65ca1003d08bafe246585d23af17ad2f715b","6dbff74608160c57aaba1712c99e5b9b842362f1ca163a28c71b35f65652064f","e1a5ff6aff2ae620b065e7e11339f37f37fd9b6295d0dd9ae3ef616f62e964b6","7ba02e0f521aa3ce7373b11fad2bcbf4cd7816353570a6576d44990995658f27","105d0023c7be83982f2223e96cf347cb5bf1a18707626b42cf4a4dc8d42dc926","ec460ec12ae891255f6adbc43f46ab6dc70dc38c46de555eb74dbe6aa2927a6a","5123583ee3d149cc9147438462419240974c504ef2dec1e712a6e6c9092efd8c","93102ab66ea71b59485f0bd1422048eab596ccf6d157362f623529cedcca9311","54ee2e3ee93a9be0acd13d7ad9e690b309676ce7118a98f261f1f5c819107a6c","5d2c3fac97f897d3abbc76cefaa7d5129145d98642b00a830a2e52678966d068","4abab12b15fb2b70e51c3fa4669924feed7fa12fa4541614a10de69664ad93eb"],"20000000","1701d936","6924fb70",true]}
+19:42:28.882 >     Parsing Method [MINING NOTIFY]
+19:42:28.887 >     target: 00000000000000000001d9360000000000000000000000000000000000000000
+19:42:28.893 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6cb2254c3500000001ffffffff02fc37bf1200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edb83c60367ee60bfce0c0bbd526bbbea243f59240cfd3bf0b7bca3a592a3accc200000000
+19:42:28.921 >     merkle sha         : aa2b33befa438d6a959e4bafbdc9fa787ab419abe92cdc627f0d949a49f59ee1
+19:42:29.270 > >>> Completed 0 share(s), 21276 Khashes, avg. hashrate 349.5 KH/s
+19:42:29.276 > >>> Valid blocks: 0
+19:42:29.276 > >>> Block templates: 3
+19:42:29.279 > >>> Best difficulty: 0.0012
+19:42:29.281 > >>> 32Bit shares: 0
+19:42:29.281 > >>> Temperature: 53
+19:42:29.284 > >>> Total MHashes: 21
+19:42:29.287 > >>> Time mining: 0  00:01:04
+19:42:30.283 > >>> Completed 0 share(s), 21649 Khashes, avg. hashrate 349.9 KH/s
+19:42:30.288 > >>> Valid blocks: 0
+19:42:30.288 > >>> Block templates: 3
+19:42:30.290 > >>> Best difficulty: 0.0012
+19:42:30.293 > >>> 32Bit shares: 0
+19:42:30.293 > >>> Temperature: 53
+19:42:30.296 > >>> Total MHashes: 21
+19:42:30.299 > >>> Time mining: 0  00:01:05
+19:42:31.295 > >>> Completed 0 share(s), 22014 Khashes, avg. hashrate 351.6 KH/s
+19:42:31.300 > >>> Valid blocks: 0
+19:42:31.300 > >>> Block templates: 3
+19:42:31.304 > >>> Best difficulty: 0.0012
+19:42:31.306 > >>> 32Bit shares: 0
+19:42:31.306 > >>> Temperature: 61
+19:42:31.309 > >>> Total MHashes: 21
+19:42:31.311 > >>> Time mining: 0  00:01:06
+19:42:32.307 > >>> Completed 0 share(s), 22366 Khashes, avg. hashrate 351.6 KH/s
+19:42:32.312 > >>> Valid blocks: 0
+19:42:32.312 > >>> Block templates: 3
+19:42:32.316 > >>> Best difficulty: 0.0012
+19:42:32.317 > >>> 32Bit shares: 0
+19:42:32.317 > >>> Temperature: 53
+19:42:32.321 > >>> Total MHashes: 21
+19:42:32.323 > >>> Time mining: 0  00:01:07
+19:42:33.132 >   Sending  : {"id":24,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f346e","00000001","6924fb70","da6b717d"]}
+19:42:33.146 >    - Current diff share: 0.001651358592
+19:42:33.149 >    - Current pool diff : 0.001600000000
+19:42:33.152 >    - TX SHARE: 15363d81c14d42a1c819fa0d6029fe58119d692e9bfd39779932818d5d020000
+19:42:33.318 > >>> Completed 0 share(s), 22735 Khashes, avg. hashrate 351.6 KH/s
+19:42:33.324 > >>> Valid blocks: 0
+19:42:33.324 > >>> Block templates: 3
+19:42:33.327 > >>> Best difficulty: 0.0012
+19:42:33.329 > >>> 32Bit shares: 0
+19:42:33.329 > >>> Temperature: 53
+19:42:33.332 > >>> Total MHashes: 21
+19:42:33.335 > >>> Time mining: 0  00:01:08
+19:42:33.461 >   Receiving: {"id":24,"error":null,"result":true}
+19:42:34.331 > >>> Completed 0 share(s), 23087 Khashes, avg. hashrate 351.6 KH/s
+19:42:34.338 > >>> Valid blocks: 0
+19:42:34.338 > >>> Block templates: 3
+19:42:34.340 > >>> Best difficulty: 0.0017
+19:42:34.342 > >>> 32Bit shares: 0
+19:42:34.342 > >>> Temperature: 53
+19:42:34.346 > >>> Total MHashes: 21
+19:42:34.349 > >>> Time mining: 0  00:01:09
+19:42:35.343 > >>> Completed 0 share(s), 23439 Khashes, avg. hashrate 349.9 KH/s
+19:42:35.348 > >>> Valid blocks: 0
+19:42:35.348 > >>> Block templates: 3
+19:42:35.351 > >>> Best difficulty: 0.0017
+19:42:35.353 > >>> 32Bit shares: 0
+19:42:35.353 > >>> Temperature: 53
+19:42:35.356 > >>> Total MHashes: 21
+19:42:35.359 > >>> Time mining: 0  00:01:10
+19:42:36.355 > >>> Completed 0 share(s), 23791 Khashes, avg. hashrate 350.3 KH/s
+19:42:36.360 > >>> Valid blocks: 0
+19:42:36.360 > >>> Block templates: 3
+19:42:36.363 > >>> Best difficulty: 0.0017
+19:42:36.365 > >>> 32Bit shares: 0
+19:42:36.365 > >>> Temperature: 53
+19:42:36.368 > >>> Total MHashes: 21
+19:42:36.371 > >>> Time mining: 0  00:01:11
+19:42:37.367 > >>> Completed 0 share(s), 24140 Khashes, avg. hashrate 351.3 KH/s
+19:42:37.372 > >>> Valid blocks: 0
+19:42:37.372 > >>> Block templates: 3
+19:42:37.375 > >>> Best difficulty: 0.0017
+19:42:37.377 > >>> 32Bit shares: 0
+19:42:37.377 > >>> Temperature: 53
+19:42:37.382 > >>> Total MHashes: 21
+19:42:37.383 > >>> Time mining: 0  00:01:13
+19:42:38.378 > >>> Completed 0 share(s), 24529 Khashes, avg. hashrate 353.4 KH/s
+19:42:38.384 > >>> Valid blocks: 0
+19:42:38.384 > >>> Block templates: 3
+19:42:38.387 > >>> Best difficulty: 0.0017
+19:42:38.389 > >>> 32Bit shares: 0
+19:42:38.389 > >>> Temperature: 53
+19:42:38.392 > >>> Total MHashes: 21
+19:42:38.395 > >>> Time mining: 0  00:01:14
+19:42:39.391 > >>> Completed 0 share(s), 24877 Khashes, avg. hashrate 355.8 KH/s
+19:42:39.396 > >>> Valid blocks: 0
+19:42:39.396 > >>> Block templates: 3
+19:42:39.399 > >>> Best difficulty: 0.0017
+19:42:39.402 > >>> 32Bit shares: 0
+19:42:39.402 > >>> Temperature: 53
+19:42:39.404 > >>> Total MHashes: 21
+19:42:39.407 > >>> Time mining: 0  00:01:15
+19:42:40.404 > >>> Completed 0 share(s), 25229 Khashes, avg. hashrate 353.8 KH/s
+19:42:40.408 > >>> Valid blocks: 0
+19:42:40.408 > >>> Block templates: 3
+19:42:40.412 > >>> Best difficulty: 0.0017
+19:42:40.414 > >>> 32Bit shares: 0
+19:42:40.414 > >>> Temperature: 53
+19:42:40.417 > >>> Total MHashes: 21
+19:42:40.419 > >>> Time mining: 0  00:01:16
+19:42:41.415 > >>> Completed 0 share(s), 25581 Khashes, avg. hashrate 352.5 KH/s
+19:42:41.421 > >>> Valid blocks: 0
+19:42:41.421 > >>> Block templates: 3
+19:42:41.423 > >>> Best difficulty: 0.0017
+19:42:41.426 > >>> 32Bit shares: 0
+19:42:41.426 > >>> Temperature: 53
+19:42:41.430 > >>> Total MHashes: 21
+19:42:41.431 > >>> Time mining: 0  00:01:17
+19:42:42.428 > >>> Completed 0 share(s), 25950 Khashes, avg. hashrate 354.2 KH/s
+19:42:42.432 > >>> Valid blocks: 0
+19:42:42.432 > >>> Block templates: 3
+19:42:42.435 > >>> Best difficulty: 0.0017
+19:42:42.438 > >>> 32Bit shares: 0
+19:42:42.438 > >>> Temperature: 53
+19:42:42.440 > >>> Total MHashes: 21
+19:42:42.446 > >>> Time mining: 0  00:01:18
+19:42:43.439 > >>> Completed 0 share(s), 26319 Khashes, avg. hashrate 354.2 KH/s
+19:42:43.444 > >>> Valid blocks: 0
+19:42:43.444 > >>> Block templates: 3
+19:42:43.447 > >>> Best difficulty: 0.0017
+19:42:43.450 > >>> 32Bit shares: 0
+19:42:43.450 > >>> Temperature: 53
+19:42:43.452 > >>> Total MHashes: 21
+19:42:43.455 > >>> Time mining: 0  00:01:19
+19:42:44.451 > >>> Completed 0 share(s), 26671 Khashes, avg. hashrate 354.2 KH/s
+19:42:44.459 > >>> Valid blocks: 0
+19:42:44.459 > >>> Block templates: 3
+19:42:44.460 > >>> Best difficulty: 0.0017
+19:42:44.462 > >>> 32Bit shares: 0
+19:42:44.462 > >>> Temperature: 53
+19:42:44.466 > >>> Total MHashes: 21
+19:42:44.467 > >>> Time mining: 0  00:01:20
+19:42:45.463 > >>> Completed 0 share(s), 27019 Khashes, avg. hashrate 353.8 KH/s
+19:42:45.468 > >>> Valid blocks: 0
+19:42:45.468 > >>> Block templates: 3
+19:42:45.472 > >>> Best difficulty: 0.0017
+19:42:45.474 > >>> 32Bit shares: 0
+19:42:45.474 > >>> Temperature: 53
+19:42:45.477 > >>> Total MHashes: 21
+19:42:45.479 > >>> Time mining: 0  00:01:21
+19:42:46.475 > >>> Completed 0 share(s), 27371 Khashes, avg. hashrate 353.8 KH/s
+19:42:46.480 > >>> Valid blocks: 0
+19:42:46.480 > >>> Block templates: 3
+19:42:46.484 > >>> Best difficulty: 0.0017
+19:42:46.486 > >>> 32Bit shares: 0
+19:42:46.486 > >>> Temperature: 53
+19:42:46.489 > >>> Total MHashes: 21
+19:42:46.492 > >>> Time mining: 0  00:01:22
+19:42:47.487 > >>> Completed 0 share(s), 27744 Khashes, avg. hashrate 356.1 KH/s
+19:42:47.492 > >>> Valid blocks: 0
+19:42:47.492 > >>> Block templates: 3
+19:42:47.498 > >>> Best difficulty: 0.0017
+19:42:47.499 > >>> 32Bit shares: 0
+19:42:47.499 > >>> Temperature: 53
+19:42:47.501 > >>> Total MHashes: 21
+19:42:47.503 > >>> Time mining: 0  00:01:23
+19:42:48.499 > >>> Completed 0 share(s), 28092 Khashes, avg. hashrate 352.1 KH/s
+19:42:48.504 > >>> Valid blocks: 0
+19:42:48.504 > >>> Block templates: 3
+19:42:48.507 > >>> Best difficulty: 0.0017
+19:42:48.510 > >>> 32Bit shares: 0
+19:42:48.510 > >>> Temperature: 53
+19:42:48.513 > >>> Total MHashes: 21
+19:42:48.515 > >>> Time mining: 0  00:01:24
+19:42:49.511 > >>> Completed 0 share(s), 28461 Khashes, avg. hashrate 354.2 KH/s
+19:42:49.516 > >>> Valid blocks: 0
+19:42:49.516 > >>> Block templates: 3
+19:42:49.519 > >>> Best difficulty: 0.0017
+19:42:49.525 > >>> 32Bit shares: 0
+19:42:49.525 > >>> Temperature: 53
+19:42:49.525 > >>> Total MHashes: 21
+19:42:49.528 > >>> Time mining: 0  00:01:25
+19:42:50.524 > >>> Completed 0 share(s), 28813 Khashes, avg. hashrate 354.2 KH/s
+19:42:50.530 > >>> Valid blocks: 0
+19:42:50.530 > >>> Block templates: 3
+19:42:50.532 > >>> Best difficulty: 0.0017
+19:42:50.534 > >>> 32Bit shares: 0
+19:42:50.534 > >>> Temperature: 53
+19:42:50.538 > >>> Total MHashes: 21
+19:42:50.540 > >>> Time mining: 0  00:01:26
+19:42:51.535 > >>> Completed 0 share(s), 29182 Khashes, avg. hashrate 355.8 KH/s
+19:42:51.540 > >>> Valid blocks: 0
+19:42:51.540 > >>> Block templates: 3
+19:42:51.543 > >>> Best difficulty: 0.0017
+19:42:51.546 > >>> 32Bit shares: 0
+19:42:51.546 > >>> Temperature: 53
+19:42:51.549 > >>> Total MHashes: 21
+19:42:51.551 > >>> Time mining: 0  00:01:27
+19:42:52.547 > >>> Completed 0 share(s), 29534 Khashes, avg. hashrate 354.2 KH/s
+19:42:52.554 > >>> Valid blocks: 0
+19:42:52.554 > >>> Block templates: 3
+19:42:52.556 > >>> Best difficulty: 0.0017
+19:42:52.558 > >>> 32Bit shares: 0
+19:42:52.558 > >>> Temperature: 53
+19:42:52.561 > >>> Total MHashes: 21
+19:42:52.564 > >>> Time mining: 0  00:01:28
+19:42:53.559 > >>> Completed 0 share(s), 29886 Khashes, avg. hashrate 352.5 KH/s
+19:42:53.565 > >>> Valid blocks: 0
+19:42:53.565 > >>> Block templates: 3
+19:42:53.567 > >>> Best difficulty: 0.0017
+19:42:53.571 > >>> 32Bit shares: 0
+19:42:53.571 > >>> Temperature: 53
+19:42:53.574 > >>> Total MHashes: 21
+19:42:53.576 > >>> Time mining: 0  00:01:29
+19:42:54.571 > >>> Completed 0 share(s), 30255 Khashes, avg. hashrate 354.2 KH/s
+19:42:54.577 > >>> Valid blocks: 0
+19:42:54.577 > >>> Block templates: 3
+19:42:54.580 > >>> Best difficulty: 0.0017
+19:42:54.582 > >>> 32Bit shares: 0
+19:42:54.582 > >>> Temperature: 53
+19:42:54.585 > >>> Total MHashes: 21
+19:42:54.587 > >>> Time mining: 0  00:01:30
+19:42:55.583 > >>> Completed 0 share(s), 30603 Khashes, avg. hashrate 354.2 KH/s
+19:42:55.589 > >>> Valid blocks: 0
+19:42:55.589 > >>> Block templates: 3
+19:42:55.591 > >>> Best difficulty: 0.0017
+19:42:55.594 > >>> 32Bit shares: 0
+19:42:55.594 > >>> Temperature: 53
+19:42:55.597 > >>> Total MHashes: 21
+19:42:55.600 > >>> Time mining: 0  00:01:31
+19:42:56.596 > >>> Completed 0 share(s), 30976 Khashes, avg. hashrate 356.2 KH/s
+19:42:56.600 > >>> Valid blocks: 0
+19:42:56.600 > >>> Block templates: 3
+19:42:56.605 > >>> Best difficulty: 0.0017
+19:42:56.606 > >>> 32Bit shares: 0
+19:42:56.606 > >>> Temperature: 53
+19:42:56.609 > >>> Total MHashes: 21
+19:42:56.612 > >>> Time mining: 0  00:01:32
+19:42:57.607 > >>> Completed 0 share(s), 31324 Khashes, avg. hashrate 353.8 KH/s
+19:42:57.613 > >>> Valid blocks: 0
+19:42:57.613 > >>> Block templates: 3
+19:42:57.616 > >>> Best difficulty: 0.0017
+19:42:57.618 > >>> 32Bit shares: 0
+19:42:57.618 > >>> Temperature: 61
+19:42:57.622 > >>> Total MHashes: 21
+19:42:57.625 > >>> Time mining: 0  00:01:33
+19:42:58.620 > >>> Completed 0 share(s), 31676 Khashes, avg. hashrate 354.2 KH/s
+19:42:58.624 > >>> Valid blocks: 0
+19:42:58.624 > >>> Block templates: 3
+19:42:58.629 > >>> Best difficulty: 0.0017
+19:42:58.630 > >>> 32Bit shares: 0
+19:42:58.630 > >>> Temperature: 53
+19:42:58.633 > >>> Total MHashes: 21
+19:42:58.637 > >>> Time mining: 0  00:01:34
+19:42:59.632 > >>> Completed 0 share(s), 32045 Khashes, avg. hashrate 354.2 KH/s
+19:42:59.637 > >>> Valid blocks: 0
+19:42:59.637 > >>> Block templates: 3
+19:42:59.639 > >>> Best difficulty: 0.0017
+19:42:59.642 > >>> 32Bit shares: 0
+19:42:59.642 > >>> Temperature: 53
+19:42:59.645 > >>> Total MHashes: 21
+19:42:59.648 > >>> Time mining: 0  00:01:35
+19:43:00.643 > >>> Completed 0 share(s), 32397 Khashes, avg. hashrate 354.2 KH/s
+19:43:00.649 > >>> Valid blocks: 0
+19:43:00.649 > >>> Block templates: 3
+19:43:00.652 > >>> Best difficulty: 0.0017
+19:43:00.655 > >>> 32Bit shares: 0
+19:43:00.655 > >>> Temperature: 53
+19:43:00.658 > >>> Total MHashes: 21
+19:43:00.660 > >>> Time mining: 0  00:01:36
+19:43:01.655 > >>> Completed 0 share(s), 32766 Khashes, avg. hashrate 354.2 KH/s
+19:43:01.661 > >>> Valid blocks: 0
+19:43:01.661 > >>> Block templates: 3
+19:43:01.664 > >>> Best difficulty: 0.0017
+19:43:01.667 > >>> 32Bit shares: 0
+19:43:01.667 > >>> Temperature: 53
+19:43:01.669 > >>> Total MHashes: 21
+19:43:01.672 > >>> Time mining: 0  00:01:37
+19:43:02.667 > >>> Completed 0 share(s), 33118 Khashes, avg. hashrate 354.2 KH/s
+19:43:02.673 > >>> Valid blocks: 0
+19:43:02.673 > >>> Block templates: 3
+19:43:02.676 > >>> Best difficulty: 0.0017
+19:43:02.678 > >>> 32Bit shares: 0
+19:43:02.678 > >>> Temperature: 53
+19:43:02.682 > >>> Total MHashes: 21
+19:43:02.684 > >>> Time mining: 0  00:01:38
+19:43:03.198 >   Sending  : KeepAlive suggest_difficulty
+19:43:03.200 >   Sending  : {"id":25,"method":"mining.suggest_difficulty","params":[0.00015]}
+19:43:03.680 > >>> Completed 0 share(s), 33487 Khashes, avg. hashrate 355.8 KH/s
+19:43:03.685 > >>> Valid blocks: 0
+19:43:03.685 > >>> Block templates: 3
+19:43:03.688 > >>> Best difficulty: 0.0017
+19:43:03.691 > >>> 32Bit shares: 0
+19:43:03.691 > >>> Temperature: 53
+19:43:03.693 > >>> Total MHashes: 21
+19:43:03.696 > >>> Time mining: 0  00:01:39
+19:43:04.656 >   Sending  : {"id":26,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f346e","00000001","6924fb70","db15ea6b"]}
+19:43:04.668 >    - Current diff share: 0.001723494149
+19:43:04.674 >    - Current pool diff : 0.001600000000
+19:43:04.677 >    - TX SHARE: 7f28146b46908e86542b9f0e45eedd45c0459bff5f56bb9bb81c323544020000
+19:43:04.691 > >>> Completed 0 share(s), 33835 Khashes, avg. hashrate 353.8 KH/s
+19:43:04.697 > >>> Valid blocks: 0
+19:43:04.697 > >>> Block templates: 3
+19:43:04.700 > >>> Best difficulty: 0.0017
+19:43:04.702 > >>> 32Bit shares: 0
+19:43:04.702 > >>> Temperature: 61
+19:43:04.705 > >>> Total MHashes: 21
+19:43:04.708 > >>> Time mining: 0  00:01:40
+19:43:04.986 >   Receiving: {"id":26,"error":null,"result":true}
+19:43:05.705 > >>> Completed 0 share(s), 34203 Khashes, avg. hashrate 355.7 KH/s
+19:43:05.709 > >>> Valid blocks: 0
+19:43:05.709 > >>> Block templates: 3
+19:43:05.713 > >>> Best difficulty: 0.0017
+19:43:05.715 > >>> 32Bit shares: 0
+19:43:05.715 > >>> Temperature: 53
+19:43:05.718 > >>> Total MHashes: 21
+19:43:05.720 > >>> Time mining: 0  00:01:41
+19:43:06.716 > >>> Completed 0 share(s), 34556 Khashes, avg. hashrate 353.8 KH/s
+19:43:06.722 > >>> Valid blocks: 0
+19:43:06.722 > >>> Block templates: 3
+19:43:06.724 > >>> Best difficulty: 0.0017
+19:43:06.726 > >>> 32Bit shares: 0
+19:43:06.726 > >>> Temperature: 53
+19:43:06.730 > >>> Total MHashes: 21
+19:43:06.732 > >>> Time mining: 0  00:01:42
+19:43:07.729 > >>> Completed 0 share(s), 34908 Khashes, avg. hashrate 354.2 KH/s
+19:43:07.733 > >>> Valid blocks: 0
+19:43:07.733 > >>> Block templates: 3
+19:43:07.736 > >>> Best difficulty: 0.0017
+19:43:07.739 > >>> 32Bit shares: 0
+19:43:07.739 > >>> Temperature: 60
+19:43:07.741 > >>> Total MHashes: 21
+19:43:07.744 > >>> Time mining: 0  00:01:43
+19:43:08.740 > >>> Completed 0 share(s), 35260 Khashes, avg. hashrate 354.2 KH/s
+19:43:08.745 > >>> Valid blocks: 0
+19:43:08.745 > >>> Block templates: 3
+19:43:08.748 > >>> Best difficulty: 0.0017
+19:43:08.751 > >>> 32Bit shares: 0
+19:43:08.751 > >>> Temperature: 53
+19:43:08.753 > >>> Total MHashes: 21
+19:43:08.759 > >>> Time mining: 0  00:01:44
+19:43:09.752 > >>> Completed 0 share(s), 35629 Khashes, avg. hashrate 354.2 KH/s
+19:43:09.765 > >>> Valid blocks: 0
+19:43:09.765 > >>> Block templates: 3
+19:43:09.765 > >>> Best difficulty: 0.0017
+19:43:09.765 > >>> 32Bit shares: 0
+19:43:09.765 > >>> Temperature: 53
+19:43:09.765 > >>> Total MHashes: 21
+19:43:09.768 > >>> Time mining: 0  00:01:45
+19:43:10.764 > >>> Completed 0 share(s), 35997 Khashes, avg. hashrate 355.7 KH/s
+19:43:10.769 > >>> Valid blocks: 0
+19:43:10.769 > >>> Block templates: 3
+19:43:10.772 > >>> Best difficulty: 0.0017
+19:43:10.775 > >>> 32Bit shares: 0
+19:43:10.775 > >>> Temperature: 53
+19:43:10.777 > >>> Total MHashes: 21
+19:43:10.781 > >>> Time mining: 0  00:01:46
+19:43:11.776 > >>> Completed 0 share(s), 36346 Khashes, avg. hashrate 353.8 KH/s
+19:43:11.781 > >>> Valid blocks: 0
+19:43:11.781 > >>> Block templates: 3
+19:43:11.784 > >>> Best difficulty: 0.0017
+19:43:11.787 > >>> 32Bit shares: 0
+19:43:11.787 > >>> Temperature: 53
+19:43:11.790 > >>> Total MHashes: 21
+19:43:11.792 > >>> Time mining: 0  00:01:47
+19:43:12.788 > >>> Completed 0 share(s), 36698 Khashes, avg. hashrate 353.8 KH/s
+19:43:12.793 > >>> Valid blocks: 0
+19:43:12.793 > >>> Block templates: 3
+19:43:12.797 > >>> Best difficulty: 0.0017
+19:43:12.799 > >>> 32Bit shares: 0
+19:43:12.799 > >>> Temperature: 53
+19:43:12.801 > >>> Total MHashes: 21
+19:43:12.804 > >>> Time mining: 0  00:01:48
+19:43:13.800 > >>> Completed 0 share(s), 37071 Khashes, avg. hashrate 354.2 KH/s
+19:43:13.805 > >>> Valid blocks: 0
+19:43:13.805 > >>> Block templates: 3
+19:43:13.808 > >>> Best difficulty: 0.0017
+19:43:13.811 > >>> 32Bit shares: 0
+19:43:13.811 > >>> Temperature: 53
+19:43:13.814 > >>> Total MHashes: 21
+19:43:13.816 > >>> Time mining: 0  00:01:49
+19:43:14.812 > >>> Completed 0 share(s), 37419 Khashes, avg. hashrate 354.2 KH/s
+19:43:14.817 > >>> Valid blocks: 0
+19:43:14.817 > >>> Block templates: 3
+19:43:14.823 > >>> Best difficulty: 0.0017
+19:43:14.823 > >>> 32Bit shares: 0
+19:43:14.823 > >>> Temperature: 53
+19:43:14.825 > >>> Total MHashes: 21
+19:43:14.828 > >>> Time mining: 0  00:01:50
+19:43:15.824 > >>> Completed 0 share(s), 37771 Khashes, avg. hashrate 352.6 KH/s
+19:43:15.830 > >>> Valid blocks: 0
+19:43:15.830 > >>> Block templates: 3
+19:43:15.832 > >>> Best difficulty: 0.0017
+19:43:15.835 > >>> 32Bit shares: 0
+19:43:15.835 > >>> Temperature: 53
+19:43:15.839 > >>> Total MHashes: 21
+19:43:15.840 > >>> Time mining: 0  00:01:51
+19:43:16.836 > >>> Completed 0 share(s), 38140 Khashes, avg. hashrate 354.2 KH/s
+19:43:16.841 > >>> Valid blocks: 0
+19:43:16.841 > >>> Block templates: 3
+19:43:16.844 > >>> Best difficulty: 0.0017
+19:43:16.847 > >>> 32Bit shares: 0
+19:43:16.847 > >>> Temperature: 53
+19:43:16.850 > >>> Total MHashes: 21
+19:43:16.852 > >>> Time mining: 0  00:01:52
+19:43:17.848 > >>> Completed 0 share(s), 38492 Khashes, avg. hashrate 354.2 KH/s
+19:43:17.853 > >>> Valid blocks: 0
+19:43:17.853 > >>> Block templates: 3
+19:43:17.856 > >>> Best difficulty: 0.0017
+19:43:17.860 > >>> 32Bit shares: 0
+19:43:17.860 > >>> Temperature: 53
+19:43:17.864 > >>> Total MHashes: 21
+19:43:17.864 > >>> Time mining: 0  00:01:53
+19:43:18.860 > >>> Completed 0 share(s), 38861 Khashes, avg. hashrate 355.8 KH/s
+19:43:18.865 > >>> Valid blocks: 0
+19:43:18.865 > >>> Block templates: 3
+19:43:18.868 > >>> Best difficulty: 0.0017
+19:43:18.872 > >>> 32Bit shares: 0
+19:43:18.872 > >>> Temperature: 53
+19:43:18.874 > >>> Total MHashes: 21
+19:43:18.876 > >>> Time mining: 0  00:01:54
+19:43:19.872 > >>> Completed 0 share(s), 39213 Khashes, avg. hashrate 354.2 KH/s
+19:43:19.877 > >>> Valid blocks: 0
+19:43:19.877 > >>> Block templates: 3
+19:43:19.880 > >>> Best difficulty: 0.0017
+19:43:19.883 > >>> 32Bit shares: 0
+19:43:19.883 > >>> Temperature: 53
+19:43:19.886 > >>> Total MHashes: 21
+19:43:19.888 > >>> Time mining: 0  00:01:55
+19:43:20.884 > >>> Completed 0 share(s), 39565 Khashes, avg. hashrate 352.6 KH/s
+19:43:20.890 > >>> Valid blocks: 0
+19:43:20.890 > >>> Block templates: 3
+19:43:20.893 > >>> Best difficulty: 0.0017
+19:43:20.896 > >>> 32Bit shares: 0
+19:43:20.896 > >>> Temperature: 53
+19:43:20.899 > >>> Total MHashes: 21
+19:43:20.901 > >>> Time mining: 0  00:01:56
+19:43:21.897 > >>> Completed 0 share(s), 39930 Khashes, avg. hashrate 354.2 KH/s
+19:43:21.901 > >>> Valid blocks: 0
+19:43:21.901 > >>> Block templates: 3
+19:43:21.907 > >>> Best difficulty: 0.0017
+19:43:21.907 > >>> 32Bit shares: 0
+19:43:21.907 > >>> Temperature: 53
+19:43:21.910 > >>> Total MHashes: 21
+19:43:21.916 > >>> Time mining: 0  00:01:57
+19:43:22.908 > >>> Completed 0 share(s), 40282 Khashes, avg. hashrate 354.2 KH/s
+19:43:22.915 > >>> Valid blocks: 0
+19:43:22.915 > >>> Block templates: 3
+19:43:22.916 > >>> Best difficulty: 0.0017
+19:43:22.919 > >>> 32Bit shares: 0
+19:43:22.919 > >>> Temperature: 53
+19:43:22.923 > >>> Total MHashes: 21
+19:43:22.925 > >>> Time mining: 0  00:01:58
+19:43:23.921 > >>> Completed 0 share(s), 40651 Khashes, avg. hashrate 353.8 KH/s
+19:43:23.926 > >>> Valid blocks: 0
+19:43:23.926 > >>> Block templates: 3
+19:43:23.929 > >>> Best difficulty: 0.0017
+19:43:23.931 > >>> 32Bit shares: 0
+19:43:23.931 > >>> Temperature: 53
+19:43:23.934 > >>> Total MHashes: 21
+19:43:23.936 > >>> Time mining: 0  00:01:59
+19:43:24.932 > >>> Completed 0 share(s), 41003 Khashes, avg. hashrate 354.2 KH/s
+19:43:24.939 > >>> Valid blocks: 0
+19:43:24.939 > >>> Block templates: 3
+19:43:24.940 > >>> Best difficulty: 0.0017
+19:43:24.943 > >>> 32Bit shares: 0
+19:43:24.943 > >>> Temperature: 60
+19:43:24.950 > >>> Total MHashes: 21
+19:43:24.950 > >>> Time mining: 0  00:02:00
+19:43:25.945 > >>> Completed 0 share(s), 41355 Khashes, avg. hashrate 354.2 KH/s
+19:43:25.950 > >>> Valid blocks: 0
+19:43:25.950 > >>> Block templates: 3
+19:43:25.953 > >>> Best difficulty: 0.0017
+19:43:25.956 > >>> 32Bit shares: 0
+19:43:25.956 > >>> Temperature: 53
+19:43:25.958 > >>> Total MHashes: 21
+19:43:25.961 > >>> Time mining: 0  00:02:01
+19:43:26.217 >   Receiving: {"id":null,"method":"mining.notify","params":["12f475e","73864d647fc710c7639e767dbdcdd179eb3507d000014d350000000000000000","02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6c","ffffffff022031c11200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edeb752c155c42f159687b04e9ff4fd46db6c8cf92590e41fcba568e1af3cb8d3800000000",["4dcb1e7b60d9dc2125cf27b659f210cee8f61354b97a48c5ec9d1361596b4b82","78c8ab16cc7a2028cdc78f69993d65ca1003d08bafe246585d23af17ad2f715b","6dbff74608160c57aaba1712c99e5b9b842362f1ca163a28c71b35f65652064f","e1a5ff6aff2ae620b065e7e11339f37f37fd9b6295d0dd9ae3ef616f62e964b6","7ba02e0f521aa3ce7373b11fad2bcbf4cd7816353570a6576d44990995658f27","2d7a00c0b3a6c6957e51f3b753541eea412db911cbe137fb753fb5846ef32d26","cdd84e734699cd97202e39bdc5c304c570cded28b4ac2794bdd3cd94a82d189c","ce3fbdd99abe78dd9ea1fc4e96483984445f629ef2b6644922d83b6b06a302bd","6658bd208077ee03592fa31e49e6b33569649112a2b85e76b39ccc2b4a877567","deecd51eeb2f0987285e2d94882a0cb82b071eeb20c86a35dff4764c7db1e0e3","5ecb2c040d930d143f18432276211fccd80ec1b88c34ed3cdd1084aa11ae75ad","900ca8ae4d34b1e0acda9cd5c8173ba7ed2c7204a1ef6b7bb84fb5c9d6e137bd"],"20000000","1701d936","6924fbac",false]}
+19:43:26.325 >     Parsing Method [MINING NOTIFY]
+19:43:26.330 >     target: 00000000000000000001d9360000000000000000000000000000000000000000
+19:43:26.336 >     coinbase: 02000000010000000000000000000000000000000000000000000000000000000000000000ffffffff17038b1d0e5075626c69632d506f6f6cb2254c3500000001ffffffff022031c11200000000160014d08b6997c9fa28ae68a2871d25ea08f70c894a000000000000000000266a24aa21a9edeb752c155c42f159687b04e9ff4fd46db6c8cf92590e41fcba568e1af3cb8d3800000000
+19:43:26.364 >     merkle sha         : 185667d4ebd056ccfb0138a5c874ad789b166a2bf116e1e717b3a03642d41344
+19:43:26.956 > >>> Completed 0 share(s), 41701 Khashes, avg. hashrate 351.9 KH/s
+19:43:26.962 > >>> Valid blocks: 0
+19:43:26.962 > >>> Block templates: 4
+19:43:26.964 > >>> Best difficulty: 0.0017
+19:43:26.967 > >>> 32Bit shares: 0
+19:43:26.967 > >>> Temperature: 53
+19:43:26.970 > >>> Total MHashes: 41
+19:43:26.973 > >>> Time mining: 0  00:02:02
+19:43:27.969 > >>> Completed 0 share(s), 42053 Khashes, avg. hashrate 351.9 KH/s
+19:43:27.977 > >>> Valid blocks: 0
+19:43:27.977 > >>> Block templates: 4
+19:43:27.977 > >>> Best difficulty: 0.0017
+19:43:27.979 > >>> 32Bit shares: 0
+19:43:27.979 > >>> Temperature: 53
+19:43:27.982 > >>> Total MHashes: 41
+19:43:27.988 > >>> Time mining: 0  00:02:03
+19:43:28.980 > >>> Completed 0 share(s), 42422 Khashes, avg. hashrate 351.9 KH/s
+19:43:28.986 > >>> Valid blocks: 0
+19:43:28.986 > >>> Block templates: 4
+19:43:28.989 > >>> Best difficulty: 0.0017
+19:43:28.991 > >>> 32Bit shares: 0
+19:43:28.991 > >>> Temperature: 53
+19:43:28.994 > >>> Total MHashes: 41
+19:43:28.997 > >>> Time mining: 0  00:02:04
+19:43:29.992 > >>> Completed 0 share(s), 42790 Khashes, avg. hashrate 353.5 KH/s
+19:43:29.998 > >>> Valid blocks: 0
+19:43:29.998 > >>> Block templates: 4
+19:43:30.001 > >>> Best difficulty: 0.0017
+19:43:30.003 > >>> 32Bit shares: 0
+19:43:30.003 > >>> Temperature: 53
+19:43:30.006 > >>> Total MHashes: 41
+19:43:30.009 > >>> Time mining: 0  00:02:05
+19:43:31.005 > >>> Completed 0 share(s), 43139 Khashes, avg. hashrate 353.2 KH/s
+19:43:31.010 > >>> Valid blocks: 0
+19:43:31.010 > >>> Block templates: 4
+19:43:31.014 > >>> Best difficulty: 0.0017
+19:43:31.015 > >>> 32Bit shares: 0
+19:43:31.015 > >>> Temperature: 53
+19:43:31.018 > >>> Total MHashes: 41
+19:43:31.021 > >>> Time mining: 0  00:02:06
+19:43:32.016 > >>> Completed 0 share(s), 43491 Khashes, avg. hashrate 351.9 KH/s
+19:43:32.023 > >>> Valid blocks: 0
+19:43:32.023 > >>> Block templates: 4
+19:43:32.026 > >>> Best difficulty: 0.0017
+19:43:32.027 > >>> 32Bit shares: 0
+19:43:32.027 > >>> Temperature: 61
+19:43:32.030 > >>> Total MHashes: 41
+19:43:32.033 > >>> Time mining: 0  00:02:07
+19:43:33.028 > >>> Completed 0 share(s), 43859 Khashes, avg. hashrate 353.5 KH/s
+19:43:33.034 > >>> Valid blocks: 0
+19:43:33.034 > >>> Block templates: 4
+19:43:33.036 > >>> Best difficulty: 0.0017
+19:43:33.039 > >>> 32Bit shares: 0
+19:43:33.039 > >>> Temperature: 53
+19:43:33.042 > >>> Total MHashes: 41
+19:43:33.045 > >>> Time mining: 0  00:02:08
+19:43:34.041 > >>> Completed 0 share(s), 44212 Khashes, avg. hashrate 351.9 KH/s
+19:43:34.046 > >>> Valid blocks: 0
+19:43:34.046 > >>> Block templates: 4
+19:43:34.050 > >>> Best difficulty: 0.0017
+19:43:34.051 > >>> 32Bit shares: 0
+19:43:34.051 > >>> Temperature: 53
+19:43:34.054 > >>> Total MHashes: 41
+19:43:34.057 > >>> Time mining: 0  00:02:09
+19:43:35.053 > >>> Completed 0 share(s), 44580 Khashes, avg. hashrate 353.5 KH/s
+19:43:35.058 > >>> Valid blocks: 0
+19:43:35.058 > >>> Block templates: 4
+19:43:35.061 > >>> Best difficulty: 0.0017
+19:43:35.063 > >>> 32Bit shares: 0
+19:43:35.063 > >>> Temperature: 53
+19:43:35.066 > >>> Total MHashes: 41
+19:43:35.069 > >>> Time mining: 0  00:02:10
+19:43:36.065 > >>> Completed 0 share(s), 44933 Khashes, avg. hashrate 353.6 KH/s
+19:43:36.070 > >>> Valid blocks: 0
+19:43:36.070 > >>> Block templates: 4
+19:43:36.073 > >>> Best difficulty: 0.0017
+19:43:36.075 > >>> 32Bit shares: 0
+19:43:36.075 > >>> Temperature: 53
+19:43:36.078 > >>> Total MHashes: 41
+19:43:36.081 > >>> Time mining: 0  00:02:11
+19:43:37.077 > >>> Completed 0 share(s), 45285 Khashes, avg. hashrate 354.2 KH/s
+19:43:37.082 > >>> Valid blocks: 0
+19:43:37.082 > >>> Block templates: 4
+19:43:37.085 > >>> Best difficulty: 0.0017
+19:43:37.087 > >>> 32Bit shares: 0
+19:43:37.087 > >>> Temperature: 53
+19:43:37.091 > >>> Total MHashes: 41
+19:43:37.093 > >>> Time mining: 0  00:02:12
+19:43:38.089 > >>> Completed 0 share(s), 45654 Khashes, avg. hashrate 355.8 KH/s
+19:43:38.094 > >>> Valid blocks: 0
+19:43:38.094 > >>> Block templates: 4
+19:43:38.098 > >>> Best difficulty: 0.0017
+19:43:38.100 > >>> 32Bit shares: 0
+19:43:38.100 > >>> Temperature: 53
+19:43:38.102 > >>> Total MHashes: 41
+19:43:38.107 > >>> Time mining: 0  00:02:13
+19:43:39.101 > >>> Completed 0 share(s), 46006 Khashes, avg. hashrate 354.2 KH/s
+19:43:39.106 > >>> Valid blocks: 0
+19:43:39.106 > >>> Block templates: 4
+19:43:39.111 > >>> Best difficulty: 0.0017
+19:43:39.111 > >>> 32Bit shares: 0
+19:43:39.111 > >>> Temperature: 53
+19:43:39.114 > >>> Total MHashes: 41
+19:43:39.117 > >>> Time mining: 0  00:02:14
+19:43:40.114 > >>> Completed 0 share(s), 46370 Khashes, avg. hashrate 353.8 KH/s
+19:43:40.118 > >>> Valid blocks: 0
+19:43:40.118 > >>> Block templates: 4
+19:43:40.122 > >>> Best difficulty: 0.0017
+19:43:40.124 > >>> 32Bit shares: 0
+19:43:40.124 > >>> Temperature: 53
+19:43:40.126 > >>> Total MHashes: 41
+19:43:40.129 > >>> Time mining: 0  00:02:15
+19:43:41.125 > >>> Completed 0 share(s), 46723 Khashes, avg. hashrate 354.2 KH/s
+19:43:41.131 > >>> Valid blocks: 0
+19:43:41.131 > >>> Block templates: 4
+19:43:41.133 > >>> Best difficulty: 0.0017
+19:43:41.136 > >>> 32Bit shares: 0
+19:43:41.136 > >>> Temperature: 53
+19:43:41.140 > >>> Total MHashes: 41
+19:43:41.141 > >>> Time mining: 0  00:02:16
+19:43:42.137 > >>> Completed 0 share(s), 47075 Khashes, avg. hashrate 354.2 KH/s
+19:43:42.142 > >>> Valid blocks: 0
+19:43:42.142 > >>> Block templates: 4
+19:43:42.145 > >>> Best difficulty: 0.0017
+19:43:42.147 > >>> 32Bit shares: 0
+19:43:42.147 > >>> Temperature: 60
+19:43:42.150 > >>> Total MHashes: 41
+19:43:42.153 > >>> Time mining: 0  00:02:17
+19:43:43.149 > >>> Completed 0 share(s), 47443 Khashes, avg. hashrate 354.2 KH/s
+19:43:43.154 > >>> Valid blocks: 0
+19:43:43.154 > >>> Block templates: 4
+19:43:43.157 > >>> Best difficulty: 0.0017
+19:43:43.160 > >>> 32Bit shares: 0
+19:43:43.160 > >>> Temperature: 53
+19:43:43.163 > >>> Total MHashes: 41
+19:43:43.165 > >>> Time mining: 0  00:02:18
+19:43:44.161 > >>> Completed 0 share(s), 47796 Khashes, avg. hashrate 354.2 KH/s
+19:43:44.166 > >>> Valid blocks: 0
+19:43:44.166 > >>> Block templates: 4
+19:43:44.169 > >>> Best difficulty: 0.0017
+19:43:44.172 > >>> 32Bit shares: 0
+19:43:44.172 > >>> Temperature: 53
+19:43:44.174 > >>> Total MHashes: 41
+19:43:44.177 > >>> Time mining: 0  00:02:19
+19:43:45.173 > >>> Completed 0 share(s), 48164 Khashes, avg. hashrate 354.2 KH/s
+19:43:45.178 > >>> Valid blocks: 0
+19:43:45.178 > >>> Block templates: 4
+19:43:45.181 > >>> Best difficulty: 0.0017
+19:43:45.184 > >>> 32Bit shares: 0
+19:43:45.184 > >>> Temperature: 53
+19:43:45.186 > >>> Total MHashes: 41
+19:43:45.189 > >>> Time mining: 0  00:02:20
+19:43:45.643 >   Sending  : {"id":27,"method":"mining.submit","params":["bc1q6z9kn97flg52u69zsuwjt6sg7uxgjjsqnmnn76.IoT3","12f475e","00000001","6924fbac","dabb9fd7"]}
+19:43:45.656 >    - Current diff share: 0.003270645689
+19:43:45.662 >    - Current pool diff : 0.001600000000
+19:43:45.664 >    - TX SHARE: 5f040c2bc0cf44c2520662b17ec1c17d6ecd6439e8ed6023f3dccfbe31010000
+19:43:45.873 >   Receiving: {"id":27,"error":null,"result":true}
+19:43:46.185 > >>> Completed 0 share(s), 48517 Khashes, avg. hashrate 354.2 KH/s
+19:43:46.191 > >>> Valid blocks: 0
+19:43:46.191 > >>> Block templates: 4
+19:43:46.194 > >>> Best difficulty: 0.0033
+19:43:46.196 > >>> 32Bit shares: 0
+19:43:46.196 > >>> Temperature: 61
+19:43:46.199 > >>> Total MHashes: 41
+19:43:46.202 > >>> Time mining: 0  00:02:21
+19:43:47.199 > >>> Completed 0 share(s), 48885 Khashes, avg. hashrate 355.7 KH/s
+19:43:47.202 > >>> Valid blocks: 0
+19:43:47.202 > >>> Block templates: 4
+19:43:47.206 > >>> Best difficulty: 0.0033
+19:43:47.208 > >>> 32Bit shares: 0
+19:43:47.208 > >>> Temperature: 53
+19:43:47.210 > >>> Total MHashes: 41
+19:43:47.215 > >>> Time mining: 0  00:02:22
+19:43:48.209 > >>> Completed 0 share(s), 49233 Khashes, avg. hashrate 353.7 KH/s
+19:43:48.214 > >>> Valid blocks: 0
+19:43:48.214 > >>> Block templates: 4
+19:43:48.217 > >>> Best difficulty: 0.0033
+19:43:48.220 > >>> 32Bit shares: 0
+19:43:48.220 > >>> Temperature: 53
+19:43:48.223 > >>> Total MHashes: 41
+19:43:48.228 > >>> Time mining: 0  00:02:23
+19:43:49.221 > >>> Completed 0 share(s), 49586 Khashes, avg. hashrate 353.8 KH/s
+19:43:49.226 > >>> Valid blocks: 0
+19:43:49.226 > >>> Block templates: 4
+19:43:49.232 > >>> Best difficulty: 0.0033
+19:43:49.232 > >>> 32Bit shares: 0
+19:43:49.232 > >>> Temperature: 53
+19:43:49.235 > >>> Total MHashes: 41
+19:43:49.237 > >>> Time mining: 0  00:02:24
+19:43:50.233 > >>> Completed 0 share(s), 49958 Khashes, avg. hashrate 354.5 KH/s
+19:43:50.239 > >>> Valid blocks: 0
+19:43:50.239 > >>> Block templates: 4
+19:43:50.241 > >>> Best difficulty: 0.0033
+19:43:50.244 > >>> 32Bit shares: 0
+19:43:50.244 > >>> Temperature: 53
+19:43:50.248 > >>> Total MHashes: 41
+19:43:50.249 > >>> Time mining: 0  00:02:25
+19:43:54.644 > ets Jul 29 2019 12:21:46
+19:43:54.645 > 
+19:43:54.645 > rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+19:43:54.652 > waiting for download

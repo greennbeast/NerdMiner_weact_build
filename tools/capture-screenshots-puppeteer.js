@@ -18,7 +18,7 @@ const fs = require('fs');
     password: 'nerd'
   });
   
-  const imagesDir = path.join(__dirname, 'docs', 'images');
+  const imagesDir = path.join(__dirname, '..', 'docs', 'images');
   
   try {
     // Desktop view - Main dashboard

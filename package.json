@@ -5,8 +5,8 @@
   "description": "Local server to host NerdMiner dashboard and proxy /api to ESP32",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "start:proxy": "node server.js"
+    "start": "node web/server.js",
+    "start:proxy": "node web/server.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -14,6 +14,7 @@
     "http-proxy-middleware": "^3.0.1"
   },
   "devDependencies": {
-    "playwright": "^1.57.0"
+    "playwright": "^1.57.0",
+    "puppeteer": "^24.31.0"
   }
 }

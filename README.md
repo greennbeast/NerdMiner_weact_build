@@ -11,7 +11,7 @@ pio run -t upload
 
 ### 2. Run Dashboard (Local)
 ```bash
-python3 -m http.server 8000
+cd web && python3 -m http.server 8000
 ```
 Open `http://localhost:8000/nerdminer-dashboard.html`
 
@@ -36,7 +36,7 @@ Open `http://localhost:8080/?mode=proxy`
 
 ![Admin Panel](docs/images/admin-page.png)
 
-> **Note:** To capture screenshots, run `./capture-screenshots.sh` or see [docs/images/README.md](docs/images/README.md) for manual instructions.
+> **Note:** To capture screenshots, run `./tools/capture-screenshots.sh` or see [docs/images/README.md](docs/images/README.md) for manual instructions.
 
 ## Features
 

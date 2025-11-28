@@ -1,6 +1,6 @@
-require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 const express = require('express');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
@@ -41,7 +41,7 @@ app.use(express.json());
 // Helper: persist credentials to .env in-place (best-effort)
 function persistEnv(updates) {
   try {
-    const envPath = path.join(__dirname, '.env');
+    const envPath = path.join(__dirname, '..', '.env');
     let lines = [];
     if (fs.existsSync(envPath)) {
       lines = fs.readFileSync(envPath, 'utf8').split(/\r?\n/);

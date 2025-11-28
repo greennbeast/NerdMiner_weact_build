@@ -9,7 +9,8 @@
 #define DEFAULT_DIFFICULTY  0.00015
 #define KEEPALIVE_TIME_ms       30000
 #define POOLINACTIVITY_TIME_ms  60000
-#define MAX_TEMP_CELSIUS        70.0
+// Disable thermal throttling caps by setting a very high threshold
+#define MAX_TEMP_CELSIUS        1000.0
 
 //#if defined(CONFIG_IDF_TARGET_ESP32S2) || defined(CONFIG_IDF_TARGET_ESP32S3) || defined(CONFIG_IDF_TARGET_ESP32C3)
 #define HARDWARE_SHA265

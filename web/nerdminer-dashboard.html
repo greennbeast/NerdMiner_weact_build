@@ -6,45 +6,71 @@
     <title>NerdMiner Dashboard</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Courier New',monospace;background:#000;color:#0f0;padding:10px}
-        .container{max-width:800px;margin:0 auto}
+        body{font-family:'Courier New',monospace;background:#000;color:#0f0;padding:10px;overflow-x:hidden}
+        .container{max-width:1400px;margin:0 auto}
         .header{text-align:center;padding:20px;border:3px solid #0f0;margin-bottom:15px;background:#001100}
-        .header h1{font-size:28px;margin-bottom:5px;letter-spacing:2px}
-        .header .chipid{font-size:12px;color:#0a0;letter-spacing:1px}
-        .header .ip-config{margin-top:15px;padding:10px;border-top:1px solid #0a0;display:flex;justify-content:center;align-items:center;gap:10px}
+        .header h1{font-size:clamp(20px, 5vw, 32px);margin-bottom:5px;letter-spacing:2px}
+        .header .chipid{font-size:clamp(10px, 2vw, 12px);color:#0a0;letter-spacing:1px}
         .header .ip-config{margin-top:15px;padding:10px;border-top:1px solid #0a0;display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap}
-        .header input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;width:200px;text-align:center}
-        .header button{background:#0f0;color:#000;border:none;padding:8px 15px;margin-left:10px;cursor:pointer;font-weight:bold}
+        .header input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;min-width:160px;max-width:250px;text-align:center;font-size:clamp(12px, 2vw, 14px)}
+        .header button{background:#0f0;color:#000;border:none;padding:8px 15px;cursor:pointer;font-weight:bold;font-size:clamp(11px, 2vw, 14px);white-space:nowrap}
         .header button:hover{background:#0ff}
-        .autoconnect{display:flex;align-items:center;gap:6px;font-size:12px;color:#0a0}
-        .saved{display:flex;align-items:center;gap:8px}
-        .saved select{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;}
-        .saved input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;width:200px}
-        .status{text-align:center;padding:5px;font-size:11px;color:#0a0}
+        .autoconnect{display:flex;align-items:center;gap:6px;font-size:clamp(10px, 2vw, 12px);color:#0a0}
+        .saved{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
+        .saved select{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;font-size:clamp(11px, 2vw, 14px)}
+        .saved input{background:#000;color:#0f0;border:2px solid #0f0;padding:8px;font-family:'Courier New',monospace;min-width:140px;max-width:200px;font-size:clamp(11px, 2vw, 14px)}
+        .status{text-align:center;padding:5px;font-size:clamp(10px, 2vw, 11px);color:#0a0}
         .status.error{color:#f00}
-        .health{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:6px;font-size:12px;color:#0a0}
+        .health{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:6px;font-size:clamp(11px, 2vw, 12px);color:#0a0}
         .health-dot{width:10px;height:10px;border-radius:50%;display:inline-block;background:#555}
         .health-dot.ok{background:#0f0}
         .health-dot.bad{background:#f00}
-        .debug{margin-top:10px;border:2px dashed #0a0;padding:10px;font-size:11px;color:#0a0;background:#000}
-        .debug pre{white-space:pre-wrap;word-wrap:break-word;color:#0f0}
-        .dashboard{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:15px}
-        .stat-box{border:2px solid #0f0;padding:15px;background:#001a00;text-align:center}
+        .debug{margin-top:10px;border:2px dashed #0a0;padding:10px;font-size:clamp(10px, 2vw, 11px);color:#0a0;background:#000}
+        .debug pre{white-space:pre-wrap;word-wrap:break-word;color:#0f0;font-size:clamp(9px, 1.8vw, 11px)}
+        .dashboard{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:15px;margin-bottom:15px}
+        .stat-box{border:2px solid #0f0;padding:15px;background:#001a00;text-align:center;min-height:100px;display:flex;flex-direction:column;justify-content:center}
         .stat-box.large{grid-column:1/-1}
-        .stat-label{font-size:11px;color:#0a0;margin-bottom:5px;text-transform:uppercase}
-        .stat-value{font-size:36px;font-weight:bold;color:#0f0;font-family:monospace}
-        .stat-value.mega{font-size:48px}
-        .stat-small{font-size:20px}
+        .stat-label{font-size:clamp(10px, 2vw, 11px);color:#0a0;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.5px}
+        .stat-value{font-size:clamp(24px, 5vw, 36px);font-weight:bold;color:#0f0;font-family:monospace;line-height:1.2}
+        .stat-value.mega{font-size:clamp(32px, 7vw, 48px)}
+        .stat-small{font-size:clamp(16px, 3vw, 20px)}
         .settings-panel{border:3px solid #0f0;background:#001100;padding:20px}
-        .settings-panel h2{text-align:center;margin-bottom:20px;font-size:20px;border-bottom:2px solid #0f0;padding-bottom:10px}
+        .settings-panel h2{text-align:center;margin-bottom:20px;font-size:clamp(16px, 3vw, 20px);border-bottom:2px solid #0f0;padding-bottom:10px}
         .form-group{margin-bottom:15px}
-        label{display:block;font-size:12px;margin-bottom:5px;color:#0f0;text-transform:uppercase}
-        input,select{width:100%;padding:10px;background:#000;color:#0f0;border:2px solid #0f0;font-family:'Courier New',monospace;font-size:14px}
+        label{display:block;font-size:clamp(11px, 2vw, 12px);margin-bottom:5px;color:#0f0;text-transform:uppercase}
+        input,select{width:100%;padding:10px;background:#000;color:#0f0;border:2px solid #0f0;font-family:'Courier New',monospace;font-size:clamp(12px, 2.5vw, 14px)}
         input:focus,select:focus{outline:none;border-color:#0ff;background:#001a1a}
-        .btn{width:100%;padding:15px;background:#0f0;color:#000;border:none;font-size:16px;font-weight:bold;cursor:pointer;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:2px;margin-top:10px}
+        .btn{width:100%;padding:15px;background:#0f0;color:#000;border:none;font-size:clamp(14px, 3vw, 16px);font-weight:bold;cursor:pointer;font-family:'Courier New',monospace;text-transform:uppercase;letter-spacing:2px;margin-top:10px}
         .btn:hover{background:#0ff;box-shadow:0 0 10px #0f0}
         .checkbox-inline{display:inline-block;width:auto;margin-left:10px}
-        @media(max-width:600px){.dashboard{grid-template-columns:1fr}.stat-box.large{grid-column:1}}
+        
+        /* Mobile optimizations */
+        @media(max-width:768px){
+            body{padding:5px}
+            .header{padding:15px}
+            .header .ip-config{gap:8px}
+            .header button{padding:6px 10px}
+            .dashboard{grid-template-columns:1fr;gap:10px}
+            .stat-box{padding:12px;min-height:80px}
+            .stat-box.large{grid-column:1}
+        }
+        
+        /* Tablet landscape / Small desktop */
+        @media(min-width:769px) and (max-width:1024px){
+            .dashboard{grid-template-columns:repeat(2, 1fr)}
+        }
+        
+        /* Large desktop */
+        @media(min-width:1400px){
+            .container{max-width:1600px}
+            .dashboard{grid-template-columns:repeat(4, 1fr)}
+        }
+        
+        /* Touch-friendly targets */
+        @media(hover:none) and (pointer:coarse){
+            .header button{min-height:44px;min-width:60px}
+            input,select{min-height:44px}
+        }
     </style>
 </head>
 <body>
@@ -82,15 +108,15 @@
             <!-- Priority: Live performance first -->
             <div class='stat-box large'>
                 <div class='stat-label'>Worker Hash Rates (KH/s)</div>
-                <div id='workers' style='font-size:18px;line-height:1.4'></div>
-                <div style='margin-top:10px;padding-top:10px;border-top:1px solid #0a0;display:grid;grid-template-columns:1fr 1fr;gap:10px'>
+                <div id='workers' style='font-size:clamp(14px, 3vw, 18px);line-height:1.4;margin:8px 0'></div>
+                <div style='margin-top:10px;padding-top:10px;border-top:1px solid #0a0;display:grid;grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));gap:10px'>
                     <div>
-                        <div style='font-size:12px;color:#0a0'>CURRENT (KH/s)</div>
-                        <div class='stat-value' style='font-size:28px' id='hashrate'>---</div>
+                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>CURRENT (KH/s)</div>
+                        <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='hashrate'>---</div>
                     </div>
                     <div>
-                        <div style='font-size:12px;color:#0a0'>30s AVG (KH/s)</div>
-                        <div class='stat-value' style='font-size:28px' id='avghashrate'>---</div>
+                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>30s AVG (KH/s)</div>
+                        <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='avghashrate'>---</div>
                     </div>
                 </div>
             </div>

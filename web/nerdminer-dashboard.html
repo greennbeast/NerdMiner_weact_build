@@ -94,6 +94,7 @@
                     <button onclick='saveCurrent()'>SAVE CURRENT</button>
                     <button onclick='renameSelected()'>RENAME</button>
                     <button onclick='deleteSelected()'>DELETE</button>
+                    <button onclick='connectAllSaved()'>CONNECT ALL</button>
                 </div>
             </div>
             <div class='status' id='status'>Enter miner IP and click CONNECT</div>
@@ -121,6 +122,10 @@
                     <div>
                         <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>UPTIME AVG (KH/s)</div>
                         <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='totalavghashrate'>---</div>
+                    </div>
+                    <div>
+                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>CONNECTED MINERS</div>
+                        <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='minerCount'>0</div>
                     </div>
                 </div>
             </div>
@@ -200,6 +205,8 @@
             } catch(_) { return 'http://' + minerIP + p; }
         }
         let minerIP = '';
+        let multiMinerIPs = [];
+        let multiUpdateInterval = null;
         let updateInterval = null;
         // Simple polling only; avoid extra retry timers
         let consecutiveFailures = 0;
@@ -325,6 +332,19 @@
                             opt.textContent = entry.name ? `${entry.name} (${entry.ip})` : entry.ip;
                             sel.appendChild(opt);
                         }
+                    }
+
+                    async function connectAllSaved(){
+                        const list = getList();
+                        if (!list.length) { setStatus('No saved miners to connect', true); return; }
+                        multiMinerIPs = list.map(e => e.ip);
+                        setStatus('Connecting to ' + multiMinerIPs.length + ' miners...');
+                        // Clear single-miner interval
+                        if (updateInterval) clearInterval(updateInterval);
+                        // Start multi-miner polling
+                        if (multiUpdateInterval) clearInterval(multiUpdateInterval);
+                        await updateMultiStats();
+                        multiUpdateInterval = setInterval(updateMultiStats, 2000);
                     }
             
             // Stop existing updates
@@ -618,6 +638,46 @@
                     // Keep the interval; next tick will attempt again
                     renderTickLocked = false;
                 });
+        }
+
+        async function updateMultiStats(){
+            if (!multiMinerIPs || !multiMinerIPs.length) return;
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+            try {
+                const fetches = multiMinerIPs.map(ip => fetch('http://' + ip + '/api/stats', { signal: controller.signal, cache: 'no-store' })
+                    .then(r => r.ok ? r.json() : null)
+                    .catch(_ => null));
+                const results = await Promise.all(fetches);
+                clearTimeout(timer);
+                const data = results.filter(Boolean);
+                const count = data.length;
+                document.getElementById('minerCount').textContent = count;
+                if (count === 0) {
+                    setStatus('All miners unreachable', true);
+                    return;
+                }
+                // Aggregate metrics
+                const sum = (arr, key) => arr.reduce((a, x) => a + (Number(x[key]) || 0), 0);
+                const aggHash = sum(data, 'hashrate');
+                const aggAvg = sum(data, 'avghashrate');
+                const aggTotalAvg = sum(data, 'totalavghashrate');
+                document.getElementById('hashrate').textContent = aggHash.toFixed(2);
+                document.getElementById('avghashrate').textContent = aggAvg.toFixed(2);
+                document.getElementById('totalavghashrate').textContent = aggTotalAvg.toFixed(2);
+                // Workers: show per-miner summary
+                let workersHtml = '';
+                data.forEach((d, idx) => {
+                    const label = multiMinerIPs[idx] || ('Miner ' + (idx+1));
+                    const wr = Array.isArray(d.workers) ? d.workers.map(v => Number(v).toFixed(2)).join(', ') : 'n/a';
+                    workersHtml += `${label}: <span style="color:#0ff">${(Number(d.hashrate)||0).toFixed(2)}</span> KH/s (workers: ${wr})<br>`;
+                });
+                document.getElementById('workers').innerHTML = workersHtml;
+                setStatus(`Connected to ${count} miners • Total ${aggHash.toFixed(2)} KH/s`);
+            } catch (e) {
+                clearTimeout(timer);
+                setStatus('Multi-miner update failed', true);
+            }
         }
 
 

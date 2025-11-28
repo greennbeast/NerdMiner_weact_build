@@ -115,8 +115,12 @@
                         <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='hashrate'>---</div>
                     </div>
                     <div>
-                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>30s AVG (KH/s)</div>
+                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>1h AVG (KH/s)</div>
                         <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='avghashrate'>---</div>
+                    </div>
+                    <div>
+                        <div style='font-size:clamp(11px, 2vw, 12px);color:#0a0'>UPTIME AVG (KH/s)</div>
+                        <div class='stat-value' style='font-size:clamp(22px, 5vw, 32px)' id='totalavghashrate'>---</div>
                     </div>
                 </div>
             </div>
@@ -511,6 +515,7 @@
                         document.getElementById('halving').textContent = (d.halving !== undefined && d.halving !== null) ? Number(d.halving).toLocaleString() : document.getElementById('halving').textContent;
                         document.getElementById('pool').textContent = (d.pool !== undefined && d.pool !== null && String(d.pool).length) ? String(d.pool) : document.getElementById('pool').textContent;
                         document.getElementById('avghashrate').textContent = (d.avghashrate !== undefined && d.avghashrate !== null) ? Number(d.avghashrate).toFixed(2) : document.getElementById('avghashrate').textContent;
+                        document.getElementById('totalavghashrate').textContent = (d.totalavghashrate !== undefined && d.totalavghashrate !== null) ? Number(d.totalavghashrate).toFixed(2) : document.getElementById('totalavghashrate').textContent;
                     } catch(_) {}
                     
                     // Update debug payload FIRST before any other DOM ops
@@ -538,6 +543,7 @@
                     }
                     document.getElementById('hashrate').textContent = d.hashrate !== undefined && d.hashrate !== null ? Number(d.hashrate).toFixed(2) : '---';
                     document.getElementById('avghashrate').textContent = d.avghashrate !== undefined && d.avghashrate !== null ? Number(d.avghashrate).toFixed(2) : '---';
+                    document.getElementById('totalavghashrate').textContent = d.totalavghashrate !== undefined && d.totalavghashrate !== null ? Number(d.totalavghashrate).toFixed(2) : '---';
                     document.getElementById('shares').textContent = d.shares !== undefined ? d.shares : '---';
                     document.getElementById('valids').textContent = d.valids !== undefined ? d.valids : '---';
                     document.getElementById('templates').textContent = d.templates !== undefined ? d.templates : '---';
@@ -588,6 +594,7 @@
                                     if (el('halving') && el('halving').textContent === '---' && jd.halving !== undefined) el('halving').textContent = Number(jd.halving).toLocaleString();
                                     if (el('pool') && el('pool').textContent === '---' && jd.pool !== undefined && String(jd.pool).length) el('pool').textContent = String(jd.pool);
                                     if (el('avghashrate') && el('avghashrate').textContent === '---' && jd.avghashrate !== undefined) el('avghashrate').textContent = Number(jd.avghashrate).toFixed(2);
+                                    if (el('totalavghashrate') && el('totalavghashrate').textContent === '---' && jd.totalavghashrate !== undefined) el('totalavghashrate').textContent = Number(jd.totalavghashrate).toFixed(2);
                                 } catch(_) {}
                             }
                             // Unlock for next tick

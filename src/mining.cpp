@@ -52,7 +52,8 @@ uint64_t upTime = 0;
 // Average hash rate tracking
 static float avgHashRate = 0.0f;
 static uint32_t hashRateSamples = 0;
-#define MAX_AVG_SAMPLES 30
+// Average window: 1 hour at 1 sample/second
+#define MAX_AVG_SAMPLES 3600
 
 // Per-worker hash tracking (max 8 workers)
 static uint32_t worker_hashes[8] = {0};
@@ -111,6 +112,17 @@ void getWorkerHashRates(float rates[], int max_workers) {
 float getAvgHashRate() {
   extern float avgHashRate;
   return avgHashRate;
+}
+
+// Get total uptime average hash rate in KH/s
+float getTotalAvgHashRate() {
+  extern uint64_t upTime;
+  extern uint32_t totalKHashes;
+  
+  if (upTime == 0) return 0.0f;
+  
+  // Total KHashes / total seconds = average KH/s
+  return (float)totalKHashes / (float)upTime;
 }
 
 bool checkPoolConnection(void) {

@@ -576,6 +576,9 @@ void setupCustomWebPages() {
         // Get 30-second rolling average hash rate
         float rollingAvgHashRate = getAvgHashRate();
         
+        // Get total uptime average hash rate
+        float totalAvgHashRate = getTotalAvgHashRate();
+        
         static unsigned long lastStatsTime = 0;
         unsigned long now = millis();
         unsigned long elapsed = now - lastStatsTime;
@@ -644,6 +647,7 @@ void setupCustomWebPages() {
         }
         String json = "{\"hashrate\":" + String(currentHashRate, 2) + 
                       ",\"avghashrate\":" + String(rollingAvgHashRate, 2) +
+                      ",\"totalavghashrate\":" + String(totalAvgHashRate, 2) +
                       ",\"workers\":" + workerRatesJson +
                   ",\"shares\":" + String(shares) + 
                   ",\"valids\":" + String(valids) +

@@ -24,6 +24,20 @@ npm start
 ```
 Open `http://localhost:8080/?mode=proxy`
 
+## Screenshots
+
+### Main Dashboard
+*Real-time mining statistics with current and 30-second average hash rates*
+
+![Dashboard Main View](docs/images/dashboard-main.png)
+
+### Admin Panel
+*Secure credential management interface*
+
+![Admin Panel](docs/images/admin-page.png)
+
+> **Note:** To capture screenshots, run `./capture-screenshots.sh` or see [docs/images/README.md](docs/images/README.md) for manual instructions.
+
 ## Features
 
 **Hardware**

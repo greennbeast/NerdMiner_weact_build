@@ -1,0 +1,293 @@
+10:59:32.892 > >>> shares:0  valids:0  Khashes:5406  avg:344.9 KH/s
+10:59:32.892 > Pool workers:0  poolHash:0.0000
+10:59:32.892 > WiFi: IoT 192.168.0.185
+10:59:32.892 > [ 23192][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:32.892 > [ 23193][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:32.892 >   Sending  : {"id":16,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d59e","00000001","6929c6dd","da78ff35"]}
+10:59:32.892 >    - Current diff share: 0.000157909023
+10:59:32.892 >    - Current pool diff : 0.000150000000
+10:59:32.892 >    - TX SHARE: bd9e0e3b02aff0d2822959731867ef28df8e53651dcc7a4a9692e9a9bc180000
+10:59:32.892 >   Receiving: {"result":true,"id":16}
+10:59:32.892 > >>> shares:0  valids:0  Khashes:5790  avg:344.9 KH/s
+10:59:32.892 > Pool workers:0  poolHash:0.0000
+10:59:32.892 > WiFi: IoT 192.168.0.185
+10:59:33.419 > >>> shares:0  valids:0  Khashes:6046  avg:320.3 KH/s
+10:59:33.421 > Pool workers:0  poolHash:0.0000
+10:59:33.424 > WiFi: IoT 192.168.0.185
+10:59:33.543 > [ 24628][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:33.554 > [ 24629][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:34.068 >   Sending  : {"id":17,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d59e","00000001","6929c6dd","da8230c9"]}
+10:59:34.076 >    - Current diff share: 0.000153452380
+10:59:34.082 >    - Current pool diff : 0.000150000000
+10:59:34.085 >    - TX SHARE: 04f4a02a59ad9e705a1b772d9b78b4189dc5d28afbea6289972d889474190000
+10:59:34.251 >   Receiving: {"result":true,"id":17}
+10:59:34.458 > >>> shares:0  valids:0  Khashes:6558  avg:344.9 KH/s
+10:59:34.462 > Pool workers:0  poolHash:0.0000
+10:59:34.463 > WiFi: IoT 192.168.0.185
+10:59:34.763 > [THERMAL] Temperature 75.0°C >= 75°C, throttling mining...
+10:59:35.039 > [ 26121][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:35.047 > [ 26122][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:35.496 > >>> shares:0  valids:0  Khashes:6686  avg:320.3 KH/s
+10:59:35.499 > Pool workers:0  poolHash:0.0000
+10:59:35.502 > WiFi: IoT 192.168.0.185
+10:59:35.580 >   Receiving: {"jsonrpc":"2.0","method":"mining.notify","params":["0000d59f","4e244245868e98d6a164fc533ef92ce0f4adb01e0001bf030000000000000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04e7c6296900","0a4d696e696e67636f726500000000020000000000000000266a24aa21a9ed2c771d75433b715e776082d0a2e7b3e6f8ebb824e3f0ee8cb548d0633c99e79104d7b41200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000",["41e9b3e8be45517c5f9fb5cfe27473cc3c9d3eaec8c222c068d6d75949f943e3","bd539924b050cd478315b863343d1bb5110e8cb92e0d46004a1d32493c2d4712","993d46e07f541c938b799277d2e95e2ad18cfc4d95b304666a48c8793e72a8ab","4e4cc20dbf1778959e95a612395c96b007149c16d1e22b5a56d8ebf7a3d2858c","51b55342391703f66cdb41f00638631af7012197d9681c684b79e9d4d6a36f45","ab53ca66142844238bdee157c07cd31abc1bfcbd98506abb14f93725e8b0ff5d","0792e4d1b1e4d15a043718df75680dc9d8fcfd2acff9374e57504b0aea2fbfb7","60577ca12df9b4a750d4ef6197d61b89ba2d896a9965f42ea328113804aae87f","0b3b1ee570c35dbfaea39e314300b21b606490da31dec8846722b09e3402cfd4","380ff4e39e6709e22bdc91d881304c16d1d218dcebb338138e1884bb4a4d6041","9ebd046e61c0343020fc4cc9e997f216f877b8c822b539158251209fea7753ff"],"20000000","1701e2a0","6929c6e7",false],"id":null}
+10:59:35.685 >     Parsing Method [MINING NOTIFY]
+10:59:35.688 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+10:59:35.696 >     coinbase: 01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04e7c629690020c527dc000000010a4d696e696e67636f726500000000020000000000000000266a24aa21a9ed2c771d75433b715e776082d0a2e7b3e6f8ebb824e3f0ee8cb548d0633c99e79104d7b41200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000
+10:59:35.724 >     merkle sha         : c65a2977b098f46f29cd9af8fcf9166e1dfbef06c789daaedfc4a034a9dbe264
+10:59:36.542 > >>> shares:0  valids:0  Khashes:6903  avg:288.2 KH/s
+10:59:36.543 > Pool workers:0  poolHash:0.0000
+10:59:36.543 > WiFi: IoT 192.168.0.185
+10:59:36.551 > [ 27636][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:36.563 > [ 27638][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:37.579 > >>> shares:0  valids:0  Khashes:6903  avg:214.2 KH/s
+10:59:37.579 > Pool workers:0  poolHash:0.0000
+10:59:37.580 > WiFi: IoT 192.168.0.185
+10:59:37.586 > >>> [i] Miner: newJob>true / inRun>true) - Client: connected>true / subscribed>true / wificonnected>true
+10:59:38.464 >   Sending  : {"id":18,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d59f","00000001","6929c6e7","da574d80"]}
+10:59:38.476 >    - Current diff share: 0.000150952341
+10:59:38.482 >    - Current pool diff : 0.000150000000
+10:59:38.485 >    - TX SHARE: 6bb684ddb9f7b719fd690bbd383f382edac6af5aa20b9380bae19f81e0190000
+10:59:38.623 > >>> shares:0  valids:0  Khashes:7159  avg:213.8 KH/s
+10:59:38.626 > Pool workers:0  poolHash:0.0000
+10:59:38.629 > WiFi: IoT 192.168.0.185
+10:59:38.648 >   Receiving: {"result":true,"id":18}
+10:59:39.210 >   Sending  : {"id":19,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d59f","00000001","6929c6e7","da5f9215"]}
+10:59:39.222 >    - Current diff share: 0.000276246079
+10:59:39.228 >    - Current pool diff : 0.000150000000
+10:59:39.231 >    - TX SHARE: 94f8b3a7d200f451b19ee6d553fc48d725d3e19d616d51911068d8e7230e0000
+10:59:39.445 >   Receiving: {"result":true,"id":19}
+10:59:39.647 > [ 30731][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:39.657 > [ 30732][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:39.663 > >>> shares:0  valids:0  Khashes:7543  avg:189.1 KH/s
+10:59:39.669 > Pool workers:0  poolHash:0.0000
+10:59:39.671 > WiFi: IoT 192.168.0.185
+10:59:40.702 > >>> shares:0  valids:0  Khashes:7799  avg:213.8 KH/s
+10:59:40.705 > Pool workers:0  poolHash:0.0000
+10:59:40.708 > WiFi: IoT 192.168.0.185
+10:59:41.070 >   Sending  : {"id":20,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da696cee"]}
+10:59:41.082 >    - Current diff share: 0.000314154642
+10:59:41.088 >    - Current pool diff : 0.000150000000
+10:59:41.091 >    - TX SHARE: 6e9253b782f7e746ed5f61827cb60d787b1c72098661f96fc8a4dd186f0c0000
+10:59:41.181 > [ 32266][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:41.192 > [ 32267][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:41.249 >   Receiving: {"result":true,"id":20}
+10:59:41.740 > >>> shares:0  valids:0  Khashes:8183  avg:245.9 KH/s
+10:59:41.743 > Pool workers:0  poolHash:0.0000
+10:59:41.746 > WiFi: IoT 192.168.0.185
+10:59:41.809 >   Sending  : {"id":21,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da6de0b4"]}
+10:59:41.821 >    - Current diff share: 0.000198907501
+10:59:41.827 >    - Current pool diff : 0.000150000000
+10:59:41.829 >    - TX SHARE: 2e634b8ca39f50b89d7757c473d0757ddb767f492f56d52fc2ffc262a3130000
+10:59:41.992 >   Receiving: {"result":true,"id":21}
+10:59:42.555 >   Sending  : {"id":22,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d59f","00000001","6929c6e7","da706cdd"]}
+10:59:42.568 >    - Current diff share: 0.009266111188
+10:59:42.573 >    - Current pool diff : 0.000150000000
+10:59:42.576 >    - TX SHARE: 366218a1eca1a39def6644a90fdddcd77689ccc6866b7b56d74122eb6b000000
+10:59:42.737 >   Receiving: {"result":true,"id":22}
+10:59:42.740 > [ 33825][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:42.751 > [ 33829][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:42.779 > >>> shares:0  valids:0  Khashes:8567  avg:319.8 KH/s
+10:59:42.782 > Pool workers:0  poolHash:0.0000
+10:59:42.785 > WiFi: IoT 192.168.0.185
+10:59:42.817 > >>> shares:0  valids:0  Khashes:8567  avg:2147483647 KH/s
+10:59:42.820 > Pool workers:0  poolHash:0.0000
+10:59:42.822 > WiFi: IoT 192.168.0.185
+10:59:43.343 >   Sending  : {"id":23,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da740a5c"]}
+10:59:43.355 >    - Current diff share: 0.000220483117
+10:59:43.361 >    - Current pool diff : 0.000150000000
+10:59:43.363 >    - TX SHARE: bfd9b6fea603f938ba6b1784b033c912e2f66986576d5644ca16ea6cb7110000
+10:59:43.527 >   Receiving: {"result":true,"id":23}
+10:59:43.682 >   Sending  : {"id":24,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da7a0cf7"]}
+10:59:43.693 >    - Current diff share: 0.000372772913
+10:59:43.699 >    - Current pool diff : 0.000150000000
+10:59:43.702 >    - TX SHARE: b0a290da0a3f734c741fd0bdb32d0b7c28435c3b406aa142d188b28e7a0a0000
+10:59:43.857 > >>> shares:0  valids:0  Khashes:8951  avg:2147483647 KH/s
+10:59:43.859 > Pool workers:0  poolHash:0.0000
+10:59:43.864 > WiFi: IoT 192.168.0.185
+10:59:43.865 >   Receiving: {"result":true,"id":24}
+10:59:44.431 > [ 35516][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:44.442 > [ 35517][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:44.828 >   Sending  : {"id":25,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da7c3602"]}
+10:59:44.840 >    - Current diff share: 0.000214896249
+10:59:44.846 >    - Current pool diff : 0.000150000000
+10:59:44.849 >    - TX SHARE: 53a4f67992760cc50a8cd3aac18323c4cb447df48f4a4d2831a35c562d120000
+10:59:44.895 > >>> shares:0  valids:0  Khashes:9335  avg:2147483647 KH/s
+10:59:44.898 > Pool workers:0  poolHash:0.0000
+10:59:44.901 > WiFi: IoT 192.168.0.185
+10:59:45.016 >   Receiving: {"result":true,"id":25}
+10:59:45.221 >   Sending  : {"id":26,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d59f","00000001","6929c6e7","da820267"]}
+10:59:45.234 >    - Current diff share: 0.001813337660
+10:59:45.240 >    - Current pool diff : 0.000150000000
+10:59:45.243 >    - TX SHARE: c97009b58ea7c2130709280b2569e42a56d6d780d9fabba0abc4fa7527020000
+10:59:45.405 >   Receiving: {"result":true,"id":26}
+10:59:45.569 >   Receiving: {"jsonrpc":"2.0","method":"mining.notify","params":["0000d5a0","4e244245868e98d6a164fc533ef92ce0f4adb01e0001bf030000000000000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04f1c6296900","0a4d696e696e67636f726500000000020000000000000000266a24aa21a9ed8725c3f3be07e27987586f1a5a90b03a20d8f4c2ede49156acedb52328745bd8133bb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000",["41e9b3e8be45517c5f9fb5cfe27473cc3c9d3eaec8c222c068d6d75949f943e3","bd539924b050cd478315b863343d1bb5110e8cb92e0d46004a1d32493c2d4712","993d46e07f541c938b799277d2e95e2ad18cfc4d95b304666a48c8793e72a8ab","4e4cc20dbf1778959e95a612395c96b007149c16d1e22b5a56d8ebf7a3d2858c","51b55342391703f66cdb41f00638631af7012197d9681c684b79e9d4d6a36f45","1eb857135ec7d139463f001e42bbd21464dfe0878c4a72e76df8ca612e9ac0f6","c7810570a33bbe47b8b46d37ce4b3ebeab138cf194e6063c14642a450c806f12","84769f5847d755614b0a9165e7e21b05cb8541685d428d298896382b13f3a7f6","993a6dd8f08f3d4e6b3f7d2e9c50b876d10c1d3e3cfda24ab11886cdda330b68","200ae73c4c0d452bdc81f0dd3366362aae5b70ae489f77940d7b38b2218812c9","25ed9006f394eb84b5878a7443c2e545ab4bbe9e8393cf1abbf6f50cafda3078"],"20000000","1701e2a0","6929c6f1",false],"id":null}
+10:59:45.674 >     Parsing Method [MINING NOTIFY]
+10:59:45.677 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+10:59:45.685 >     coinbase: 01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04f1c629690020c527dc000000010a4d696e696e67636f726500000000020000000000000000266a24aa21a9ed8725c3f3be07e27987586f1a5a90b03a20d8f4c2ede49156acedb52328745bd8133bb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000
+10:59:45.713 >     merkle sha         : 1762625d3d531794a9740184661e3a3c9d8d99774354d82f2270d26e8a150a9c
+10:59:45.935 > >>> shares:0  valids:0  Khashes:9705  avg:2147483647 KH/s
+10:59:45.937 > Pool workers:0  poolHash:0.0000
+10:59:45.940 > WiFi: IoT 192.168.0.185
+10:59:45.994 > [ 37079][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:46.005 > [ 37080][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:46.973 > >>> shares:0  valids:0  Khashes:10089  avg:2147483647 KH/s
+10:59:46.976 > Pool workers:0  poolHash:0.0000
+10:59:46.979 > WiFi: IoT 192.168.0.185
+10:59:47.547 > [ 38631][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:47.557 > [ 38632][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:48.011 > >>> shares:0  valids:0  Khashes:10345  avg:0 KH/s
+10:59:48.014 > Pool workers:0  poolHash:0.0000
+10:59:48.017 > WiFi: IoT 192.168.0.185
+10:59:49.040 > [ 40125][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:49.052 > [ 40126][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:49.057 > >>> shares:0  valids:0  Khashes:10729  avg:0 KH/s
+10:59:49.062 > Pool workers:0  poolHash:0.0000
+10:59:49.065 > WiFi: IoT 192.168.0.185
+10:59:50.101 > >>> shares:0  valids:0  Khashes:11113  avg:0 KH/s
+10:59:50.103 > Pool workers:0  poolHash:0.0000
+10:59:50.107 > WiFi: IoT 192.168.0.185
+10:59:50.569 > [ 41654][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:50.580 > [ 41655][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:51.139 > >>> shares:0  valids:0  Khashes:11497  avg:0 KH/s
+10:59:51.141 > Pool workers:0  poolHash:0.0000
+10:59:51.144 > WiFi: IoT 192.168.0.185
+10:59:52.086 > [ 43171][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:52.097 > [ 43172][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:52.177 > >>> shares:0  valids:0  Khashes:11881  avg:0 KH/s
+10:59:52.179 > Pool workers:0  poolHash:0.0000
+10:59:52.182 > WiFi: IoT 192.168.0.185
+10:59:53.216 > >>> shares:0  valids:0  Khashes:12137  avg:0 KH/s
+10:59:53.218 > Pool workers:0  poolHash:0.0000
+10:59:53.221 > WiFi: IoT 192.168.0.185
+10:59:53.651 > [ 44736][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:53.662 > [ 44737][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:54.254 > >>> shares:0  valids:0  Khashes:12521  avg:0 KH/s
+10:59:54.257 > Pool workers:0  poolHash:0.0000
+10:59:54.260 > WiFi: IoT 192.168.0.185
+10:59:55.127 >   Sending  : {"id":27,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d5a0","00000001","6929c6f1","da7f543f"]}
+10:59:55.137 > [ 46221][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:55.151 > [ 46226][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:55.157 >    - Current diff share: 0.000651785377
+10:59:55.160 >    - Current pool diff : 0.000150000000
+10:59:55.165 >    - TX SHARE: 25465b6bc3f140c875cac0f969aba254ae07ce8be57851234f535539fe050000
+10:59:55.271 >   Receiving: {"result":true,"id":27}
+10:59:55.293 > >>> shares:0  valids:0  Khashes:12905  avg:0 KH/s
+10:59:55.296 > Pool workers:0  poolHash:0.0000
+10:59:55.299 > WiFi: IoT 192.168.0.185
+10:59:55.527 >   Sending  : {"id":28,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d5a0","00000001","6929c6f1","da8b3c68"]}
+10:59:55.539 >    - Current diff share: 0.001155547515
+10:59:55.545 >    - Current pool diff : 0.000150000000
+10:59:55.548 >    - TX SHARE: 04d1d3cac9ba8359112303a9307b6267727413869d3c821b15629f6061030000
+10:59:55.616 >   Receiving: {"jsonrpc":"2.0","method":"mining.notify","params":["0000d5a1","4e244245868e98d6a164fc533ef92ce0f4adb01e0001bf030000000000000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04fbc6296900","0a4d696e696e67636f726500000000020000000000000000266a24aa21a9edcf64efab0e7603bd2256613a5327ead0fca0d445a579702962b27f24d2cc9388c29fb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000",["41e9b3e8be45517c5f9fb5cfe27473cc3c9d3eaec8c222c068d6d75949f943e3","bd539924b050cd478315b863343d1bb5110e8cb92e0d46004a1d32493c2d4712","993d46e07f541c938b799277d2e95e2ad18cfc4d95b304666a48c8793e72a8ab","4e4cc20dbf1778959e95a612395c96b007149c16d1e22b5a56d8ebf7a3d2858c","7763e93b2b961d72640be3cb22369ddc091d6e4cca732e6d545404b1df628f23","90d838239ba3ac951beb1666c30ddc89aeeae3a41ebbbf403905e9b0da932674","5bdb7ffa567517a3a3fa734ff876916f0371fff6c10653bc3240fb23c5d2522e","c8a7ff3a4f0f48d5e7f3cbc3482a52aa9c77b28811e817ca230f8feda12fbcd6","11993515c3a6fe33692c857757963f041147c1efa58f50c736dd1ba6eb3a97d7","5bfd56e069860ae278ef89b2989d2224a41f93539481c0aea4c9209121bfcda3","287cca2d325bdf4e2567db581db4ecc59c31997831eefba645e78c9a58775f1f"],"20000000","1701e2a0","6929c6fb",true],"id":null}
+10:59:55.721 >     Parsing Method [MINING NOTIFY]
+10:59:55.724 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+10:59:55.732 >     coinbase: 01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e04fbc629690020c527dc000000010a4d696e696e67636f726500000000020000000000000000266a24aa21a9edcf64efab0e7603bd2256613a5327ead0fca0d445a579702962b27f24d2cc9388c29fb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000
+10:59:55.760 >     merkle sha         : 4da23765a6a0c09f94a8112b2bc533d2c70f72ad2c3ae2435fd92d058975f86e
+10:59:55.774 >   Receiving: {"result":true,"id":28}
+10:59:56.333 > >>> shares:0  valids:0  Khashes:13339  avg:0 KH/s
+10:59:56.335 > Pool workers:0  poolHash:0.0000
+10:59:56.338 > WiFi: IoT 192.168.0.185
+10:59:56.702 > [ 47788][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:56.713 > [ 47789][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:57.371 > >>> shares:0  valids:0  Khashes:13723  avg:0 KH/s
+10:59:57.374 > Pool workers:0  poolHash:0.0000
+10:59:57.377 > WiFi: IoT 192.168.0.185
+10:59:58.014 >   Sending  : {"id":29,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d5a1","00000001","6929c6fb","da64b089"]}
+10:59:58.027 >    - Current diff share: 0.000163077190
+10:59:58.033 >    - Current pool diff : 0.000150000000
+10:59:58.035 >    - TX SHARE: 086a53b87d9b6b3d07d7443626a1632927e3146d988647410415ccf8f3170000
+10:59:58.198 >   Receiving: {"result":true,"id":29}
+10:59:58.286 > [ 49371][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:58.297 > [ 49372][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+10:59:58.410 > >>> shares:0  valids:0  Khashes:13979  avg:0 KH/s
+10:59:58.413 > Pool workers:0  poolHash:0.0000
+10:59:58.419 > WiFi: IoT 192.168.0.185
+10:59:58.805 >   Sending  : {"id":30,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d5a1","00000001","6929c6fb","da5d8b1a"]}
+10:59:58.817 >    - Current diff share: 0.000253461406
+10:59:58.823 >    - Current pool diff : 0.000150000000
+10:59:58.826 >    - TX SHARE: 876910ce1ad16c255aa03f494147b9f1118cd8ad55776884e38d4a50690f0000
+10:59:58.990 >   Receiving: {"result":true,"id":30}
+10:59:59.450 > >>> shares:0  valids:0  Khashes:14363  avg:0 KH/s
+10:59:59.452 > Pool workers:0  poolHash:0.0000
+10:59:59.455 > WiFi: IoT 192.168.0.185
+10:59:59.920 > [ 51004][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+10:59:59.930 > [ 51006][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:00.306 >   Sending  : {"id":31,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d5a1","00000001","6929c6fb","da672289"]}
+11:00:00.318 >    - Current diff share: 0.000690095619
+11:00:00.324 >    - Current pool diff : 0.000150000000
+11:00:00.326 >    - TX SHARE: 72cd549677f7e133ce39a6aa8a28d8ff4b8a520e111bcc73fbc06c0da9050000
+11:00:00.489 > >>> shares:0  valids:0  Khashes:14747  avg:0 KH/s
+11:00:00.491 > Pool workers:0  poolHash:0.0000
+11:00:00.493 > WiFi: IoT 192.168.0.185
+11:00:00.496 >   Receiving: {"result":true,"id":31}
+11:00:01.411 >   Sending  : {"id":32,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w2","0000d5a1","00000001","6929c6fb","da76b53f"]}
+11:00:01.423 >    - Current diff share: 0.001134279647
+11:00:01.428 >    - Current pool diff : 0.000150000000
+11:00:01.431 >    - TX SHARE: cdc231019f5d49eb447666254201113042086b4fdafa03c38462759a71030000
+11:00:01.464 > [ 52549][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:01.475 > [ 52550][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:01.526 > >>> shares:0  valids:0  Khashes:15131  avg:0 KH/s
+11:00:01.529 > Pool workers:0  poolHash:0.0000
+11:00:01.531 > WiFi: IoT 192.168.0.185
+11:00:01.589 >   Receiving: {"result":true,"id":32}
+11:00:02.150 >   Sending  : {"id":33,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d5a1","00000001","6929c6fb","da73b310"]}
+11:00:02.163 >    - Current diff share: 0.000411517986
+11:00:02.169 >    - Current pool diff : 0.000150000000
+11:00:02.171 >    - TX SHARE: bbf06ee6cda4a661f06607d9e72c1a28f5169aba8cf861a3bf8a88fd7d090000
+11:00:02.335 >   Receiving: {"result":true,"id":33}
+11:00:02.565 > >>> shares:0  valids:0  Khashes:15387  avg:0 KH/s
+11:00:02.568 > Pool workers:0  poolHash:0.0000
+11:00:02.571 > WiFi: IoT 192.168.0.185
+11:00:02.896 >   Sending  : {"id":34,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d5a1","00000001","6929c6fb","da7ea09f"]}
+11:00:02.908 >    - Current diff share: 0.000677078542
+11:00:02.913 >    - Current pool diff : 0.000150000000
+11:00:02.916 >    - TX SHARE: e8581131d08a6e2376493de815f3b549547190be8a3a912265be36e9c4050000
+11:00:02.960 > [ 54045][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:02.971 > [ 54046][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:03.075 >   Receiving: {"result":true,"id":34}
+11:00:03.606 > >>> shares:0  valids:0  Khashes:15771  avg:0 KH/s
+11:00:03.607 > Pool workers:0  poolHash:0.0000
+11:00:03.610 > WiFi: IoT 192.168.0.185
+11:00:04.511 > [ 55596][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:04.522 > [ 55597][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:04.643 > >>> shares:0  valids:0  Khashes:16155  avg:0 KH/s
+11:00:04.646 > Pool workers:0  poolHash:0.0000
+11:00:04.649 > WiFi: IoT 192.168.0.185
+11:00:05.629 >   Receiving: {"jsonrpc":"2.0","method":"mining.notify","params":["0000d5a2","4e244245868e98d6a164fc533ef92ce0f4adb01e0001bf030000000000000000","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e0405c7296900","0a4d696e696e67636f726500000000020000000000000000266a24aa21a9ede142222179e3fadf9f5a3cf5db5adeccf4251db53a3c176cb13ae1bdf1513da5e5fdb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000",["41e9b3e8be45517c5f9fb5cfe27473cc3c9d3eaec8c222c068d6d75949f943e3","bd539924b050cd478315b863343d1bb5110e8cb92e0d46004a1d32493c2d4712","e5d96fc888269950811ea3c399bb4215e04a3a025050eff4d8825371319bf9fc","33039fead9cddd9b38239d6ad64184023bdce11884be3e7badec47d8e9258f69","ed7480dab66f8d1f1d9f506534506b5ecf62bf6374a937e7e6cbfe230cc59f67","38757d67d7b51b33da9b7baa341911f6533d65fe5575e4d9cedcccd21a2d8fd4","6f24b5162167e252379b39646fee85e525a78da4a80b4f849f6f27da389d30bb","8c0a5785354cc2ccb8acedd6786ac38d983f3af8b3ca988d4bba664a2ec37f4f","746bccea5f54455a32a87614e2033f1456986b5df065ee37454d00c4a1289b8a","7685cac85728f9b5962ee396fe2551cc4d5bed7ac1b4521e0040f567641120a0","e28c642ea3f9471ce02b89f509fd08481fc081921e8483261e46d2b9842d04cf"],"20000000","1701e2a0","6929c705",false],"id":null}>>> shares:0  valids:0  Khashes:16539  avg:0 KH/s
+11:00:05.740 > Pool workers:0  poolHash:0.0000
+11:00:05.743 > 
+11:00:05.743 > WiFi: IoT 192.168.0.185
+11:00:05.745 >     Parsing Method [MINING NOTIFY]
+11:00:05.748 >     target: 00000000000000000001e2a00000000000000000000000000000000000000000
+11:00:05.754 >     coinbase: 01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1d03871f0e0405c729690020c527dc000000010a4d696e696e67636f726500000000020000000000000000266a24aa21a9ede142222179e3fadf9f5a3cf5db5adeccf4251db53a3c176cb13ae1bdf1513da5e5fdb51200000000160014a0a75500479fe2e6ebf5d6504542c19b46fba57200000000
+11:00:05.784 >     merkle sha         : 90ea8c7b29037b1f3bb639d96a331d7126ff0eb0adcf5ed9c391ba602b5792b7
+11:00:06.069 > [ 57154][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:06.080 > [ 57155][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:06.683 > >>> shares:0  valids:0  Khashes:16948  avg:0 KH/s
+11:00:06.685 > Pool workers:0  poolHash:0.0000
+11:00:06.688 > WiFi: IoT 192.168.0.185
+11:00:07.668 > [ 58752][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:07.678 > [ 58753][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:07.721 > >>> shares:0  valids:0  Khashes:17332  avg:0 KH/s
+11:00:07.724 > Pool workers:0  poolHash:0.0000
+11:00:07.727 > WiFi: IoT 192.168.0.185
+11:00:08.429 >   Sending  : {"id":35,"method":"mining.submit","params":["bc1qrx29kdm75ek69zs29m9pp08z0kkczcg286t7kl.IoT 2.w0","0000d5a2","00000001","6929c705","da660568"]}
+11:00:08.444 >    - Current diff share: 0.000386381236
+11:00:08.447 >    - Current pool diff : 0.000150000000
+11:00:08.450 >    - TX SHARE: 28d1a3992f3cbbccf1c43fc7e14350af6fef9b9de24a32003bc2f1131c0a0000
+11:00:08.614 >   Receiving: {"result":true,"id":35}
+11:00:08.760 > >>> shares:0  valids:0  Khashes:17588  avg:0 KH/s
+11:00:08.763 > Pool workers:0  poolHash:0.0000
+11:00:08.765 > WiFi: IoT 192.168.0.185
+11:00:09.155 > [THERMAL] Temperature 76.1°C >= 75°C, throttling mining...
+11:00:09.231 > [ 60314][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:09.240 > [ 60316][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:09.798 > >>> shares:0  valids:0  Khashes:17844  avg:0 KH/s
+11:00:09.801 > Pool workers:0  poolHash:0.0000
+11:00:09.804 > WiFi: IoT 192.168.0.185
+11:00:10.742 > [ 61822][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():273]: (-30592) SSL - A fatal alert message was received from our peer
+11:00:10.748 > [ 61823][E][WiFiClientSecure.cpp:144] connect(): start_ssl_client: -30592
+11:00:10.837 > >>> shares:0  valids:0  Khashes:18356  avg:0 KH/s
+11:00:10.839 > Pool workers:0  poolHash:0.0000
+11:00:10.842 > WiFi: IoT 192.168.0.185

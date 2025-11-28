@@ -1327,11 +1327,14 @@ void runMonitor(void *name)
       totalKHashes = currentKHashes;
 
       // Update rolling average hash rate (30-second window)
+      // Clamp elapsedKHs to reasonable range (0-10000 KH/s) to prevent overflow
+      float safeElapsedKHs = (elapsedKHs > 10000) ? 0.0f : (float)elapsedKHs;
+      
       if (hashRateSamples < MAX_AVG_SAMPLES) {
-        avgHashRate = (avgHashRate * hashRateSamples + elapsedKHs) / (hashRateSamples + 1);
+        avgHashRate = (avgHashRate * hashRateSamples + safeElapsedKHs) / (hashRateSamples + 1);
         hashRateSamples++;
       } else {
-        avgHashRate = (avgHashRate * (MAX_AVG_SAMPLES - 1) + elapsedKHs) / MAX_AVG_SAMPLES;
+        avgHashRate = (avgHashRate * (MAX_AVG_SAMPLES - 1) + safeElapsedKHs) / MAX_AVG_SAMPLES;
       }
 
       upTime += (uptime_frac + mElapsed) / 1000;

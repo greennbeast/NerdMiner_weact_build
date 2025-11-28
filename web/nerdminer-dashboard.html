@@ -406,31 +406,23 @@
 
         // Open the device settings page (WiFi/pool) in a new tab
         async function openSettings(){
-            // Build candidate URLs to improve reliability
-            const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+            // Directly open miner's settings using its IP
             const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
             if (!minerIP && savedIP) minerIP = savedIP;
-            const candidates = [];
-            if (useProxy) candidates.push('/settings');
-            if (minerIP) candidates.push('http://' + minerIP + '/settings');
-            // Common AP and mDNS fallbacks
-            candidates.push('http://192.168.4.1/settings');
-            candidates.push('http://nerdminer.local/settings');
-            candidates.push('http://esp32.local/settings');
-
-            // Try candidates and open first reachable in new tab
-            setStatus('Locating settings page...');
-            for (const url of candidates) {
-                try {
-                    const r = await fetch(url, { method: 'GET', cache: 'no-store' });
-                    if (r.ok) {
-                        window.open(url, '_blank');
-                        setStatus('Opening WiFi config...');
-                        return;
-                    }
-                } catch(_) {}
+            if (!minerIP) {
+                setStatus('Enter miner IP or connect first to open settings', true);
+                return;
             }
-            setStatus('Cannot open settings. Ensure miner AP/portal is running.', true);
+            const url = 'http://' + minerIP + '/settings';
+            try {
+                const r = await fetch(url, { method: 'GET', cache: 'no-store' });
+                if (r.ok) {
+                    window.open(url, '_blank');
+                    setStatus('Opening WiFi config...');
+                    return;
+                }
+            } catch(_) {}
+            setStatus('Cannot GET ' + url + ' • Ensure the device portal is active', true);
         }
 
         // Some builds removed the retry scheduler; provide a safe no-op.

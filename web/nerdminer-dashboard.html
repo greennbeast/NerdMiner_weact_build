@@ -408,21 +408,14 @@
 
         // Open the device settings page (WiFi/pool) in a new tab
         async function openSettings(){
-            // Directly open miner's settings using its IP
             const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
             if (!minerIP && savedIP) minerIP = savedIP;
-            if (!minerIP) {
-                setStatus('Enter miner IP or connect first to open settings', true);
-                return;
-            }
-            const url = 'http://' + minerIP + '/settings';
+            if (!minerIP) { setStatus('Enter miner IP or connect first to open settings', true); return; }
+            const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+            const url = useProxy ? ('/settings?ip=' + encodeURIComponent(minerIP)) : ('http://' + minerIP + '/settings');
             try {
                 const r = await fetch(url, { method: 'GET', cache: 'no-store' });
-                if (r.ok) {
-                    window.open(url, '_blank');
-                    setStatus('Opening WiFi config...');
-                    return;
-                }
+                if (r.ok) { window.open(url, '_blank'); setStatus('Opening WiFi config...'); return; }
             } catch(_) {}
             setStatus('Cannot GET ' + url + ' • Ensure the device portal is active', true);
         }
@@ -432,13 +425,15 @@
             const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
             if (!minerIP && savedIP) minerIP = savedIP;
             if (!minerIP) { setStatus('Enter miner IP to start portal', true); return; }
-            const url = 'http://' + minerIP + '/startportal';
+            const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+            const url = useProxy ? ('/startportal?ip=' + encodeURIComponent(minerIP)) : ('http://' + minerIP + '/startportal');
             setStatus('Starting portal on current network...');
             try {
                 const r = await fetch(url, { method: 'GET', cache: 'no-store' });
                 if (r.ok) {
                     // Try opening settings on the same STA IP
-                    window.open('http://' + minerIP + '/settings', '_blank');
+                    const settingsUrl = useProxy ? ('/settings?ip=' + encodeURIComponent(minerIP)) : ('http://' + minerIP + '/settings');
+                    window.open(settingsUrl, '_blank');
                     setStatus('Portal active. Opening settings...');
                     return;
                 }

@@ -133,34 +133,6 @@ app.use('/api/*', createProxyMiddleware({
   }
 }));
 
-// Proxy settings and config pages with optional ip override
-function resolveTargetFromReq(req) {
-  const ip = (req.query && req.query.ip) ? String(req.query.ip) : MINER_IP;
-  return `http://${ip}`;
-}
-
-app.use('/settings', (req, res, next) => {
-  const target = resolveTargetFromReq(req);
-  return createProxyMiddleware({
-    target,
-    changeOrigin: true,
-    xfwd: true,
-    followRedirects: true,
-    onProxyReq: (proxyReq) => proxyReq.setHeader('Cache-Control', 'no-store'),
-  })(req, res, next);
-});
-
-app.use('/config', (req, res, next) => {
-  const target = resolveTargetFromReq(req);
-  return createProxyMiddleware({
-    target,
-    changeOrigin: true,
-    xfwd: true,
-    followRedirects: true,
-    onProxyReq: (proxyReq) => proxyReq.setHeader('Cache-Control', 'no-store'),
-  })(req, res, next);
-});
-
 // Serve the dashboard at root
 app.get('/', (_req, res) => {
   res.sendFile(path.join(__dirname, 'nerdminer-dashboard.html'));

@@ -405,19 +405,32 @@
         }
 
         // Open the device settings page (WiFi/pool) in a new tab
-        function openSettings(){
-            if (!minerIP) {
-                const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
-                if (savedIP) minerIP = savedIP;
-            }
+        async function openSettings(){
+            // Build candidate URLs to improve reliability
             const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
-            const url = useProxy ? '/settings' : ('http://' + minerIP + '/settings');
-            if (!minerIP && !useProxy) {
-                setStatus('Enter IP or enable proxy mode to open settings', true);
-                return;
+            const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
+            if (!minerIP && savedIP) minerIP = savedIP;
+            const candidates = [];
+            if (useProxy) candidates.push('/settings');
+            if (minerIP) candidates.push('http://' + minerIP + '/settings');
+            // Common AP and mDNS fallbacks
+            candidates.push('http://192.168.4.1/settings');
+            candidates.push('http://nerdminer.local/settings');
+            candidates.push('http://esp32.local/settings');
+
+            // Try candidates and open first reachable in new tab
+            setStatus('Locating settings page...');
+            for (const url of candidates) {
+                try {
+                    const r = await fetch(url, { method: 'GET', cache: 'no-store' });
+                    if (r.ok) {
+                        window.open(url, '_blank');
+                        setStatus('Opening WiFi config...');
+                        return;
+                    }
+                } catch(_) {}
             }
-            try { window.open(url, '_blank'); setStatus('Opening WiFi config...'); }
-            catch(e){ setStatus('Failed to open settings', true); }
+            setStatus('Cannot open settings. Ensure miner AP/portal is running.', true);
         }
 
         // Some builds removed the retry scheduler; provide a safe no-op.

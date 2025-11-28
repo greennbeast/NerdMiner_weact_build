@@ -83,6 +83,7 @@
                 <button onclick='connectMiner()'>CONNECT</button>
                 <button onclick='disconnectMiner()'>DISCONNECT</button>
                 <button onclick='openSettings()'>WIFI CONFIG</button>
+                <button onclick='startPortal()'>START PORTAL</button>
                 <button onclick='triggerConfigMode()'>CONFIG MODE</button>
                 <button onclick='toggleDebug()'>DEBUG</button>
                 <label class='autoconnect'>
@@ -424,6 +425,25 @@
                 }
             } catch(_) {}
             setStatus('Cannot GET ' + url + ' • Ensure the device portal is active', true);
+        }
+
+        // Start WiFiManager portal on current network (no reboot)
+        async function startPortal(){
+            const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
+            if (!minerIP && savedIP) minerIP = savedIP;
+            if (!minerIP) { setStatus('Enter miner IP to start portal', true); return; }
+            const url = 'http://' + minerIP + '/startportal';
+            setStatus('Starting portal on current network...');
+            try {
+                const r = await fetch(url, { method: 'GET', cache: 'no-store' });
+                if (r.ok) {
+                    // Try opening settings on the same STA IP
+                    window.open('http://' + minerIP + '/settings', '_blank');
+                    setStatus('Portal active. Opening settings...');
+                    return;
+                }
+            } catch(_) {}
+            setStatus('Failed to start portal. Check device connectivity.', true);
         }
 
         // Some builds removed the retry scheduler; provide a safe no-op.

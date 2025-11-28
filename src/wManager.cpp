@@ -676,6 +676,22 @@ void setupCustomWebPages() {
         wm.server->sendHeader("Access-Control-Allow-Headers", "*");
         wm.server->send(200, "application/json", json);
     });
+
+    // Endpoint to restart into configuration portal (useful if /settings not reachable)
+    wm.server->on("/config", [](){
+        wm.server->sendHeader("Access-Control-Allow-Origin", "*");
+        wm.server->sendHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+        wm.server->sendHeader("Access-Control-Allow-Headers", "*");
+        wm.server->send(200, "text/html; charset=UTF-8",
+            "<html><head><meta charset='UTF-8'></head><body style='background:#000;color:#0f0;font-family:monospace;padding:20px'>"
+            "<h2>Restarting into WiFi Config...</h2>"
+            "<p>Device will reboot and start the config portal (AP and web UI).</p>"
+            "<p>After restart, connect to the AP and open <code>http://192.168.4.1/settings</code>.</p>"
+            "</body></html>");
+        // small delay to flush
+        vTaskDelay(300 / portTICK_PERIOD_MS);
+        triggerConfigPortal();
+    });
     
     // Settings page with pool configuration
     wm.server->on("/settings", [](){

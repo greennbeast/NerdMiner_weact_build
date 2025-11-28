@@ -573,13 +573,16 @@ void setupCustomWebPages() {
             totalWorkerRate += workerRates[i];
         }
         
+        // Get 30-second rolling average hash rate
+        float rollingAvgHashRate = getAvgHashRate();
+        
         static unsigned long lastStatsTime = 0;
         unsigned long now = millis();
         unsigned long elapsed = now - lastStatsTime;
         if (elapsed == 0) elapsed = 1;
         
-        // Prefer total computed from individual workers for accuracy
-        double avgHashRate = totalWorkerRate;
+        // Use instantaneous total from individual workers
+        double currentHashRate = totalWorkerRate;
         (void)elapsed; // keep variable to avoid warnings
         lastStatsTime = now;
         
@@ -639,7 +642,8 @@ void setupCustomWebPages() {
         if (poolName.length() && Settings.PoolPort > 0) {
             poolName += ":" + String(Settings.PoolPort);
         }
-        String json = "{\"hashrate\":" + String(avgHashRate, 2) + 
+        String json = "{\"hashrate\":" + String(currentHashRate, 2) + 
+                      ",\"avghashrate\":" + String(rollingAvgHashRate, 2) +
                       ",\"workers\":" + workerRatesJson +
                   ",\"shares\":" + String(shares) + 
                   ",\"valids\":" + String(valids) +

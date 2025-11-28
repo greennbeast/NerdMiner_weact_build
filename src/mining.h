@@ -29,6 +29,7 @@ String printLocalTime(void);
 
 void resetStat();
 void getWorkerHashRates(float rates[], int max_workers);
+float getAvgHashRate();
 
 typedef struct{
   uint8_t bytearray_target[32];

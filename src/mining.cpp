@@ -49,6 +49,11 @@ uint32_t totalKHashes = 0;
 uint32_t elapsedKHs = 0;
 uint64_t upTime = 0;
 
+// Average hash rate tracking
+static float avgHashRate = 0.0f;
+static uint32_t hashRateSamples = 0;
+#define MAX_AVG_SAMPLES 30
+
 // Per-worker hash tracking (max 8 workers)
 static uint32_t worker_hashes[8] = {0};
 static unsigned long worker_last_update[8] = {0};
@@ -100,6 +105,12 @@ void getWorkerHashRates(float rates[], int max_workers) {
   }
   
   last_calc_time = now;
+}
+
+// Get 30-second rolling average hash rate in KH/s
+float getAvgHashRate() {
+  extern float avgHashRate;
+  return avgHashRate;
 }
 
 bool checkPoolConnection(void) {
@@ -1314,6 +1325,14 @@ void runMonitor(void *name)
       unsigned long currentKHashes = (Mhashes * 1000) + (hashes >> 10);
       elapsedKHs = currentKHashes - totalKHashes;
       totalKHashes = currentKHashes;
+
+      // Update rolling average hash rate (30-second window)
+      if (hashRateSamples < MAX_AVG_SAMPLES) {
+        avgHashRate = (avgHashRate * hashRateSamples + elapsedKHs) / (hashRateSamples + 1);
+        hashRateSamples++;
+      } else {
+        avgHashRate = (avgHashRate * (MAX_AVG_SAMPLES - 1) + elapsedKHs) / MAX_AVG_SAMPLES;
+      }
 
       upTime += (uptime_frac + mElapsed) / 1000;
       uptime_frac = (uptime_frac + mElapsed) % 1000;

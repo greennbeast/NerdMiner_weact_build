@@ -83,9 +83,15 @@
             <div class='stat-box large'>
                 <div class='stat-label'>Worker Hash Rates (KH/s)</div>
                 <div id='workers' style='font-size:18px;line-height:1.4'></div>
-                <div style='margin-top:10px;padding-top:10px;border-top:1px solid #0a0'>
-                    <div style='font-size:12px;color:#0a0'>TOTAL HASH RATE (KH/s)</div>
-                    <div class='stat-value' style='font-size:36px' id='hashrate'>---</div>
+                <div style='margin-top:10px;padding-top:10px;border-top:1px solid #0a0;display:grid;grid-template-columns:1fr 1fr;gap:10px'>
+                    <div>
+                        <div style='font-size:12px;color:#0a0'>CURRENT (KH/s)</div>
+                        <div class='stat-value' style='font-size:28px' id='hashrate'>---</div>
+                    </div>
+                    <div>
+                        <div style='font-size:12px;color:#0a0'>30s AVG (KH/s)</div>
+                        <div class='stat-value' style='font-size:28px' id='avghashrate'>---</div>
+                    </div>
                 </div>
             </div>
             <div class='stat-box'>
@@ -464,6 +470,7 @@
                         document.getElementById('mediumfee').textContent = (d.mediumfee !== undefined && d.mediumfee !== null) ? d.mediumfee : document.getElementById('mediumfee').textContent;
                         document.getElementById('halving').textContent = (d.halving !== undefined && d.halving !== null) ? Number(d.halving).toLocaleString() : document.getElementById('halving').textContent;
                         document.getElementById('pool').textContent = (d.pool !== undefined && d.pool !== null && String(d.pool).length) ? String(d.pool) : document.getElementById('pool').textContent;
+                        document.getElementById('avghashrate').textContent = (d.avghashrate !== undefined && d.avghashrate !== null) ? Number(d.avghashrate).toFixed(2) : document.getElementById('avghashrate').textContent;
                     } catch(_) {}
                     
                     // Update debug payload FIRST before any other DOM ops
@@ -490,6 +497,7 @@
                         document.getElementById('workers').innerHTML = workersHtml;
                     }
                     document.getElementById('hashrate').textContent = d.hashrate !== undefined && d.hashrate !== null ? Number(d.hashrate).toFixed(2) : '---';
+                    document.getElementById('avghashrate').textContent = d.avghashrate !== undefined && d.avghashrate !== null ? Number(d.avghashrate).toFixed(2) : '---';
                     document.getElementById('shares').textContent = d.shares !== undefined ? d.shares : '---';
                     document.getElementById('valids').textContent = d.valids !== undefined ? d.valids : '---';
                     document.getElementById('templates').textContent = d.templates !== undefined ? d.templates : '---';
@@ -539,6 +547,7 @@
                                     if (el('mediumfee') && el('mediumfee').textContent === '---' && jd.mediumfee !== undefined) el('mediumfee').textContent = jd.mediumfee;
                                     if (el('halving') && el('halving').textContent === '---' && jd.halving !== undefined) el('halving').textContent = Number(jd.halving).toLocaleString();
                                     if (el('pool') && el('pool').textContent === '---' && jd.pool !== undefined && String(jd.pool).length) el('pool').textContent = String(jd.pool);
+                                    if (el('avghashrate') && el('avghashrate').textContent === '---' && jd.avghashrate !== undefined) el('avghashrate').textContent = Number(jd.avghashrate).toFixed(2);
                                 } catch(_) {}
                             }
                             // Unlock for next tick

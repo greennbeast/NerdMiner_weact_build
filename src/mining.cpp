@@ -20,8 +20,8 @@
 #include "i2c_master.h"
 
 //Optimized batch sizes for better throughput
-#define NONCE_PER_JOB_SW 16384
-#define NONCE_PER_JOB_HW 64*1024
+#define NONCE_PER_JOB_SW 32768
+#define NONCE_PER_JOB_HW 128*1024
 
 //#define I2C_SLAVE
 
@@ -84,7 +84,7 @@ void getWorkerHashRates(float rates[], int max_workers) {
   static unsigned long last_calc_time = 0;
   unsigned long now = millis();
   
-  if (now - last_calc_time < 100) {
+  if (now - last_calc_time < 200) {
     // Return cached rates if called too frequently
     return;
   }
@@ -92,7 +92,8 @@ void getWorkerHashRates(float rates[], int max_workers) {
   unsigned long elapsed = now - last_calc_time;
   if (elapsed == 0) elapsed = 1;
   
-  for (int i = 0; i < max_workers && i < 8; i++) {
+  int limit = (max_workers < 8) ? max_workers : 8;
+  for (int i = 0; i < limit; i++) {
     uint32_t hash_diff = worker_hashes[i] - last_worker_hashes[i];
     rates[i] = (float)hash_diff / (float)elapsed;
     last_worker_hashes[i] = worker_hashes[i];
@@ -672,23 +673,24 @@ void minerWorkerSw(void * task_id)
       result->nonce_count = job->nonce_count;
       result->worker_id = miner_id;
       uint8_t job_in_work = job->id & 0xFF;
-      for (uint32_t n = 0; n < job->nonce_count; ++n)
+      uint32_t nonce_end = job->nonce_start + job->nonce_count;
+      for (uint32_t n = job->nonce_start; n < nonce_end; ++n)
       {
-        ((uint32_t*)(job->sha_buffer+64+12))[0] = job->nonce_start+n;
+        ((uint32_t*)(job->sha_buffer+64+12))[0] = n;
         if (nerd_sha256d_baked(job->midstate, job->sha_buffer+64, job->bake, hash))
         {
           double diff_hash = diff_from_target(hash);
           if (diff_hash > result->difficulty)
           {
             result->difficulty = diff_hash;
-            result->nonce = job->nonce_start+n;
+            result->nonce = n;
             memcpy(result->hash, hash, 32);
           }
         }
 
-        if ( (uint16_t)(n & 0xFF) == 0 &&s_working_current_job_id != job_in_work)
+        if ( (n & 0x1FF) == 0 && s_working_current_job_id != job_in_work)
         {
-          result->nonce_count = n+1;
+          result->nonce_count = n - job->nonce_start + 1;
           break;
         }
       }
@@ -1309,16 +1311,12 @@ void runMonitor(void *name)
     { 
       mLastCheck = now_millis;
       last_update_millis = now_millis;
-      unsigned long currentKHashes = (Mhashes * 1000) + hashes / 1000;
+      unsigned long currentKHashes = (Mhashes * 1000) + (hashes >> 10);
       elapsedKHs = currentKHashes - totalKHashes;
       totalKHashes = currentKHashes;
 
-      uptime_frac += mElapsed;
-      while (uptime_frac >= 1000)
-      {
-        uptime_frac -= 1000;
-        upTime ++;
-      }
+      upTime += (uptime_frac + mElapsed) / 1000;
+      uptime_frac = (uptime_frac + mElapsed) % 1000;
 
       drawCurrentScreen(mElapsed);
 

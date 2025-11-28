@@ -83,7 +83,6 @@
                 <button onclick='connectMiner()'>CONNECT</button>
                 <button onclick='disconnectMiner()'>DISCONNECT</button>
                 <button onclick='openSettings()'>WIFI CONFIG</button>
-                <button onclick='triggerConfigMode()'>CONFIG MODE</button>
                 <button onclick='toggleDebug()'>DEBUG</button>
                 <label class='autoconnect'>
                     <input type='checkbox' id='autoConnect'> Auto-connect
@@ -444,23 +443,6 @@
                 if (payload) payload.textContent = 'Waiting for next update...';
                 setStatus('Debug enabled');
             }
-        }
-
-        // Ask the miner to restart into WiFiManager config portal
-        async function triggerConfigMode(){
-            const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
-            if (!minerIP && savedIP) minerIP = savedIP;
-            if (!minerIP) { setStatus('Enter miner IP to start config mode', true); return; }
-            const url = 'http://' + minerIP + '/config';
-            setStatus('Requesting config mode...');
-            try {
-                const r = await fetch(url, { method: 'GET', cache: 'no-store' });
-                if (r.ok) {
-                    setStatus('Rebooting into config portal... connect to AP and open http://192.168.4.1/settings');
-                    return;
-                }
-            } catch(_) {}
-            setStatus('Failed to trigger config mode. Try power-cycling the device.', true);
         }
 
         // Removed retry scheduler to keep stable 2s polling

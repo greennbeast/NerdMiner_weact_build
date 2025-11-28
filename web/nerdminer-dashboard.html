@@ -405,24 +405,19 @@
         }
 
         // Open the device settings page (WiFi/pool) in a new tab
-        async function openSettings(){
-            // Directly open miner's settings using its IP
-            const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
-            if (!minerIP && savedIP) minerIP = savedIP;
+        function openSettings(){
             if (!minerIP) {
-                setStatus('Enter miner IP or connect first to open settings', true);
+                const savedIP = localStorage.getItem(STORAGE_KEY_IP) || '';
+                if (savedIP) minerIP = savedIP;
+            }
+            const useProxy = new URLSearchParams(location.search).get('mode') === 'proxy';
+            const url = useProxy ? '/settings' : ('http://' + minerIP + '/settings');
+            if (!minerIP && !useProxy) {
+                setStatus('Enter IP or enable proxy mode to open settings', true);
                 return;
             }
-            const url = 'http://' + minerIP + '/settings';
-            try {
-                const r = await fetch(url, { method: 'GET', cache: 'no-store' });
-                if (r.ok) {
-                    window.open(url, '_blank');
-                    setStatus('Opening WiFi config...');
-                    return;
-                }
-            } catch(_) {}
-            setStatus('Cannot GET ' + url + ' • Ensure the device portal is active', true);
+            try { window.open(url, '_blank'); setStatus('Opening WiFi config...'); }
+            catch(e){ setStatus('Failed to open settings', true); }
         }
 
         // Some builds removed the retry scheduler; provide a safe no-op.
